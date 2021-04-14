@@ -7,19 +7,55 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+/// <reference types="cypress" />
+
+import credentials from './credentials'
+
+Cypress.Commands.add('doLogin', (email, pass) => {
+  cy.request({
+    method: 'POST',
+    url: '/login',
+    headers: credentials.HEADERS,
+    failOnStatusCode: false,
+    body: {
+      email: email,
+      password: pass
+    }
+  })
+})
+
+Cypress.Commands.add('consultUser', (name, email, id) => {
+  cy.request({
+    method: 'GET',
+    url: '/usuarios',
+    headers: credentials.HEADERS,
+    failOnStatusCode: false,
+    qs: {
+      nome: name,
+      email: email,
+      _id: id
+    }
+  })
+})
+
+Cypress.Commands.add('modifyUser', (_id, name, nameChange) => {
+  cy.request({
+    method: 'PUT',
+    url: `/usuarios/${_id}`,
+    headers: credentials.HEADERS,
+    failOnStatusCode: false,
+    body: {
+      nome: `${name} ${nameChange}`
+    }
+  })
+})
+
+Cypress.Commands.add('deleteUser', (_id) => {
+  cy.request({
+    method: 'DELETE',
+    url: `/usuarios/${_id}`,
+    headers: credentials.HEADERS,
+    failOnStatusCode: false,
+  })
+})
