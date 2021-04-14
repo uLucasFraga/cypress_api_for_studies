@@ -1,0 +1,44 @@
+{
+  "name": "cypress-api-for-studies",
+  "version": "1.0.0",
+  "description": "repositório de testes api rest",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^7.1.0",
+    "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2"
+  },
+  "devDependencies": {
+    "cypress-multi-reporters": "^1.5.0",
+    "faker": "^5.5.3",
+    "http-status-codes": "^2.1.0",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0",
+    "standard": "^16.0.3"
+  },
+  "standard": {
+    "globals": [
+    ]
+  },
+  "scripts": {
+    "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json >cypress/reports/mochareports/report.json",
+    "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
+    "clean-all": "rm -rf ./node_modules && rm -rf ./package-lock.json && npm run clean-reports",
+    "clean-reports": "rm -rf cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
+    "pre-test": "npm run clean-all && npm i",
+    "cy:run": "cypress run --spec cypress/integration/*.spec.js",
+    "cy:open": "cypress open",
+    "post-test": "npm run combine-reports && npm run generate-report",
+    "lint:fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uLucasFraga/cypress_api_for_studies.git"
+  },
+  "author": "Lucas Fraga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uLucasFraga/cypress_api_for_studies/issues"
+  },
+  "homepage": "https://github.com/uLucasFraga/cypress_api_for_studies#readme"
+}
