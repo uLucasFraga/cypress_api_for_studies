@@ -1,61 +1,106 @@
 # CYPRESS API FOR STUDIES
 -----------------------
 
-Projeto para estudos do cypress-api
+[![ServeRest API](https://img.shields.io/badge/API-ServeRest-green)](https://github.com/PauloGoncalvesBH/ServeRest/)
+
+Repositório com exemplos de testes automatizados para API Rest utilizando os frameworks e lib:
+- cypress
+- mocha
+
+A web evoluiu. Finalmente, o teste também.
+Testes rápidos, fáceis e confiáveis para qualquer coisa que seja executada em um navegador.
+
+> O **Cypress** veio para realizar testes rápidos, fáceis e confiáveis: [CONHECER CYPRESS](https://github.com/cypress-io/cypress)
+
+**Nota:** Incluída a lib **Mocha** para uma estrutura de teste (JS) simples, flexível e divertida.
+[CONHECER MOCHA](https://github.com/mochajs/mocha)
 
 -----------------------
 
-### Pré requisitos
+## Tabela de contexto
 
-- [Node e NPM](https://nodejs.org/en/)
-- [Vscode ou outra IDE](https://code.visualstudio.com/download)
-- [Cypress](https://www.cypress.io/)
+> Índice `README`.
+
+  - [Pré Requisitos](#pré-requisitos)
+  - [Configuração](#configuração)
+  - [Instalação](#instalação)
+  - [Como Testar](#como-testar)
+  - [Reporte](#report)
+  - [Suporte](#suporte)
+  - [Licença](#licença)
 
 -----------------------
 
-### Instalação e configuração
+### Pré Requisitos
 
-- Instalar o [Node.js](https://nodejs.org/en/download/);
-- Clonar este repositório usando ssh ou https: 
+- [node e npm](https://nodejs.org/en/)
+- [vscode ou outra IDE](https://code.visualstudio.com/download)
+- [cypress](https://www.cypress.io/)
 
-`git clone miimiim`
+-----------------------
 
-- Executar os seguintes comandos no terminal:
+### Configuração
+
+- Usar o arquivo _package.json_ para baixar/instalar as dependências.
+
+### Instalação
+
+> Clonar projeto
+
+- Clonar este repositório usando _ssh_ ou _https_, por exemplo:
+
+`git clone https://github.com/uLucasFraga/cypress_api_for_studies.git`
+
+- Instalar todas as dependências via package.json, por exemplo:
+
+`cd /{desafio_api_for_studies}`
 
 `npm run pre-test`
 
+> Dicas
+
+- Utilize o seu _package.json_ para incluir ou excluir novas libs ao seu projeto
+
 
 -----------------------
 
-### Como rodar os testes
+### Como testar
 
-- Executar os seguintes comandos no terminal:
+> Para limpar e instalar as dependências do repositório
+
+`npm run pre-test`
+
+> Para rodar todos os testes do repositório
 
 `npm run cy:run`
 
+> Para limpar todo o repositório
+
+`npm run clean-all`
+
 
 -----------------------
 
-### Para gerar relatórios
+### Reporte
 
-- Executar os seguintes comandos no terminal:
+> Para gerar relatórios depois dos testes:
 
 `npm run post-test`
 
 -----------------------
 
-## Suporte e dúvidas
+### Suporte
 
-- Linkedin <a href="linkedin.com/in/ulucasfraga/" target="_blank">`meu_linkedin`</a>
+- Linkedin <a href="https://www.linkedin.com/in/ulucasfraga/" target="_blank">`Lucas Fraga`</a>
 
 - E-mail: `lucass.fragaa@gmail.com`
 
 -----------------------
 
-
-## Licença
+### Licença
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2021 © <a href="linkedin.com/in/ulucasfraga/" target="_blank">Lucas Fraga</a>.
+- Copyright 2021 © <a href="https://www.linkedin.com/in/ulucasfraga" target="_blank">Lucas Fraga</a>
+
