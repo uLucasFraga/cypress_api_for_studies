@@ -10,7 +10,7 @@
 
 /// <reference types="cypress" />
 
-const httpStatus = require("http-status-codes");
+const httpStatus = require('http-status-codes')
 
 const credentials = {
   HEADERS: {
@@ -18,27 +18,27 @@ const credentials = {
   }
 }
 
-Cypress.Commands.add('getToken', () =>{
+Cypress.Commands.add('getToken', () => {
   cy.request({
-      method: 'POST',
-      url: '/login',
-      headers: credentials.HEADERS,
-      failOnStatusCode: false,
-      body: {
-          email: Cypress.env('email'),
-          password: Cypress.env('password')
-        }
+    method: 'POST',
+    url: '/login',
+    headers: credentials.HEADERS,
+    failOnStatusCode: false,
+    body: {
+      email: Cypress.env('email'),
+      password: Cypress.env('password')
+    }
   })
-  .then(response =>{
+    .then(response => {
       expect(response.status).to.eql(httpStatus.StatusCodes.OK)
       localStorage.setItem('token', response.body.authorization)
-      expect(localStorage.getItem('token')).not.null
+      // expect(localStorage.getItem('token')).not.null
       cy.log(localStorage.getItem('token'))
-  })      
+    })
 })
 
 Cypress.Commands.add('clearSession', () => {
-  localStorage.removeItem('token');
-});
+  localStorage.removeItem('token')
+})
 
 export default credentials

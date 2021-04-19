@@ -22,8 +22,8 @@ Cypress.Commands.add('doLogin', (email, pass) => {
       email: email,
       password: pass
     }
-  });
-});
+  })
+})
 
 Cypress.Commands.add('consultUser', () => {
   cy.request({
@@ -31,8 +31,8 @@ Cypress.Commands.add('consultUser', () => {
     url: '/usuarios',
     headers: credentials.HEADERS,
     failOnStatusCode: false
-  });
-});
+  })
+})
 
 Cypress.Commands.add('consultUserByName', (name) => {
   cy.request({
@@ -43,8 +43,8 @@ Cypress.Commands.add('consultUserByName', (name) => {
     qs: {
       nome: name
     }
-  });
-});
+  })
+})
 
 Cypress.Commands.add('consultUserByEmail', (email) => {
   cy.request({
@@ -55,8 +55,8 @@ Cypress.Commands.add('consultUserByEmail', (email) => {
     qs: {
       email: email
     }
-  });
-});
+  })
+})
 
 Cypress.Commands.add('consultUserByNameAndEmail', (name, email) => {
   cy.request({
@@ -68,8 +68,8 @@ Cypress.Commands.add('consultUserByNameAndEmail', (name, email) => {
       nome: name,
       email: email
     }
-  });
-});
+  })
+})
 
 Cypress.Commands.add('consultUserById', (id) => {
   cy.request({
@@ -78,10 +78,10 @@ Cypress.Commands.add('consultUserById', (id) => {
     headers: credentials.HEADERS,
     failOnStatusCode: false,
     qs: {
-      _id: id,
+      _id: id
     }
-  });
-});
+  })
+})
 
 Cypress.Commands.add('modifyUser', (_id, name, nameChange) => {
   cy.request({
@@ -92,14 +92,14 @@ Cypress.Commands.add('modifyUser', (_id, name, nameChange) => {
     body: {
       nome: `${name} ${nameChange}`
     }
-  });
-});
+  })
+})
 
 Cypress.Commands.add('deleteUser', (_id) => {
   cy.request({
     method: 'DELETE',
     url: `/usuarios/${_id}`,
     headers: credentials.HEADERS,
-    failOnStatusCode: false,
-  });
-});
+    failOnStatusCode: false
+  })
+})
