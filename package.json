@@ -17,7 +17,15 @@
     "standard": "^16.0.3"
   },
   "standard": {
-    "globals": []
+    "globals": [
+    "Cypress",
+    "cy",
+    "expect",
+    "localStorage",
+    "credentials",
+    "describe",
+    "it"
+    ]
   },
   "scripts": {
     "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json >cypress/reports/mochareports/report.json",
