@@ -41,7 +41,18 @@ Testes rápidos, fáceis e confiáveis para qualquer coisa que seja executada em
 
 ### Configuração
 
-- Usar o arquivo _package.json_ para baixar/instalar as dependências.
+- Criar um arquivo na raiz do projeto chamado _cypress.env.json_ e incluir os seguintes dados:
+
+```
+{
+    "email": "fulano@qa.com",
+    "password": "teste"
+}
+```
+
+**Nota Importante:** Isso foi feito para simular uma possível _"não exposição"_ para o tratamento quanto a dados sensíveis. Porém, coloquei os dados no README para facilitar a todos.
+
+O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Logo, faz-se necessário cria-lo assim que baixar.
 
 ### Instalação
 
@@ -69,6 +80,10 @@ Testes rápidos, fáceis e confiáveis para qualquer coisa que seja executada em
 > Para limpar e instalar as dependências do repositório
 
 `npm run pre-test`
+
+> Para rodar os testes no modo interativo do cypress
+
+`npm run cy:run`
 
 > Para rodar todos os testes do repositório
 

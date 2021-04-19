@@ -1,13 +1,13 @@
 /// <reference types="cypress" />
 
-import credentials from '../../../support/credentials'
+import credentials from '../../../support/session'
 const httpStatus = require("http-status-codes");
 
 describe("[INTEGRATION] :: Testes de API para o ServRest - Login", () => {
     let token;
 
     it("/POST - Realizar login com sucesso", () => {
-        cy.doLogin(credentials.BODY.email, credentials.BODY.password)
+        cy.doLogin(Cypress.env('email'), Cypress.env('password'))
             .then((response) => {
                 token = response.body.authorization;
                 expect(response.status).to.eq(httpStatus.StatusCodes.OK);
@@ -16,32 +16,24 @@ describe("[INTEGRATION] :: Testes de API para o ServRest - Login", () => {
             });
     });
 
-    it("/POST - Realizar login com usuário inválido", () => {
-        cy.doLogin('usuário_inválido', credentials.BODY.password)
+    it("/POST - Realizar login com tipo de email inválido", () => {
+        cy.doLogin('email_invalido', Cypress.env('password'))
             .then((response) => {
                 expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST);
                 expect(response.body.email).to.eq('email deve ser um email válido');
             });
     });
 
-    it("/POST - Realizar login com usuário inexistente", () => {
-        cy.doLogin('nao_existe@qa.com', credentials.BODY.password)
+    it("/POST - Realizar login com email inexistente", () => {
+        cy.doLogin('email_nao@existe.com', Cypress.env('password'))
             .then((response) => {
                 expect(response.status).to.eq(httpStatus.StatusCodes.UNAUTHORIZED);
                 expect(response.body.message).to.eq('Email e/ou senha inválidos');
             });
     });
 
-    it("/POST - Realizar login sem preencher o usuário", () => {
-        cy.doLogin('', credentials.BODY.password)
-            .then((response) => {
-                expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST);
-                expect(response.body.email).to.eq('email não pode ficar em branco');
-            });
-    });
-
-    it("/POST - Realizar login sem preencher o usuário", () => {
-        cy.doLogin('', credentials.BODY.password)
+    it("/POST - Realizar login sem preencher o email do usuário", () => {
+        cy.doLogin('', Cypress.env('password'))
             .then((response) => {
                 expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST);
                 expect(response.body.email).to.eq('email não pode ficar em branco');
@@ -50,7 +42,7 @@ describe("[INTEGRATION] :: Testes de API para o ServRest - Login", () => {
 
 
     it("/POST - Realizar login com senha inválida", () => {
-        cy.doLogin(credentials.BODY.email, 'senha_invalida')
+        cy.doLogin(Cypress.env('email'), 'senha_invalida')
             .then((response) => {
                 expect(response.status).to.eq(httpStatus.StatusCodes.UNAUTHORIZED);
                 expect(response.body.message).to.eq('Email e/ou senha inválidos');
@@ -58,14 +50,14 @@ describe("[INTEGRATION] :: Testes de API para o ServRest - Login", () => {
     });
 
     it("/POST - Realizar login sem preencher a senha", () => {
-        cy.doLogin(credentials.BODY.email, '')
+        cy.doLogin(Cypress.env('email'), '')
             .then((response) => {
                 expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST);
                 expect(response.body.password).to.eq('password não pode ficar em branco');
             });
     });
 
-    it("/POST - Realizar login sem preencher o usuário e a senha", () => {
+    it("/POST - Realizar login sem preencher o email e a senha", () => {
         cy.doLogin('', '')
             .then((response) => {
                 expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST);

@@ -10,7 +10,7 @@
 
 /// <reference types="cypress" />
 
-import credentials from './credentials'
+import credentials from './session'
 
 Cypress.Commands.add('doLogin', (email, pass) => {
   cy.request({
@@ -22,10 +22,43 @@ Cypress.Commands.add('doLogin', (email, pass) => {
       email: email,
       password: pass
     }
-  })
-})
+  });
+});
 
-Cypress.Commands.add('consultUser', (name, email, id) => {
+Cypress.Commands.add('consultUser', () => {
+  cy.request({
+    method: 'GET',
+    url: '/usuarios',
+    headers: credentials.HEADERS,
+    failOnStatusCode: false
+  });
+});
+
+Cypress.Commands.add('consultUserByName', (name) => {
+  cy.request({
+    method: 'GET',
+    url: '/usuarios',
+    headers: credentials.HEADERS,
+    failOnStatusCode: false,
+    qs: {
+      nome: name
+    }
+  });
+});
+
+Cypress.Commands.add('consultUserByEmail', (email) => {
+  cy.request({
+    method: 'GET',
+    url: '/usuarios',
+    headers: credentials.HEADERS,
+    failOnStatusCode: false,
+    qs: {
+      email: email
+    }
+  });
+});
+
+Cypress.Commands.add('consultUserByNameAndEmail', (name, email) => {
   cy.request({
     method: 'GET',
     url: '/usuarios',
@@ -33,11 +66,22 @@ Cypress.Commands.add('consultUser', (name, email, id) => {
     failOnStatusCode: false,
     qs: {
       nome: name,
-      email: email,
-      _id: id
+      email: email
     }
-  })
-})
+  });
+});
+
+Cypress.Commands.add('consultUserById', (id) => {
+  cy.request({
+    method: 'GET',
+    url: '/usuarios',
+    headers: credentials.HEADERS,
+    failOnStatusCode: false,
+    qs: {
+      _id: id,
+    }
+  });
+});
 
 Cypress.Commands.add('modifyUser', (_id, name, nameChange) => {
   cy.request({
@@ -48,8 +92,8 @@ Cypress.Commands.add('modifyUser', (_id, name, nameChange) => {
     body: {
       nome: `${name} ${nameChange}`
     }
-  })
-})
+  });
+});
 
 Cypress.Commands.add('deleteUser', (_id) => {
   cy.request({
@@ -57,5 +101,5 @@ Cypress.Commands.add('deleteUser', (_id) => {
     url: `/usuarios/${_id}`,
     headers: credentials.HEADERS,
     failOnStatusCode: false,
-  })
-})
+  });
+});
