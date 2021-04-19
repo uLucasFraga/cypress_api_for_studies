@@ -40,7 +40,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - name: install dependencies
-        run: npm run unix:pre-test
+        run: npm run pre-test
       - name: integration tests
         run: npm run cy:run
         env:
