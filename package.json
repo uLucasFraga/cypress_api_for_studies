@@ -32,10 +32,10 @@
     "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
     "clean-all": "rm -rf ./node_modules && rm -rf ./package-lock.json && npm run clean-reports",
     "clean-reports": "rm -rf cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
-    "pre-test": "npm run clean-all && npm i",
+    "pre-cy:run": "npm run clean-all",
     "cy:run": "cypress run --spec 'cypress/integration/tests/**/*.spec.js'",
     "cy:open": "cypress open",
-    "post-test": "npm run combine-reports && npm run generate-report",
+    "post-cy:run": "npm run combine-reports && npm run generate-report",
     "lint:fix": "standard --fix"
   },
   "repository": {

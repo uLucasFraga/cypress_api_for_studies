@@ -1,8 +1,9 @@
 /// <reference types="cypress" />
 
-import credentials from './session'
+import credentials from './credentials'
 
 Cypress.Commands.add('doLogin', (email, pass) => {
+  cy.log('Loggin in to servrest')
   cy.request({
     method: 'POST',
     url: '/login',
