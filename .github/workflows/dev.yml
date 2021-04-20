@@ -25,11 +25,9 @@ jobs:
       - name: integration tests
         run: npm run cy:run
       - name: generate and merge report
-        run: npm run post-cy:run
-        with:
-          env: true
+        run: npm run report:merge
         env:
           APP_URL: "https://serverest.dev"
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
-          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
+          CI: true
