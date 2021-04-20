@@ -18,13 +18,13 @@
   },
   "standard": {
     "globals": [
-    "Cypress",
-    "cy",
-    "expect",
-    "localStorage",
-    "credentials",
-    "describe",
-    "it"
+      "Cypress",
+      "cy",
+      "expect",
+      "localStorage",
+      "credentials",
+      "describe",
+      "it"
     ]
   },
   "scripts": {

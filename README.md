@@ -67,7 +67,7 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 `cd /{desafio_api_for_studies}`
 
-`npm run pre-test`
+`npm ci`
 
 > Dicas
 
