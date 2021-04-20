@@ -18,16 +18,15 @@ jobs:
         uses: actions/setup-node@v2.1.4
         with:
           node-version: 10
-      - name: install dependencies
-        run: npm ci
-      - name: lint standard
-        run: npm run lint:fix
-      - name: integration tests
-        run: npm run cy:run
+      - name: checkout
+        uses: actions/checkout@v1
+      - name: run cypress
+        uses: cypress-io/github-action@v1
       - name: generate and merge report
         run: npm run post-cy:run
+        with:
+          env: true
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
-          CI: true
