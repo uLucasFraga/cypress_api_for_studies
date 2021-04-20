@@ -8,22 +8,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  integrations:
-    runs-on: ubuntu-18.04
-
+  integration-tests:
+    runs-on: ubuntu-16.04
     steps:
       - name: checkout
-        uses: actions/checkout@v2
-      - name: node 10 setup
-        uses: actions/setup-node@v2.1.4
-        with:
-          node-version: 10
-      - name: checkout
         uses: actions/checkout@v1
-      - name: run cypress
+      - name: cypress run
         uses: cypress-io/github-action@v1
-      - name: generate and merge report
-        run: npm run post-cy:run
         with:
           env: true
         env:
