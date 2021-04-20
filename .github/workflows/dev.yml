@@ -30,4 +30,3 @@ jobs:
           APP_URL: "https://serverest.dev"
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
-          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
