@@ -4,10 +4,6 @@
   "reporter": "cypress-multi-reporters",
   "screenshot": false,
   "video": false,
-  "env": {
-    "email": "fulano@qa.com",
-    "password": "teste"
-  },
   "reporterOptions": {
     "reporterEnabled": "mochawesome",
     "mochawesomeReporterOptions": {
