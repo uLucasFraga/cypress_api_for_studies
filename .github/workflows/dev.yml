@@ -8,21 +8,19 @@ on:
   workflow_dispatch:
 
 jobs:
-  integrations:
-    runs-on: ubuntu-18.04
-
+  cypress-run:
+    name: cypress run
+    runs-on: ubuntu-16.04
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v1
-
-      - name: lint standard
-        run: npm run lint:fix
-
+ 
       - name: cypress run
         uses: cypress-io/github-action@v1
-       
+
       - name: generate and merge report
         run: npm run post-cy:run
+      
         with:
           APP_URL: "https://serverest.dev"
           EMAIL: ${{ secrets.EMAIL }}
