@@ -16,7 +16,7 @@ describe('[INTEGRATION] :: Testes de API para o ServRest - Usuários', () => {
   })
 
   it('/GET - Listar usuários cadastrados pelo nome', () => {
-    cy.consultUserByName(dataUsers.nome)
+    cy.consultUser(dataUsers.nome)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.usuarios[0].nome).to.deep.eq(dataUsers.nome)
@@ -24,7 +24,7 @@ describe('[INTEGRATION] :: Testes de API para o ServRest - Usuários', () => {
   })
 
   it('/GET - Listar usuários cadastrados pelo email', () => {
-    cy.consultUserByEmail(dataUsers.email)
+    cy.consultUser({}, dataUsers.email)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.usuarios[0].email).to.deep.eq(dataUsers.email)
@@ -32,7 +32,7 @@ describe('[INTEGRATION] :: Testes de API para o ServRest - Usuários', () => {
   })
 
   it('/GET - Listar usuários cadastrados pelo _id', () => {
-    cy.consultUserById(dataUsers._id)
+    cy.consultUser({}, {}, dataUsers._id)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.usuarios[0]._id).to.deep.eq(dataUsers._id)
@@ -40,7 +40,7 @@ describe('[INTEGRATION] :: Testes de API para o ServRest - Usuários', () => {
   })
 
   it('/GET - Listar usuários com uma busca correta de: nome válido e email válido', () => {
-    cy.consultUserByNameAndEmail(dataUsers.nome, dataUsers.email)
+    cy.consultUser(dataUsers.nome, dataUsers.email)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.usuarios[0].nome).to.deep.eq(dataUsers.nome)
@@ -49,7 +49,7 @@ describe('[INTEGRATION] :: Testes de API para o ServRest - Usuários', () => {
   })
 
   it('/GET - Listar usuários com uma busca incorreta de: nome válido e email inválido', () => {
-    cy.consultUserByNameAndEmail(dataUsers.nome, 'email@incorreto.com')
+    cy.consultUser(dataUsers.nome, 'email@incorreto.com')
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.quantidade).to.eq(0)
@@ -57,7 +57,7 @@ describe('[INTEGRATION] :: Testes de API para o ServRest - Usuários', () => {
   })
 
   it('/GET - Listar usuários com uma busca incorreta de: nome inválido e email válido', () => {
-    cy.consultUserByNameAndEmail('Nome Incorreto', dataUsers.email)
+    cy.consultUser('Nome Incorreto', dataUsers.email)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.quantidade).to.eq(0)

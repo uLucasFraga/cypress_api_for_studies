@@ -1,18 +1,9 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-
 /// <reference types="cypress" />
 
-import credentials from './session'
+import credentials from './credentials'
 
 Cypress.Commands.add('doLogin', (email, pass) => {
+  cy.log('Loggin in to servrest')
   cy.request({
     method: 'POST',
     url: '/login',
@@ -25,40 +16,7 @@ Cypress.Commands.add('doLogin', (email, pass) => {
   })
 })
 
-Cypress.Commands.add('consultUser', () => {
-  cy.request({
-    method: 'GET',
-    url: '/usuarios',
-    headers: credentials.HEADERS,
-    failOnStatusCode: false
-  })
-})
-
-Cypress.Commands.add('consultUserByName', (name) => {
-  cy.request({
-    method: 'GET',
-    url: '/usuarios',
-    headers: credentials.HEADERS,
-    failOnStatusCode: false,
-    qs: {
-      nome: name
-    }
-  })
-})
-
-Cypress.Commands.add('consultUserByEmail', (email) => {
-  cy.request({
-    method: 'GET',
-    url: '/usuarios',
-    headers: credentials.HEADERS,
-    failOnStatusCode: false,
-    qs: {
-      email: email
-    }
-  })
-})
-
-Cypress.Commands.add('consultUserByNameAndEmail', (name, email) => {
+Cypress.Commands.add('consultUser', (name, email, id) => {
   cy.request({
     method: 'GET',
     url: '/usuarios',
@@ -66,18 +24,7 @@ Cypress.Commands.add('consultUserByNameAndEmail', (name, email) => {
     failOnStatusCode: false,
     qs: {
       nome: name,
-      email: email
-    }
-  })
-})
-
-Cypress.Commands.add('consultUserById', (id) => {
-  cy.request({
-    method: 'GET',
-    url: '/usuarios',
-    headers: credentials.HEADERS,
-    failOnStatusCode: false,
-    qs: {
+      email: email,
       _id: id
     }
   })

@@ -2,6 +2,7 @@
 -----------------------
 
 [![ServeRest API](https://img.shields.io/badge/API-ServeRest-green)](https://github.com/PauloGoncalvesBH/ServeRest/)
+[![CONTINUOUS INTEGRATIONS](https://github.com/uLucasFraga/cypress_api_for_studies/actions/workflows/dev.yml/badge.svg?branch=main)](https://github.com/uLucasFraga/cypress_api_for_studies/actions/workflows/dev.yml)
 
 Repositório com exemplos de testes automatizados para API Rest utilizando os frameworks e lib:
 - cypress
@@ -45,14 +46,14 @@ Testes rápidos, fáceis e confiáveis para qualquer coisa que seja executada em
 
 ```
 {
-    "email": "fulano@qa.com",
-    "password": "teste"
+    "email": "email@valido.com",
+    "password": "senha_valida"
 }
 ```
 
 **Nota Importante:** Isso foi feito para simular uma possível _"não exposição"_ para o tratamento quanto a dados sensíveis. Porém, coloquei os dados no README para facilitar a todos.
 
-O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Logo, faz-se necessário cria-lo assim que baixar.
+O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Logo, faz-se necessário cria-lo assim que baixar. Há um arquivo chamado **_.cypress.env.example_** ilustrando o local e como o arquivo precisa ser preenchido.
 
 ### Instalação
 
@@ -66,7 +67,7 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 `cd /{desafio_api_for_studies}`
 
-`npm run pre-test`
+`npm ci`
 
 > Dicas
 
@@ -77,21 +78,22 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 ### Como testar
 
-> Para limpar e instalar as dependências do repositório
 
-`npm run pre-test`
+> Para instalar as dependências do repositório
+
+`npm ci`
+
+> Para limpar o repositório
+
+`npm run pre-cy:run`
 
 > Para rodar os testes no modo interativo do cypress
 
-`npm run cy:run`
+`npm run cy:open`
 
 > Para rodar todos os testes do repositório
 
 `npm run cy:run`
-
-> Para limpar todo o repositório
-
-`npm run clean-all`
 
 
 -----------------------
@@ -100,7 +102,7 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 > Para gerar relatórios depois dos testes:
 
-`npm run post-test`
+`npm run post-cy:run`
 
 -----------------------
 
