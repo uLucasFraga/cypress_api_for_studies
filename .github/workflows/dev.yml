@@ -24,6 +24,8 @@ jobs:
         run: npm run lint:fix
       - name: integration tests
         run: npm run cy:run
+      - name: generate and merge report
+        run: npm run post-cy:run
         env:
           APP_URL: "https://serverest.dev"
           EMAIL: ${{ secrets.EMAIL }}
