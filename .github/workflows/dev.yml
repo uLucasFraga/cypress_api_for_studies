@@ -8,19 +8,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  lint:
-    runs-on: ubuntu-18.04
-
-    steps:
-      - name: checkout
-        uses: actions/checkout@v2
-      - name: node v${{ matrix.node }} setup
-        uses: actions/setup-node@v2.1.4
-      - name: install dependencies
-        run: npm ci
-      - name: standard lint
-        run: npm run lint:fix
-
   integrations:
     runs-on: ubuntu-18.04
 
@@ -31,10 +18,14 @@ jobs:
         uses: actions/setup-node@v2.1.4
         with:
           node-version: 10
+      - name: clean project
+        run: npm pre-cy:run
       - name: install dependencies
         run: npm ci
+      - name: lint standard
+        run: npm run lint:fix
       - name: integration tests
-        run: npm run pre-cy:run && npm run cy:run
+        run: npm run cy:run
         env:
           APP_URL: "https://serverest.dev"
           EMAIL: ${{ secrets.EMAIL }}
