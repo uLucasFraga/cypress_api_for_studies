@@ -3,15 +3,12 @@
 const httpStatus = require('http-status-codes')
 
 describe('[INTEGRATION] :: Testes de API para o ServRest - Login', () => {
-  let token
 
   it('/POST - Realizar login com sucesso', () => {
     cy.doLogin(Cypress.env('email'), Cypress.env('password'))
       .then((response) => {
-        token = response.body.authorization
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.message).to.eq('Login realizado com sucesso')
-        expect(response.body.authorization).to.eq(token)
       })
   })
 
