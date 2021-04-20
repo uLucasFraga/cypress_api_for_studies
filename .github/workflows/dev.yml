@@ -8,16 +8,28 @@ on:
   workflow_dispatch:
 
 jobs:
-  integration-tests:
-    runs-on: ubuntu-16.04
+  integrations:
+    runs-on: ubuntu-18.04
+
     steps:
       - name: checkout
-        uses: actions/checkout@v1
-      - name: cypress run
-        uses: cypress-io/github-action@v1
+        uses: actions/checkout@v2
+      - name: node 10 setup
+        uses: actions/setup-node@v2.1.4
+        with:
+          node-version: 10
+      - name: install dependencies
+        run: npm ci
+      - name: lint standard
+        run: npm run lint:fix
+      - name: integration tests
+        run: npm run cy:run
+      - name: generate and merge report
+        run: npm run post-cy:run
         with:
           env: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+          APP_URL: "https://serverest.dev"
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
+          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
