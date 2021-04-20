@@ -18,8 +18,6 @@ jobs:
         uses: actions/setup-node@v2.1.4
         with:
           node-version: 10
-      - name: clean project
-        run: npm pre-cy:run
       - name: install dependencies
         run: npm ci
       - name: lint standard
