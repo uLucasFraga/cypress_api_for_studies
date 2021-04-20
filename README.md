@@ -83,7 +83,7 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 > Para rodar os testes no modo interativo do cypress
 
-`npm run cy:run`
+`npm run cy:open`
 
 > Para rodar todos os testes do repositório
 

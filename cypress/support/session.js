@@ -30,9 +30,9 @@ Cypress.Commands.add('getToken', () => {
     }
   })
     .then(response => {
-      expect(response.status).to.eql(httpStatus.StatusCodes.OK)
       localStorage.setItem('token', response.body.authorization)
-      // expect(localStorage.getItem('token')).not.null
+      expect(response.status).to.eq(httpStatus.StatusCodes.OK)
+      expect(localStorage.getItem('token')).not.null // eslint-disable-line
       cy.log(localStorage.getItem('token'))
     })
 })
