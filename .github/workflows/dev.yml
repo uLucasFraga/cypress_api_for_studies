@@ -17,6 +17,7 @@ jobs:
       - name: node 10 setup
         uses: actions/setup-node@v2.1.4
         with:
+          env: true
           node-version: 10
       - name: install dependencies
         run: npm ci
