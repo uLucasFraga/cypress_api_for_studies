@@ -2,6 +2,7 @@
 -----------------------
 
 [![ServeRest API](https://img.shields.io/badge/API-ServeRest-green)](https://github.com/PauloGoncalvesBH/ServeRest/)
+[![CONTINUOUS INTEGRATIONS](https://github.com/uLucasFraga/cypress_api_for_studies/actions/workflows/dev.yml/badge.svg?branch=main)](https://github.com/uLucasFraga/cypress_api_for_studies/actions/workflows/dev.yml)
 
 Repositório com exemplos de testes automatizados para API Rest utilizando os frameworks e lib:
 - cypress
