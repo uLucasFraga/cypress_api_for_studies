@@ -27,7 +27,7 @@ jobs:
       - name: generate and merge report
         run: npm run post-cy:run
         env:
-          APP_URL: "https://serverest.dev"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
           CI: true
