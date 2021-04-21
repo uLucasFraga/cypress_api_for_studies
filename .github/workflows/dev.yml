@@ -26,5 +26,5 @@ jobs:
         run: npm run cy:run
         env: 
           CYPRESS_APP_URL: "https://serverest.dev"
-          CYPRESS_EMAIL: ${{ secrets.EMAIL }}
-          CYPRESS_PASSWORD: ${{ secrets.PASSWORD }}
+          CYPRESS_EMAIL: "fulano@qa.com"
+          CYPRESS_PASSWORD: "teste"
