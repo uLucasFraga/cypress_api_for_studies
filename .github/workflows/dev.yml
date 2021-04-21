@@ -25,6 +25,5 @@ jobs:
       - name: integration tests
         run: npm run cy:run
         env: 
-          CYPRESS_APP_URL: "https://serverest.dev"
           CYPRESS_EMAIL: ${{ secrets.CYPRESS_EMAIL }}
           CYPRESS_PASSWORD: ${{ secrets.CYPRESS_PASSWORD }}
