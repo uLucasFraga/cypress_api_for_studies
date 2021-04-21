@@ -1,4 +1,4 @@
-name: DEV - CONTINUOUS INTEGRATIONS
+name: CONTINUOUS INTEGRATIONS
 
 on:
   push:
@@ -14,7 +14,6 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v1
-        
       - name: cypress run tests
         uses: cypress-io/github-action@v2
         env:

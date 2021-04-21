@@ -13,8 +13,8 @@ Cypress.Commands.add('doLogin', (email, pass) => {
       email: email,
       password: pass
     }
-  })
-})
+  });
+});
 
 Cypress.Commands.add('consultUser', (name, email, id) => {
   cy.request({
@@ -27,8 +27,8 @@ Cypress.Commands.add('consultUser', (name, email, id) => {
       email: email,
       _id: id
     }
-  })
-})
+  });
+});
 
 Cypress.Commands.add('modifyUser', (_id, name, nameChange) => {
   cy.request({
@@ -39,8 +39,8 @@ Cypress.Commands.add('modifyUser', (_id, name, nameChange) => {
     body: {
       nome: `${name} ${nameChange}`
     }
-  })
-})
+  });
+});
 
 Cypress.Commands.add('deleteUser', (_id) => {
   cy.request({
@@ -48,5 +48,5 @@ Cypress.Commands.add('deleteUser', (_id) => {
     url: `/usuarios/${_id}`,
     headers: credentials.HEADERS,
     failOnStatusCode: false
-  })
-})
+  });
+});
