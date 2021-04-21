@@ -24,5 +24,7 @@ jobs:
         run: npm run lint:fix
       - name: integration tests
         run: npm run cy:run
-        with:
-          env: APP_URL="https://serverest.dev",EMAIL=${{ secrets.EMAIL }},PASSWORD=${{ secrets.PASSWORD }}
+        env: 
+          CYPRESS_APP_URL: "https://serverest.dev"
+          CYPRESS_EMAIL: ${{ secrets.EMAIL }}
+          CYPRESS_PASSWORD: ${{ secrets.PASSWORD }}
