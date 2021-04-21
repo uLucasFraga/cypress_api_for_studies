@@ -13,17 +13,12 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v2
-      - name: node 10 setup
-        uses: actions/setup-node@v2.1.4
+        uses: actions/checkout@v1
+      - name: cypress run tests
+        uses: cypress-io/github-action@v1
         with:
-          node-version: 10
-      - name: install dependencies
-        run: npm ci
-      - name: lint standard
-        run: npm run lint:fix
-      - name: integration tests
-        run: npm run cy:run
-        env: 
-          CYPRESS_EMAIL: ${{ secrets.CYPRESS_EMAIL }}
-          CYPRESS_PASSWORD: ${{ secrets.CYPRESS_PASSWORD }}
+          env: true
+        env:
+          CYPRESS_APP_URL: 'https://serverest.dev'
+          CYPRESS_EMAIL:  ${{ secrets.EMAIL }}
+          CYPRESS_PASSWORD:  ${{ secrets.PASSWORD }}
