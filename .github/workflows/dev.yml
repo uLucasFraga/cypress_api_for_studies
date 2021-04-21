@@ -17,8 +17,6 @@ jobs:
         
       - name: cypress run tests
         uses: cypress-io/github-action@v2
-        with:
-          env: true
         env:
           CYPRESS_APP_URL: 'https://serverest.dev'
           CYPRESS_EMAIL:  ${{ secrets.EMAIL }}
