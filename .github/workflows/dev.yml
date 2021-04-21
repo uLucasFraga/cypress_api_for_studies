@@ -1,40 +1,35 @@
 name: CONTINUOUS INTEGRATIONS
-
-on:
-  pull_request:
-  workflow_dispatch:
-
+'on':
+  pull_request: null
+  workflow_dispatch: null
 jobs:
   lint:
     runs-on: ubuntu-18.04
-
     steps:
-    - name: checkout
-      uses: actions/checkout@v2
-    - name: node.js 10 setup
-      with:
-        node-version: 10
-      uses: actions/setup-node@v2
-    - name: installation of dependencies
-      run: npm ci
-    - name: lint
-      run: npm run lint:fix
-
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: node.js 10 setup
+        with:
+          node-version: 10
+        uses: actions/setup-node@v2
+      - name: installation of dependencies
+        run: npm ci
+      - name: lint
+        run: 'npm run lint:fix'
   integrations:
     runs-on: ubuntu-18.04
-
     steps:
-    - name: checkout
-      uses: actions/checkout@v2
-    - name: node.js 10 setup
-      uses: actions/setup-node@v2
-      with:
-        node-version: 10
-    - name: installation of dependencies
-      run: npm ci
-    - name: api tests
-      run: npm run cy:run
-      env:
-        CYPRESS_APP_URL: 'https://serverest.dev'
-        CYPRESS_EMAIL:  ${{ secrets.EMAIL }}
-        CYPRESS_PASSWORD:  ${{ secrets.PASSWORD }}
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: node.js 10 setup
+        uses: actions/setup-node@v2
+        with:
+          node-version: 10
+      - name: installation of dependencies
+        run: npm ci
+      - name: api tests
+        run: 'npm run cy:run'
+        env:
+          CYPRESS_APP_URL: 'https://serverest.dev'
+          CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
+          CYPRESS_PASSWORD: '${{ secrets.PASSWORD }}'
