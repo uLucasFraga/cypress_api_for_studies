@@ -30,10 +30,10 @@ Cypress.Commands.add('consultUser', (name, email, id) => {
   });
 });
 
-Cypress.Commands.add('modifyUser', (_id, name, nameChange) => {
+Cypress.Commands.add('modifyUser', (id, name, nameChange) => {
   cy.request({
     method: 'PUT',
-    url: `/usuarios/${_id}`,
+    url: `/usuarios/${id}`,
     headers: credentials.HEADERS,
     failOnStatusCode: false,
     body: {
@@ -42,10 +42,10 @@ Cypress.Commands.add('modifyUser', (_id, name, nameChange) => {
   });
 });
 
-Cypress.Commands.add('deleteUser', (_id) => {
+Cypress.Commands.add('deleteUser', (id) => {
   cy.request({
     method: 'DELETE',
-    url: `/usuarios/${_id}`,
+    url: `/usuarios/${id}`,
     headers: credentials.HEADERS,
     failOnStatusCode: false
   });

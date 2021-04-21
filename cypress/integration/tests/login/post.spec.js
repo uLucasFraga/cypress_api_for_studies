@@ -3,6 +3,7 @@
 const httpStatus = require('http-status-codes')
 
 describe('[INTEGRATION] :: Testes de API para o ServRest - Login', () => {
+
   it('/POST - Realizar login com sucesso', () => {
     cy.doLogin(Cypress.env('EMAIL'), Cypress.env('PASSWORD'))
       .then((response) => {
