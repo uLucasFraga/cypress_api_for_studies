@@ -1,22 +1,42 @@
 name: CONTINUOUS INTEGRATIONS
 
 on:
-  push:
-    branches: [main]
   pull_request:
-    branches: [main]
   workflow_dispatch:
 
 jobs:
-  integrations:
+  lint:
     runs-on: ubuntu-18.04
 
     steps:
-      - name: checkout
-        uses: actions/checkout@v1
-      - name: cypress run tests
-        uses: cypress-io/github-action@v2
-        env:
-          CYPRESS_APP_URL: 'https://serverest.dev'
-          CYPRESS_EMAIL:  ${{ secrets.EMAIL }}
-          CYPRESS_PASSWORD:  ${{ secrets.PASSWORD }}
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: node.js setup
+      uses: actions/setup-node@v2
+    - name: installation of dependencies
+      run: npm ci
+    - name: lint
+      run: npm run lint:fix
+
+  integrations:
+    runs-on: ubuntu-18.04
+    
+    strategy:
+      matrix:
+        node: [10, 12, 14]
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: node.js v${{ matrix.node }} setup
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node }}
+    - name: installation of dependencies
+      run: npm ci
+    - name: api tests
+      run: npm run cy:run
+      env:
+        CYPRESS_APP_URL: 'https://serverest.dev'
+        CYPRESS_EMAIL:  ${{ secrets.EMAIL }}
+        CYPRESS_PASSWORD:  ${{ secrets.PASSWORD }}
