@@ -11,7 +11,9 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@v2
-    - name: node.js setup
+    - name: node.js 10 setup
+      with:
+        node-version: 10
       uses: actions/setup-node@v2
     - name: installation of dependencies
       run: npm ci
@@ -20,18 +22,14 @@ jobs:
 
   integrations:
     runs-on: ubuntu-18.04
-    
-    strategy:
-      matrix:
-        node: [10, 12, 14]
 
     steps:
     - name: checkout
       uses: actions/checkout@v2
-    - name: node.js v${{ matrix.node }} setup
+    - name: node.js 10 setup
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node }}
+        node-version: 10
     - name: installation of dependencies
       run: npm ci
     - name: api tests
