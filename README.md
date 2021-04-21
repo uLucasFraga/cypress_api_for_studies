@@ -10,10 +10,10 @@ Repositório com exemplos de testes automatizados para API Rest utilizando os fr
 - cypress
 - mocha
 
-A web evoluiu. Finalmente, o teste também.
-Testes rápidos, fáceis e confiáveis para qualquer coisa que seja executada em um navegador.
+Os testes evoluíram bastante.
+Hoje precisamos ter testes mais rápidos, fáceis e confiáveis para qualquer coisa que seja executada em um navegador ou por serviços.
 
-> O **Cypress** veio para realizar testes rápidos, fáceis e confiáveis: [CONHECER CYPRESS](https://github.com/cypress-io/cypress)
+> O **Cypress** veio para realizar esses testes rápidos, fáceis e confiáveis: [CONHECER CYPRESS](https://github.com/cypress-io/cypress)
 
 **Nota:** Incluída a lib **Mocha** para uma estrutura de teste (JS) simples, flexível e divertida.
 [CONHECER MOCHA](https://github.com/mochajs/mocha)
