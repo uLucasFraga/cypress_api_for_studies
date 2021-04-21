@@ -1,4 +1,4 @@
-name: DEV - CONTINUOUS INTEGRATIONS
+name: CONTINUOUS INTEGRATIONS
 
 on:
   push:
@@ -13,26 +13,10 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v2
-      - name: node 10 setup
-        uses: actions/setup-node@v2.1.4
-        with:
-          node-version: 10
-      - name: install dependencies
-        run: npm ci
-      - name: lint standard
-        run: npm run lint:fix
-      - name: integration tests
-        run: npm run cy:run
+        uses: actions/checkout@v1
+      - name: cypress run tests
+        uses: cypress-io/github-action@v2
         env:
-          APP_URL: "https://serverest.dev"
-          EMAIL: ${{ secrets.EMAIL }}
-          PASSWORD: ${{ secrets.PASSWORD }}
-          CI: true
-      - name: generate and merge report
-        run: npm run report:merge
-        env:
-          APP_URL: "https://serverest.dev"
-          EMAIL: ${{ secrets.EMAIL }}
-          PASSWORD: ${{ secrets.PASSWORD }}
-          CI: true
+          CYPRESS_APP_URL: 'https://serverest.dev'
+          CYPRESS_EMAIL:  ${{ secrets.EMAIL }}
+          CYPRESS_PASSWORD:  ${{ secrets.PASSWORD }}
