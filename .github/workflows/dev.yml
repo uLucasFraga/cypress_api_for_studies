@@ -24,6 +24,11 @@ jobs:
         run: npm run lint:fix
       - name: integration tests
         run: npm run cy:run
+        env:
+          APP_URL: "https://serverest.dev"
+          EMAIL: ${{ secrets.EMAIL }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+          CI: true
       - name: generate and merge report
         run: npm run report:merge
         env:
