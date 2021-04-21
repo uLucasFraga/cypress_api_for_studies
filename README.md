@@ -20,6 +20,7 @@ Hoje precisamos ter testes mais rápidos, fáceis e confiáveis para qualquer co
 
 -----------------------
 
+
 ## Tabela de contexto
 
 > Índice `README`.
@@ -34,6 +35,7 @@ Hoje precisamos ter testes mais rápidos, fáceis e confiáveis para qualquer co
 
 -----------------------
 
+
 ### Pré Requisitos
 
 - [node e npm](https://nodejs.org/en/)
@@ -41,6 +43,7 @@ Hoje precisamos ter testes mais rápidos, fáceis e confiáveis para qualquer co
 - [cypress](https://www.cypress.io/)
 
 -----------------------
+
 
 ### Configuração
 
@@ -56,6 +59,10 @@ Hoje precisamos ter testes mais rápidos, fáceis e confiáveis para qualquer co
 **Nota Importante:** Isso foi feito para simular uma possível _"não exposição"_ para o tratamento quanto a dados sensíveis. Porém, coloquei os dados no README para facilitar a todos.
 
 O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Logo, faz-se necessário cria-lo assim que baixar. Há um arquivo chamado **_.cypress.env.example_** ilustrando o local e como o arquivo precisa ser preenchido.
+
+
+-----------------------
+
 
 ### Instalação
 
@@ -77,6 +84,7 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 
 -----------------------
+
 
 ### Como testar
 
@@ -100,13 +108,16 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 -----------------------
 
+
 ### Reporte
 
 > Para gerar relatórios depois dos testes:
 
 `npm run post-cy:run`
 
+
 -----------------------
+
 
 ### Suporte
 
@@ -114,11 +125,13 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 - E-mail: `lucass.fragaa@gmail.com`
 
+
 -----------------------
+
 
 ### Licença
 
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+[![Licença](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 - Copyright 2021 © <a href="https://www.linkedin.com/in/ulucasfraga" target="_blank">Lucas Fraga</a>
