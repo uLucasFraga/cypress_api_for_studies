@@ -5,6 +5,7 @@ const httpStatus = require('http-status-codes')
 describe('[INTEGRATION] :: Testes de API para o ServRest - Login', () => {
 
   it('/POST - Realizar login com sucesso', () => {
+    console.log(Cypress.env('CYPRESS_EMAIL'))
     cy.doLogin(Cypress.env('CYPRESS_EMAIL'), Cypress.env('CYPRESS_PASSWORD'))
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
