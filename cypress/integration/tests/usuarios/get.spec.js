@@ -63,4 +63,20 @@ describe('[INTEGRATION] :: Testes de API para o ServRest - Usuários', () => {
         expect(response.body.quantidade).to.eq(0)
       });
   });
+
+  it('/GET - Listar usuários com uma busca incorreta de: nome sem parâmetro e email válido', () => {
+    cy.consultUser('', dataUsers.email)
+      .then((response) => {
+        expect(response.status).to.eq(httpStatus.StatusCodes.OK)
+        expect(response.body.quantidade).to.eq(0)
+      });
+  });
+
+  it('/GET - Listar usuários com uma busca incorreta de: nome e email sem parâmetro', () => {
+    cy.consultUser('', '')
+      .then((response) => {
+        expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
+        expect(response.body.email).to.eq('email deve ser uma string')
+      });
+  });
 });

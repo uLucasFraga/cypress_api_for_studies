@@ -51,8 +51,8 @@ Hoje precisamos ter testes mais rápidos, fáceis e confiáveis para qualquer co
 
 ```
 {
-    "email": "email@valido.com",
-    "password": "senha_valida"
+    "EMAIL": "email@valido.com",
+    "PASSWORD": "senha_valida"
 }
 ```
 
