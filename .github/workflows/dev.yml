@@ -25,9 +25,4 @@ jobs:
       - name: integration tests
         run: npm run cy:run
         with:
-          env: true
-        env:
-          APP_URL: "https://serverest.dev"
-          EMAIL: ${{ secrets.EMAIL }}
-          PASSWORD: ${{ secrets.PASSWORD }}
-          CI: true
+          env: APP_URL="https://serverest.dev",EMAIL=${{ secrets.EMAIL }},PASSWORD=${{ secrets.PASSWORD }}
