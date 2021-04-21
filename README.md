@@ -48,8 +48,8 @@ Testes rápidos, fáceis e confiáveis para qualquer coisa que seja executada em
 
 ```
 {
-    "email": "email@valido.com",
-    "password": "senha_valida"
+    "EMAIL": "email@valido.com",
+    "PASSWORD": "senha_valida"
 }
 ```
 
