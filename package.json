@@ -4,6 +4,7 @@
   "description": "repositório de testes api rest",
   "main": "index.js",
   "dependencies": {
+    "@cypress/github-action": "^2.3.1",
     "cypress": "^7.1.0",
     "mocha": "^8.3.2",
     "mochawesome": "^6.2.2"

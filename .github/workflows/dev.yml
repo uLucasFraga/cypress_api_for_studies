@@ -14,8 +14,9 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v1
+        
       - name: cypress run tests
-        uses: cypress-io/github-action@v1
+        uses: cypress-io/github-action@v2
         with:
           env: true
         env:
