@@ -30,6 +30,21 @@ Cypress.Commands.add('consultUser', (name, email, id) => {
   });
 });
 
+Cypress.Commands.add('registerUser', (name, email, password, admin = true) => {
+  cy.request({
+    method: 'POST',
+    url: '/usuarios',
+    headers: credentials.HEADERS,
+    failOnStatusCode: false,
+    body: {
+      nome: name,
+      email: email,
+      password: password,
+      administrador: admin
+    }
+  });
+});
+
 Cypress.Commands.add('modifyUser', (id, name, nameChange) => {
   cy.request({
     method: 'PUT',

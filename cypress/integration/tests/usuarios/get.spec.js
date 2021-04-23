@@ -3,7 +3,7 @@
 import dataUsers from '../../../fixtures/usuarios.json'
 const httpStatus = require('http-status-codes')
 
-describe('[INTEGRATION] :: Testes de API para o ServRest - Usuários', () => {
+describe('[INTEGRATION] :: Listar Usuários', () => {
   let qtd;
 
   it('/GET - Listar todos os usuários cadastrados', () => {
