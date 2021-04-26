@@ -19,7 +19,28 @@ jobs:
       - name: lint
         run: npm run lint
 
-  integrations:
+  integration-local:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: node.js 10 setup
+        uses: actions/setup-node@v2
+        with:
+          node-version: 10
+      - name: installation of dependencies
+        run: npm ci
+      - name: start ServeRest locally
+        run: docker run -d -p 3000:3000 paulogoncalvesbh/serverest
+      - name: api tests
+        run: npm run cy:run
+        env:
+          CYPRESS_APP_URL: 'http://localhost:3000'
+          CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
+          CYPRESS_PASSWORD: '${{ secrets.PASSWORD }}'
+
+  integration-prod:
+    needs: [lint, integration-local]
     runs-on: ubuntu-18.04
     steps:
       - name: checkout
