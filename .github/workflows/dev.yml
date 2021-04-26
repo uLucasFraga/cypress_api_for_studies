@@ -1,7 +1,9 @@
 name: CONTINUOUS INTEGRATIONS
-'on':
-  pull_request: null
-  workflow_dispatch: null
+
+on:
+  pull_request:
+  workflow_dispatch:
+
 jobs:
   lint:
     runs-on: ubuntu-18.04
@@ -15,7 +17,8 @@ jobs:
       - name: installation of dependencies
         run: npm ci
       - name: lint
-        run: 'npm run lint:fix'
+        run: npm run lint:fix
+
   integrations:
     runs-on: ubuntu-18.04
     steps:
@@ -28,7 +31,7 @@ jobs:
       - name: installation of dependencies
         run: npm ci
       - name: api tests
-        run: 'npm run cy:run'
+        run: npm run cy:run
         env:
           CYPRESS_APP_URL: 'https://serverest.dev'
           CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
