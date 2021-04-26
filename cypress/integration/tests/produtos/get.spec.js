@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import dataProducts from '../../../fixtures/products.json'
+import dataProducts from '../../../fixtures/produtos.json'
 const httpStatus = require('http-status-codes')
 
 describe('[INTEGRATION] :: Listar Produtos', () => {
