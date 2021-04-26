@@ -17,7 +17,7 @@ jobs:
       - name: installation of dependencies
         run: npm ci
       - name: lint
-        run: npm run lint:fix
+        run: npm run lint
 
   integrations:
     runs-on: ubuntu-18.04

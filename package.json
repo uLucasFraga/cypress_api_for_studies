@@ -35,6 +35,7 @@
     "cy:run": "cypress run --spec 'cypress/integration/tests/**/*.spec.js'",
     "cy:open": "cypress open",
     "post-cy:run": "npm run combine-reports && npm run generate-report",
+    "lint": "standard",
     "lint:fix": "standard --fix"
   },
   "repository": {
