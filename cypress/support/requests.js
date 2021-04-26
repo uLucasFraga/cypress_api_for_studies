@@ -86,3 +86,12 @@ Cypress.Commands.add('consultProduct', (_id, name, description) => {
     }
   })
 })
+
+Cypress.Commands.add('consultProductById', (_id) => {
+  cy.request({
+    method: 'GET',
+    url: `/produtos/${_id}`,
+    headers: credentials.HEADERS,
+    failOnStatusCode: false
+  })
+})
