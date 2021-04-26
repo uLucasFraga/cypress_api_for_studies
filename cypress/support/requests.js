@@ -2,6 +2,8 @@
 
 import credentials from './credentials'
 
+//USUÁRIOS//
+
 Cypress.Commands.add('doLogin', (email, pass) => {
   cy.log('Loggin in to servrest')
   cy.request({
@@ -66,5 +68,21 @@ Cypress.Commands.add('deleteUser', (_id) => {
     url: `/usuarios/${_id}`,
     headers: credentials.HEADERS,
     failOnStatusCode: false
+  })
+})
+
+//PRODUTOS//
+
+Cypress.Commands.add('consultProduct', (_id, name, description) => {
+  cy.request({
+    method: 'GET',
+    url: '/produtos',
+    headers: credentials.HEADERS,
+    failOnStatusCode: false,
+    qs: {
+      _id: _id,
+      nome: name,
+      descricao: description
+    }
   })
 })
