@@ -1,6 +1,7 @@
 {
   "name": "cypress-api-for-studies",
   "description": "repositório de testes api rest com cypress e mocha",
+  "private": true,
   "dependencies": {
     "cypress": "^7.1.0",
     "mocha": "^8.3.2",
