@@ -1,7 +1,8 @@
 /// <reference types="cypress" />
 
-import faker from 'faker'
+import dataUsers from '../../../fixtures/usuarios.json'
 const httpStatus = require('http-status-codes')
+import faker from 'faker'
 
 const userFaker = {
   BODY: {
@@ -44,6 +45,14 @@ describe('[INTEGRATION] :: Deletar Usuários', () => {
     cy.deleteUser('')
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.METHOD_NOT_ALLOWED)
+      })
+  })
+
+  it('/DELETE - Deletar um usuário que contenha um carrinho', () => {
+    cy.deleteUser(dataUsers.idUsuario)
+      .then((response) => {
+        expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
+        expect(response.body.message).to.eq('Não é permitido excluir usuário com carrinho cadastrado')
       })
   })
 })

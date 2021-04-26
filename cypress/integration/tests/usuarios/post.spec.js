@@ -13,6 +13,7 @@ const userFaker = {
 }
 
 describe('[INTEGRATION] :: Cadastrar Usuários', () => {
+
   it('/POST - Cadastrar um usuário válido', () => {
     cy.registerUser(userFaker.BODY.nome, userFaker.BODY.email, userFaker.BODY.pass, userFaker.BODY.admin)
       .then((response) => {
