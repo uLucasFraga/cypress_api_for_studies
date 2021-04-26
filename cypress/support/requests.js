@@ -2,7 +2,7 @@
 
 import credentials from './credentials'
 
-//USUÁRIOS//
+// USUÁRIOS//
 
 Cypress.Commands.add('doLogin', (email, pass) => {
   cy.log('Loggin in to servrest')
@@ -71,7 +71,7 @@ Cypress.Commands.add('deleteUser', (_id) => {
   })
 })
 
-//PRODUTOS//
+// PRODUTOS//
 
 Cypress.Commands.add('consultProduct', (_id, name, description) => {
   cy.request({

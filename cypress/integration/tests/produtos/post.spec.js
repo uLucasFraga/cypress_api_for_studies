@@ -13,7 +13,6 @@ const productFaker = {
 }
 
 describe('[INTEGRATION] :: Cadastrar Produtos sem Token de autorização', () => {
-
   it('/POST - Cadastrar um produto válido', () => {
     cy.registerProduct(
       productFaker.BODY.nome,
@@ -27,10 +26,7 @@ describe('[INTEGRATION] :: Cadastrar Produtos sem Token de autorização', () =>
   })
 })
 
-
 describe('[INTEGRATION] :: Cadastrar Produtos com Token de autorização', () => {
-  let _id;
-
   beforeEach(() => {
     cy.getToken()
   })
@@ -43,7 +39,6 @@ describe('[INTEGRATION] :: Cadastrar Produtos com Token de autorização', () =>
       productFaker.BODY.quantidade
     )
       .then((response) => {
-        _id = response.body._id
         expect(response.status).to.eq(httpStatus.StatusCodes.CREATED)
         expect(response.body.message).to.eq('Cadastro realizado com sucesso')
       })
