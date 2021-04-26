@@ -24,7 +24,9 @@
       "localStorage",
       "credentials",
       "describe",
-      "it"
+      "it",
+      "before",
+      "beforeEach"
     ]
   },
   "scripts": {

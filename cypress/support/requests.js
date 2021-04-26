@@ -13,10 +13,10 @@ Cypress.Commands.add('doLogin', (email, pass) => {
       email: email,
       password: pass
     }
-  });
-});
+  })
+})
 
-Cypress.Commands.add('consultUser', (name, email, id) => {
+Cypress.Commands.add('consultUser', (name, email, _id) => {
   cy.request({
     method: 'GET',
     url: '/usuarios',
@@ -25,28 +25,46 @@ Cypress.Commands.add('consultUser', (name, email, id) => {
     qs: {
       nome: name,
       email: email,
-      _id: id
+      _id: _id
     }
-  });
-});
+  })
+})
 
-Cypress.Commands.add('modifyUser', (id, name, nameChange) => {
+Cypress.Commands.add('registerUser', (name, email, password, admin = true) => {
   cy.request({
-    method: 'PUT',
-    url: `/usuarios/${id}`,
+    method: 'POST',
+    url: '/usuarios',
     headers: credentials.HEADERS,
     failOnStatusCode: false,
     body: {
-      nome: `${name} ${nameChange}`
+      nome: name,
+      email: email,
+      password: password,
+      administrador: admin
     }
-  });
-});
+  })
+})
 
-Cypress.Commands.add('deleteUser', (id) => {
+Cypress.Commands.add('modifyUser', (_id, newName, newEmail, newPass) => {
+  cy.request({
+    method: 'PUT',
+    url: `/usuarios/${_id}`,
+    headers: credentials.HEADERS,
+    failOnStatusCode: false,
+    body: {
+      nome: newName,
+      email: newEmail,
+      password: newPass,
+      administrador: 'true'
+    }
+  })
+})
+
+Cypress.Commands.add('deleteUser', (_id) => {
   cy.request({
     method: 'DELETE',
-    url: `/usuarios/${id}`,
+    url: `/usuarios/${_id}`,
     headers: credentials.HEADERS,
     failOnStatusCode: false
-  });
-});
+  })
+})
