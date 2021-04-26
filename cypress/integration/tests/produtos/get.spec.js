@@ -62,4 +62,20 @@ describe('[INTEGRATION] :: Listar Produtos', () => {
         expect(response.body.quantidade).to.deep.eq(0)
       })
   })
+
+  it('/GET - Listar produtos pelo _id na URL válido', () => {
+    cy.consultProductById(dataProducts.produtos[0]._id)
+      .then((response) => {
+        expect(response.status).to.eq(httpStatus.StatusCodes.OK)
+        expect(response.body._id).to.deep.eq(dataProducts.produtos[0]._id)
+      })
+  })
+
+  it('/GET - Listar produtos pelo _id na URL que não existe', () => {
+    cy.consultProductById('ID_QUE_NAO_EXISTE')
+      .then((response) => {
+        expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
+        expect(response.body.message).to.deep.eq('Produto não encontrado')
+      })
+  })
 })

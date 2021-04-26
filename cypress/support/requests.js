@@ -2,7 +2,7 @@
 
 import credentials from './credentials'
 
-//USUÁRIOS//
+// USUÁRIOS//
 
 Cypress.Commands.add('doLogin', (email, pass) => {
   cy.log('Loggin in to servrest')
@@ -71,7 +71,7 @@ Cypress.Commands.add('deleteUser', (_id) => {
   })
 })
 
-//PRODUTOS//
+// PRODUTOS//
 
 Cypress.Commands.add('consultProduct', (_id, name, description) => {
   cy.request({
@@ -83,6 +83,32 @@ Cypress.Commands.add('consultProduct', (_id, name, description) => {
       _id: _id,
       nome: name,
       descricao: description
+    }
+  })
+})
+
+Cypress.Commands.add('consultProductById', (_id) => {
+  cy.request({
+    method: 'GET',
+    url: `/produtos/${_id}`,
+    headers: credentials.HEADERS,
+    failOnStatusCode: false
+  })
+})
+
+Cypress.Commands.add('registerProduct', (name, price, description, qtd) => {
+  cy.request({
+    method: 'POST',
+    url: '/produtos',
+    headers: {
+      Authorization: localStorage.getItem('token')
+    },
+    failOnStatusCode: false,
+    body: {
+      nome: name,
+      preco: price,
+      descricao: description,
+      quantidade: qtd
     }
   })
 })
