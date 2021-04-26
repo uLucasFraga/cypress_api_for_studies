@@ -25,8 +25,8 @@
       "credentials",
       "describe",
       "it",
-      "Before",
-      "BeforeEach"
+      "before",
+      "beforeEach"
     ]
   },
   "scripts": {
