@@ -74,9 +74,8 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 - Instalar todas as dependências via package.json, por exemplo:
 
-`cd /{desafio_api_for_studies}`
+`cd /{desafio_api_for_studies} && npm ci`
 
-`npm ci`
 
 > Dicas
 
@@ -95,7 +94,7 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 > Para limpar o repositório
 
-`npm run pre-cy:run`
+`npm run precy:run`
 
 > Para rodar os testes no modo interativo do cypress
 
@@ -113,7 +112,7 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 > Para gerar relatórios depois dos testes:
 
-`npm run post-cy:run`
+`npm run postcy:run`
 
 
 -----------------------
