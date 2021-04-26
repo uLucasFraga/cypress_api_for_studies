@@ -13,7 +13,6 @@ const productFaker = {
 }
 
 describe('[INTEGRATION] :: Cadastrar Produtos sem Token de autorização', () => {
-
   it('/POST - Cadastrar um produto válido', () => {
     cy.registerProduct(
       productFaker.BODY.nome,
@@ -28,7 +27,6 @@ describe('[INTEGRATION] :: Cadastrar Produtos sem Token de autorização', () =>
 })
 
 describe('[INTEGRATION] :: Cadastrar Produtos com Token de autorização', () => {
-
   beforeEach(() => {
     cy.getToken()
   })
