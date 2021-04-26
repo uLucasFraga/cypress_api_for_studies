@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 
 import dataUsers from '../../../fixtures/usuarios.json'
-const httpStatus = require('http-status-codes')
 import faker from 'faker'
+const httpStatus = require('http-status-codes')
 
 const userFaker = {
   BODY: {
