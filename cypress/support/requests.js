@@ -95,3 +95,20 @@ Cypress.Commands.add('consultProductById', (_id) => {
     failOnStatusCode: false
   })
 })
+
+Cypress.Commands.add('registerProduct', (name, price, description, qtd) => {
+  cy.request({
+    method: 'POST',
+    url: '/produtos',
+    headers: {
+      Authorization: localStorage.getItem('token')
+    },
+    failOnStatusCode: false,
+    body: {
+      nome: name,
+      preco: price,
+      descricao: description,
+      quantidade: qtd
+    }
+  })
+})
