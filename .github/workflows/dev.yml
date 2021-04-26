@@ -1,7 +1,9 @@
 name: CONTINUOUS INTEGRATIONS
-'on':
-  pull_request: null
-  workflow_dispatch: null
+
+on:
+  pull_request:
+  workflow_dispatch:
+
 jobs:
   lint:
     runs-on: ubuntu-18.04
@@ -15,8 +17,30 @@ jobs:
       - name: installation of dependencies
         run: npm ci
       - name: lint
-        run: 'npm run lint:fix'
-  integrations:
+        run: npm run lint
+
+  integration-local:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: node.js 10 setup
+        uses: actions/setup-node@v2
+        with:
+          node-version: 10
+      - name: installation of dependencies
+        run: npm ci
+      - name: start ServeRest locally
+        run: docker run -d -p 3000:3000 paulogoncalvesbh/serverest
+      - name: api tests
+        run: npm run cy:run
+        env:
+          CYPRESS_APP_URL: 'http://localhost:3000'
+          CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
+          CYPRESS_PASSWORD: '${{ secrets.PASSWORD }}'
+
+  integration-prod:
+    needs: [lint, integration-local]
     runs-on: ubuntu-18.04
     steps:
       - name: checkout
@@ -28,7 +52,7 @@ jobs:
       - name: installation of dependencies
         run: npm ci
       - name: api tests
-        run: 'npm run cy:run'
+        run: npm run cy:run
         env:
           CYPRESS_APP_URL: 'https://serverest.dev'
           CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
