@@ -1,17 +1,14 @@
 {
   "name": "cypress-api-for-studies",
-  "version": "1.0.0",
   "description": "repositório de testes api rest com cypress e mocha",
-  "main": "index.js",
+  "private": true,
   "dependencies": {
     "cypress": "^7.1.0",
-    "mocha": "^8.3.2",
-    "mochawesome": "^6.2.2"
-  },
-  "devDependencies": {
     "cypress-multi-reporters": "^1.5.0",
     "faker": "^5.5.3",
     "http-status-codes": "^2.1.0",
+    "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2",
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^5.2.0",
     "standard": "^16.0.3"
@@ -30,14 +27,14 @@
     ]
   },
   "scripts": {
-    "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json >cypress/reports/mochareports/report.json",
-    "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
-    "clean-all": "rm -rf ./node_modules && npm run clean-reports",
-    "clean-reports": "rm -rf cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
-    "pre-cy:run": "npm run clean-all",
+    "combine-reports": "mochawesome-merge ./cypress/reports/mocha/*.json > ./cypress/reports/mochareports/report.json",
+    "generate-report": "marge ./cypress/reports/mochareports/report.json -f report -o ./cypress/reports/mochareports",
+    "clean-reports": "rm -rf ./cypress/reports && mkdir -p ./cypress/reports/mochareports",
+    "precy:run": "npm run clean-reports",
     "cy:run": "cypress run --spec 'cypress/integration/tests/**/*.spec.js'",
+    "postcy:run": "npm run combine-reports && npm run generate-report",
     "cy:open": "cypress open",
-    "post-cy:run": "npm run combine-reports && npm run generate-report",
+    "lint": "standard",
     "lint:fix": "standard --fix"
   },
   "repository": {
