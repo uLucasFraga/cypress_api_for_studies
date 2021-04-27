@@ -106,9 +106,9 @@ Cypress.Commands.add('registerProduct', (name, price, description, qtd) => {
     failOnStatusCode: false,
     body: {
       nome: name,
-      preco: parseInt(price),
+      preco: price,
       descricao: description,
-      quantidade: parseInt(qtd)
+      quantidade: qtd
     }
   })
 })
@@ -123,9 +123,20 @@ Cypress.Commands.add('modifyProduct', (_id, newName, newPrice, newDescription, n
     failOnStatusCode: false,
     body: {
       nome: newName,
-      preco: parseInt(newPrice),
+      preco: newPrice,
       descricao: newDescription,
-      quantidade: parseInt(newQtd)
+      quantidade: newQtd
     }
+  })
+})
+
+Cypress.Commands.add('deleteProduct', (_id) => {
+  cy.request({
+    method: 'DELETE',
+    url: `/produtos/${_id}`,
+    headers: {
+      Authorization: localStorage.getItem('token')
+    },
+    failOnStatusCode: false
   })
 })
