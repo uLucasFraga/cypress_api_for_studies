@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+// POST - PRODUTOS//
+
 import faker from 'faker'
 const httpStatus = require('http-status-codes')
 
@@ -13,7 +15,6 @@ const productFaker = {
 }
 
 describe('[INTEGRATION] :: Cadastrar Produtos sem Token de autorização', () => {
-
   it('/POST - Cadastrar um produto válido sem utilização de token', () => {
     cy.registerProduct(
       productFaker.BODY.nome,
@@ -28,7 +29,6 @@ describe('[INTEGRATION] :: Cadastrar Produtos sem Token de autorização', () =>
 })
 
 describe('[INTEGRATION] :: Cadastrar Produtos com Token de autorização', () => {
-  
   beforeEach(() => {
     cy.getToken()
   })

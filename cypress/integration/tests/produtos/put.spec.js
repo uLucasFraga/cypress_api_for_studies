@@ -1,8 +1,10 @@
 /// <reference types="cypress" />
 
+// PUT - PRODUTOS//
+
 import dataProducts from '../../../fixtures/produtos.json'
-const httpStatus = require('http-status-codes')
 import faker from 'faker'
+const httpStatus = require('http-status-codes')
 
 const productFaker = {
   BODY: {
@@ -14,7 +16,6 @@ const productFaker = {
 }
 
 describe('[INTEGRATION] :: Editar Produtos sem Token de autorização', () => {
-
   it('/PUT - Editar um produto válido', () => {
     cy.modifyProduct(
       dataProducts.produtos[0]._id,
@@ -32,7 +33,7 @@ describe('[INTEGRATION] :: Editar Produtos sem Token de autorização', () => {
 
 describe('[INTEGRATION] :: Editar Produtos com Token de autorização', () => {
   let _id
-  let new_id
+  let newId
 
   beforeEach(() => {
     cy.getToken()
@@ -59,13 +60,13 @@ describe('[INTEGRATION] :: Editar Produtos com Token de autorização', () => {
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.message).to.eq('Registro alterado com sucesso')
-        new_id = response.body._id
+        newId = response.body._id
       })
   })
 
   it('/PUT - Editar um produto já existente', () => {
     cy.modifyProduct(
-      new_id,
+      newId,
       productFaker.BODY.nome,
       productFaker.BODY.preco,
       productFaker.BODY.descricao,

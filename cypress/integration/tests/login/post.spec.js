@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+// LOGIN//
+
 const httpStatus = require('http-status-codes')
 
 describe('[INTEGRATION] :: Login', () => {
