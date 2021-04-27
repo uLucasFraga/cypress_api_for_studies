@@ -2,8 +2,8 @@
 
 // PUT - PRODUTOS//
 
-import dataProducts from '../../../fixtures/produtos.json'
 import faker from 'faker'
+import dataProducts from '../../../fixtures/produtos.json'
 const httpStatus = require('http-status-codes')
 
 const productFaker = {

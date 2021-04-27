@@ -2,8 +2,8 @@
 
 // DELETE - USUÁRIOS//
 
-import dataUsers from '../../../fixtures/usuarios.json'
 import faker from 'faker'
+import dataUsers from '../../../fixtures/usuarios.json'
 const httpStatus = require('http-status-codes')
 
 const userFaker = {
@@ -19,7 +19,12 @@ describe('[INTEGRATION] :: Deletar Usuários', () => {
   let _id
 
   before(() => {
-    cy.registerUser(userFaker.BODY.nome, userFaker.BODY.email, userFaker.BODY.pass, userFaker.BODY.admin)
+    cy.registerUser(
+      userFaker.BODY.nome,
+      userFaker.BODY.email,
+      userFaker.BODY.pass,
+      userFaker.BODY.admin
+    )
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.CREATED)
         expect(response.body.message).to.eq('Cadastro realizado com sucesso')
