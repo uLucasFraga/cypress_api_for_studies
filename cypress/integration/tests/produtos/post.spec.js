@@ -169,9 +169,9 @@ describe('[INTEGRATION] :: Cadastrar Produtos com Token de autorização', () =>
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
         expect(response.body.nome).to.eq('nome é obrigatório')
-        expect(response.body.preco).to.eq('preco deve ser um número')
+        expect(response.body.preco).to.eq('preco é obrigatório')
         expect(response.body.descricao).to.eq('descricao é obrigatório')
-        expect(response.body.quantidade).to.eq('quantidade deve ser um número')
+        expect(response.body.quantidade).to.eq('quantidade é obrigatório')
       })
   })
 })
