@@ -13,7 +13,8 @@ const productFaker = {
 }
 
 describe('[INTEGRATION] :: Cadastrar Produtos sem Token de autorização', () => {
-  it('/POST - Cadastrar um produto válido', () => {
+
+  it('/POST - Cadastrar um produto válido sem utilização de token', () => {
     cy.registerProduct(
       productFaker.BODY.nome,
       productFaker.BODY.preco,
@@ -27,11 +28,12 @@ describe('[INTEGRATION] :: Cadastrar Produtos sem Token de autorização', () =>
 })
 
 describe('[INTEGRATION] :: Cadastrar Produtos com Token de autorização', () => {
+  
   beforeEach(() => {
     cy.getToken()
   })
 
-  it('/POST - Cadastrar um produto válido', () => {
+  it('/POST - Cadastrar um produto válido com utilização de token', () => {
     cy.registerProduct(
       productFaker.BODY.nome,
       productFaker.BODY.preco,
@@ -166,9 +168,9 @@ describe('[INTEGRATION] :: Cadastrar Produtos com Token de autorização', () =>
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
         expect(response.body.nome).to.eq('nome é obrigatório')
-        expect(response.body.preco).to.eq('preco é obrigatório')
+        expect(response.body.preco).to.eq('preco deve ser um número')
         expect(response.body.descricao).to.eq('descricao é obrigatório')
-        expect(response.body.quantidade).to.eq('quantidade é obrigatório')
+        expect(response.body.quantidade).to.eq('quantidade deve ser um número')
       })
   })
 })
