@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+// DELETE - USUÁRIOS//
+
 import dataUsers from '../../../fixtures/usuarios.json'
 import faker from 'faker'
 const httpStatus = require('http-status-codes')

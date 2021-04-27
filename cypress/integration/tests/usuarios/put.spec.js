@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+// PUT - USUÁRIOS//
+
 import faker from 'faker'
 const httpStatus = require('http-status-codes')
 
@@ -16,7 +18,12 @@ describe('[INTEGRATION] :: Editar Usuários', () => {
   let _id
 
   before(() => {
-    cy.registerUser(userFaker.BODY.nome, userFaker.BODY.email, userFaker.BODY.pass, userFaker.BODY.admin)
+    cy.registerUser(
+      userFaker.BODY.nome,
+      userFaker.BODY.email,
+      userFaker.BODY.pass,
+      userFaker.BODY.admin
+    )
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.CREATED)
         expect(response.body.message).to.eq('Cadastro realizado com sucesso')
@@ -29,7 +36,8 @@ describe('[INTEGRATION] :: Editar Usuários', () => {
       _id,
       `${faker.name.firstName()} ${faker.name.lastName()}`,
       faker.internet.email(),
-      faker.internet.password())
+      faker.internet.password()
+    )
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.message).to.eq('Registro alterado com sucesso')
@@ -41,7 +49,8 @@ describe('[INTEGRATION] :: Editar Usuários', () => {
       faker.datatype.uuid(),
       `${faker.name.firstName()} ${faker.name.lastName()}`,
       faker.internet.email(),
-      faker.internet.password())
+      faker.internet.password()
+    )
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.CREATED)
         expect(response.body.message).to.eq('Cadastro realizado com sucesso')
@@ -53,7 +62,8 @@ describe('[INTEGRATION] :: Editar Usuários', () => {
       _id,
       `${faker.name.firstName()} ${faker.name.lastName()}`,
       userFaker.BODY.email,
-      userFaker.BODY.pass)
+      userFaker.BODY.pass
+    )
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.message).to.eq('Registro alterado com sucesso')
@@ -65,7 +75,8 @@ describe('[INTEGRATION] :: Editar Usuários', () => {
       _id,
       userFaker.BODY.nome,
       faker.internet.email(),
-      userFaker.BODY.pass)
+      userFaker.BODY.pass
+    )
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.message).to.eq('Registro alterado com sucesso')
@@ -77,7 +88,8 @@ describe('[INTEGRATION] :: Editar Usuários', () => {
       _id,
       userFaker.BODY.nome,
       userFaker.BODY.email,
-      faker.internet.password())
+      faker.internet.password()
+    )
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.message).to.eq('Registro alterado com sucesso')
@@ -89,7 +101,8 @@ describe('[INTEGRATION] :: Editar Usuários', () => {
       _id,
       userFaker.BODY.nome,
       'fulano@qa.com',
-      userFaker.BODY.pass)
+      userFaker.BODY.pass
+    )
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
         expect(response.body.message).to.eq('Este email já está sendo usado')
@@ -101,7 +114,8 @@ describe('[INTEGRATION] :: Editar Usuários', () => {
       _id,
       userFaker.BODY.nome,
       'com.br@nao.valido',
-      userFaker.BODY.pass)
+      userFaker.BODY.pass
+    )
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
         expect(response.body.email).to.eq('email deve ser um email válido')
@@ -113,7 +127,8 @@ describe('[INTEGRATION] :: Editar Usuários', () => {
       _id,
       '',
       userFaker.BODY.email,
-      userFaker.BODY.pass)
+      userFaker.BODY.pass
+    )
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
         expect(response.body.nome).to.eq('nome não pode ficar em branco')
@@ -125,7 +140,8 @@ describe('[INTEGRATION] :: Editar Usuários', () => {
       _id,
       userFaker.BODY.nome,
       '',
-      userFaker.BODY.pass)
+      userFaker.BODY.pass
+    )
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
         expect(response.body.email).to.eq('email não pode ficar em branco')
@@ -137,7 +153,8 @@ describe('[INTEGRATION] :: Editar Usuários', () => {
       _id,
       userFaker.BODY.nome,
       userFaker.BODY.email,
-      '')
+      ''
+    )
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
         expect(response.body.password).to.eq('password não pode ficar em branco')
@@ -149,7 +166,8 @@ describe('[INTEGRATION] :: Editar Usuários', () => {
       _id,
       '',
       '',
-      '')
+      ''
+    )
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
         expect(response.body.nome).to.eq('nome não pode ficar em branco')
