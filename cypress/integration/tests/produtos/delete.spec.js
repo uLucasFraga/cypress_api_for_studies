@@ -51,7 +51,7 @@ describe('[INTEGRATION] :: Deletar Produtos', () => {
   })
 
   it('/DELETE - Deletar um produto que não existe', () => {
-    cy.deleteProduct(faker.datatype.uuid())
+    cy.deleteProduct(faker.random.alphaNumeric(10))
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.message).to.eq('Nenhum registro excluído')
