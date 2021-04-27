@@ -3,7 +3,7 @@
   "description": "repositório de testes api rest com cypress e mocha",
   "private": true,
   "dependencies": {
-    "cypress": "^7.1.0",
+    "cypress": "^7.2.0",
     "cypress-multi-reporters": "^1.5.0",
     "faker": "^5.5.3",
     "http-status-codes": "^2.1.0",
