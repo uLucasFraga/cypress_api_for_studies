@@ -106,9 +106,26 @@ Cypress.Commands.add('registerProduct', (name, price, description, qtd) => {
     failOnStatusCode: false,
     body: {
       nome: name,
-      preco: price,
+      preco: parseInt(price),
       descricao: description,
-      quantidade: qtd
+      quantidade: parseInt(qtd)
+    }
+  })
+})
+
+Cypress.Commands.add('modifyProduct', (_id, newName, newPrice, newDescription, newQtd) => {
+  cy.request({
+    method: 'PUT',
+    url: `/produtos/${_id}`,
+    headers: {
+      Authorization: localStorage.getItem('token')
+    },
+    failOnStatusCode: false,
+    body: {
+      nome: newName,
+      preco: parseInt(newPrice),
+      descricao: newDescription,
+      quantidade: parseInt(newQtd)
     }
   })
 })
