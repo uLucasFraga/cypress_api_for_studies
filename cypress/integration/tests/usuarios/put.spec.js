@@ -46,7 +46,7 @@ describe('[INTEGRATION] :: Editar Usuários', () => {
 
   it('/PUT - Editar um usuário que não existe na base', () => {
     cy.modifyUser(
-      faker.datatype.uuid(),
+      faker.random.alphaNumeric(10),
       `${faker.name.firstName()} ${faker.name.lastName()}`,
       faker.internet.email(),
       faker.internet.password()

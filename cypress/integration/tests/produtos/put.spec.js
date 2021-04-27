@@ -80,7 +80,7 @@ describe('[INTEGRATION] :: Editar Produtos com Token de autorização', () => {
 
   it('/PUT - Editar um produto não existente', () => {
     cy.modifyProduct(
-      faker.datatype.uuid(),
+      faker.random.alphaNumeric(10),
       faker.commerce.productName(),
       faker.commerce.price(),
       faker.commerce.productDescription(),
