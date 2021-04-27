@@ -2,7 +2,7 @@
 
 import credentials from './credentials'
 
-// USUÁRIOS//
+// USUÁRIOS //
 
 Cypress.Commands.add('doLogin', (email, pass) => {
   cy.log('Loggin in to servrest')
@@ -71,7 +71,7 @@ Cypress.Commands.add('deleteUser', (_id) => {
   })
 })
 
-// PRODUTOS//
+// PRODUTOS //
 
 Cypress.Commands.add('consultProduct', (_id, name, description) => {
   cy.request({
@@ -138,5 +138,30 @@ Cypress.Commands.add('deleteProduct', (_id) => {
       Authorization: localStorage.getItem('token')
     },
     failOnStatusCode: false
+  })
+})
+
+// CARRINHOS //
+
+Cypress.Commands.add('consultCarsById', (_id) => {
+  cy.request({
+    method: 'GET',
+    url: `/carrinhos/${_id}`,
+    headers: credentials.HEADERS,
+    failOnStatusCode: false
+  })
+})
+
+Cypress.Commands.add('consultCars', (totalPrice, totalQtd, idUser) => {
+  cy.request({
+    method: 'GET',
+    url: '/carrinhos',
+    headers: credentials.HEADERS,
+    failOnStatusCode: false,
+    qs: {
+      precoTotal: totalPrice,
+      quantidadeTotal: totalQtd,
+      idUsuario: idUser
+    }
   })
 })
