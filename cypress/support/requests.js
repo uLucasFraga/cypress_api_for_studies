@@ -195,7 +195,7 @@ Cypress.Commands.add('registerCar', (
   })
 })
 
-// COMMANDS - ANOTHERS METHODS //
+// COMMANDS - OTHERS METHODS //
 
 Cypress.Commands.add('registerUserWithLogin', (name, email, pass, admin = 'true') => {
   cy.registerUser(name, email, pass, admin)
