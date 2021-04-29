@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 
+import dataCars from './../fixtures/carrinhos.json'
 import credentials from './credentials'
 
 // COMMANDS - LOGIN //
@@ -167,7 +168,11 @@ Cypress.Commands.add('consultCar', (totalPrice, totalQtd, idUser) => {
   })
 })
 
-Cypress.Commands.add('registerCar', (idProduct, qtd) => {
+Cypress.Commands.add('registerCar', (
+  idProductOne,
+  qtd,
+  idProductTwo = dataCars.carrinhos[0].produtos[0].idProduto
+) => {
   cy.request({
     method: 'POST',
     url: '/carrinhos',
@@ -178,26 +183,25 @@ Cypress.Commands.add('registerCar', (idProduct, qtd) => {
     body: {
       produtos: [
         {
-          idProduto: idProduct,
+          idProduto: idProductOne,
           quantidade: qtd
+        },
+        {
+          idProduto: idProductTwo,
+          quantidade: 1
         }
       ]
     }
   })
 })
 
-// COMMANDS - ANOTHERS //
+// COMMANDS - ANOTHERS METHODS //
 
-Cypress.Commands.add('registerUserWithLogin', (name, email, pass) => {
-  cy.registerUser(
-    name,
-    email,
-    pass,
-    'true'
-  )
+Cypress.Commands.add('registerUserWithLogin', (name, email, pass, admin = 'true') => {
+  cy.registerUser(name, email, pass, admin)
     .then((response) => {
       expect(response.body.message).to.eq('Cadastro realizado com sucesso')
     })
 
-  cy.getTokenRandomUser(email, pass)
+  cy.getToken(email, pass)
 })

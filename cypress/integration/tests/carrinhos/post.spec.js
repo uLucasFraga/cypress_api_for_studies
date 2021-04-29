@@ -8,11 +8,12 @@ const httpStatus = require('http-status-codes')
 
 const carsFaker = {
   BODY: {
-    quantidade: faker.datatype.number(100, 1)
+    quantidade: faker.datatype.number({ min: 1000, max: 5000 })
+
   }
 }
 
-describe.skip('[INTEGRATION] :: Cadastrar Carrinhos sem Token de autorização', () => {
+describe('[INTEGRATION] :: Cadastrar Carrinhos sem Token de autorização', () => {
   it('/POST - Cadastrar um carrinho válido sem utilização de token', () => {
     cy.registerCar(
       carsFaker.BODY.idProduto,
@@ -39,7 +40,7 @@ describe('[INTEGRATION] :: Cadastrar Carrinhos com Token de autorização', () =
       faker.commerce.productName(),
       faker.commerce.price(),
       faker.commerce.productDescription(),
-      faker.datatype.number(100, 1)
+      faker.datatype.number({ min: 1, max: 500 })
     )
       .then((response) => {
         _id = response.body._id
@@ -55,22 +56,16 @@ describe('[INTEGRATION] :: Cadastrar Carrinhos com Token de autorização', () =
   })
 
   it('/POST - Cadastrar mais de um carrinho para o mesmo usuário', () => {
-    cy.registerCar(dataCars.carrinhos[0].produtos[0].idProduto, 1)
-    cy.registerCar(dataCars.carrinhos[0].produtos[0].idProduto, 1)
+    cy.registerCar(_id, 1)
+    cy.registerCar(_id, 1)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
         expect(response.body.message).to.eq('Não é permitido ter mais de 1 carrinho')
       })
   })
 
-  it.skip('/POST - Cadastrar um carrinho cujo o produto esteja duplicado', () => {
-    cy.registerCar(_id, 1)
-      .then((response) => {
-        expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
-        expect(response.body.message).to.eq('Não é permitido possuir produto duplicado')
-      })
-
-    cy.registerCar(_id, 1)
+  it('/POST - Cadastrar um carrinho cujo o produto esteja duplicado', () => {
+    cy.registerCar(dataCars.carrinhos[0].produtos[0].idProduto, 1)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
         expect(response.body.message).to.eq('Não é permitido possuir produto duplicado')
@@ -82,6 +77,14 @@ describe('[INTEGRATION] :: Cadastrar Carrinhos com Token de autorização', () =
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
         expect(response.body.message).to.eq('Produto não encontrado')
+      })
+  })
+
+  it('/POST - Cadastrar um carrinho cujo a quantidade não seja suficiente', () => {
+    cy.registerCar(_id, carsFaker.BODY.quantidade)
+      .then((response) => {
+        expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
+        expect(response.body.message).to.eq('Produto não possui quantidade suficiente')
       })
   })
 })
