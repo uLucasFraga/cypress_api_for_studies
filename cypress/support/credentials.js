@@ -8,9 +8,8 @@ const credentials = {
   }
 }
 
-Cypress.Commands.add('getToken', () => {
-  cy.log('Get token - Bearer')
-  cy.doLogin(Cypress.env('EMAIL'), Cypress.env('PASSWORD'))
+Cypress.Commands.add('getToken', (email = Cypress.env('EMAIL'), pass = Cypress.env('PASSWORD')) => {
+  cy.doLogin(email, pass)
     .then(response => {
       localStorage.setItem('token', response.body.authorization)
       expect(response.status).to.eq(httpStatus.StatusCodes.OK)

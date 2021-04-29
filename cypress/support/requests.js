@@ -1,11 +1,11 @@
 /// <reference types="cypress" />
 
+import dataCars from './../fixtures/carrinhos.json'
 import credentials from './credentials'
 
-// USUÁRIOS //
+// COMMANDS - LOGIN //
 
 Cypress.Commands.add('doLogin', (email, pass) => {
-  cy.log('Loggin in to servrest')
   cy.request({
     method: 'POST',
     url: '/login',
@@ -17,6 +17,8 @@ Cypress.Commands.add('doLogin', (email, pass) => {
     }
   })
 })
+
+// COMMANDS - USUÁRIOS //
 
 Cypress.Commands.add('consultUser', (name, email, _id) => {
   cy.request({
@@ -32,7 +34,7 @@ Cypress.Commands.add('consultUser', (name, email, _id) => {
   })
 })
 
-Cypress.Commands.add('registerUser', (name, email, password, admin = true) => {
+Cypress.Commands.add('registerUser', (name, email, password, admin) => {
   cy.request({
     method: 'POST',
     url: '/usuarios',
@@ -71,7 +73,7 @@ Cypress.Commands.add('deleteUser', (_id) => {
   })
 })
 
-// PRODUTOS //
+// COMMANDS - PRODUTOS //
 
 Cypress.Commands.add('consultProduct', (_id, name, description) => {
   cy.request({
@@ -141,9 +143,9 @@ Cypress.Commands.add('deleteProduct', (_id) => {
   })
 })
 
-// CARRINHOS //
+// COMMANDS - CARRINHOS //
 
-Cypress.Commands.add('consultCarsById', (_id) => {
+Cypress.Commands.add('consultCartById', (_id) => {
   cy.request({
     method: 'GET',
     url: `/carrinhos/${_id}`,
@@ -152,7 +154,7 @@ Cypress.Commands.add('consultCarsById', (_id) => {
   })
 })
 
-Cypress.Commands.add('consultCars', (totalPrice, totalQtd, idUser) => {
+Cypress.Commands.add('consultCart', (totalPrice, totalQtd, idUser) => {
   cy.request({
     method: 'GET',
     url: '/carrinhos',
@@ -164,4 +166,42 @@ Cypress.Commands.add('consultCars', (totalPrice, totalQtd, idUser) => {
       idUsuario: idUser
     }
   })
+})
+
+Cypress.Commands.add('registerCar', (
+  idProductOne,
+  qtd,
+  idProductTwo = dataCars.carrinhos[0].produtos[0].idProduto
+) => {
+  cy.request({
+    method: 'POST',
+    url: '/carrinhos',
+    headers: {
+      Authorization: localStorage.getItem('token')
+    },
+    failOnStatusCode: false,
+    body: {
+      produtos: [
+        {
+          idProduto: idProductOne,
+          quantidade: qtd
+        },
+        {
+          idProduto: idProductTwo,
+          quantidade: 1
+        }
+      ]
+    }
+  })
+})
+
+// COMMANDS - OTHERS METHODS //
+
+Cypress.Commands.add('registerUserWithLogin', (name, email, pass, admin = 'true') => {
+  cy.registerUser(name, email, pass, admin)
+    .then((response) => {
+      expect(response.body.message).to.eq('Cadastro realizado com sucesso')
+    })
+
+  cy.getToken(email, pass)
 })
