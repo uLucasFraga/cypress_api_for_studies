@@ -2,10 +2,9 @@
 
 import credentials from './credentials'
 
-// USUÁRIOS //
+// COMMANDS - LOGIN //
 
 Cypress.Commands.add('doLogin', (email, pass) => {
-  cy.log('Loggin in to servrest')
   cy.request({
     method: 'POST',
     url: '/login',
@@ -17,6 +16,8 @@ Cypress.Commands.add('doLogin', (email, pass) => {
     }
   })
 })
+
+// COMMANDS - USUÁRIOS //
 
 Cypress.Commands.add('consultUser', (name, email, _id) => {
   cy.request({
@@ -32,7 +33,7 @@ Cypress.Commands.add('consultUser', (name, email, _id) => {
   })
 })
 
-Cypress.Commands.add('registerUser', (name, email, password, admin = true) => {
+Cypress.Commands.add('registerUser', (name, email, password, admin) => {
   cy.request({
     method: 'POST',
     url: '/usuarios',
@@ -71,7 +72,7 @@ Cypress.Commands.add('deleteUser', (_id) => {
   })
 })
 
-// PRODUTOS //
+// COMMANDS - PRODUTOS //
 
 Cypress.Commands.add('consultProduct', (_id, name, description) => {
   cy.request({
@@ -141,9 +142,9 @@ Cypress.Commands.add('deleteProduct', (_id) => {
   })
 })
 
-// CARRINHOS //
+// COMMANDS - CARRINHOS //
 
-Cypress.Commands.add('consultCarsById', (_id) => {
+Cypress.Commands.add('consultCarById', (_id) => {
   cy.request({
     method: 'GET',
     url: `/carrinhos/${_id}`,
@@ -152,7 +153,7 @@ Cypress.Commands.add('consultCarsById', (_id) => {
   })
 })
 
-Cypress.Commands.add('consultCars', (totalPrice, totalQtd, idUser) => {
+Cypress.Commands.add('consultCar', (totalPrice, totalQtd, idUser) => {
   cy.request({
     method: 'GET',
     url: '/carrinhos',
@@ -164,4 +165,39 @@ Cypress.Commands.add('consultCars', (totalPrice, totalQtd, idUser) => {
       idUsuario: idUser
     }
   })
+})
+
+Cypress.Commands.add('registerCar', (idProduct, qtd) => {
+  cy.request({
+    method: 'POST',
+    url: '/carrinhos',
+    headers: {
+      Authorization: localStorage.getItem('token')
+    },
+    failOnStatusCode: false,
+    body: {
+      produtos: [
+        {
+          idProduto: idProduct,
+          quantidade: qtd
+        }
+      ]
+    }
+  })
+})
+
+// COMMANDS - ANOTHERS //
+
+Cypress.Commands.add('registerUserWithLogin', (name, email, pass) => {
+  cy.registerUser(
+    name,
+    email,
+    pass,
+    "true"
+  )
+    .then((response) => {
+      expect(response.body.message).to.eq('Cadastro realizado com sucesso')
+    })
+
+  cy.getTokenRandomUser(email, pass)
 })
