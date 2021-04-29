@@ -62,7 +62,7 @@ describe('[INTEGRATION] :: Listar Carrinhos', () => {
   })
 
   it('/GET - Listar carrinhos cadastrados pelo preço total inválido', () => {
-    cy.consultCar(faker.commerce.price(1000), {}, {})
+    cy.consultCar(faker.commerce.price(500000), {}, {})
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.quantidade).to.eq(0)
