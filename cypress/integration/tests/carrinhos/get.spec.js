@@ -115,7 +115,7 @@ describe('[INTEGRATION] :: Listar Carrinhos', () => {
   })
 
   it('/GET - Listar carrinhos com uma busca incorreta de: id do usuário válido e quantidade total inválida', () => {
-    cy.consultCar({}, dataCars.carrinhos[1].quantidadeTotal, {}, dataCars.carrinhos[0].idUsuario)
+    cy.consultCar({}, faker.datatype.number(100), {}, dataCars.carrinhos[0].idUsuario)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.quantidade).to.eq(0)
