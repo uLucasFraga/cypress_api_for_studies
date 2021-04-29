@@ -193,7 +193,7 @@ Cypress.Commands.add('registerUserWithLogin', (name, email, pass) => {
     name,
     email,
     pass,
-    "true"
+    'true'
   )
     .then((response) => {
       expect(response.body.message).to.eq('Cadastro realizado com sucesso')
