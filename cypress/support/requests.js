@@ -145,7 +145,7 @@ Cypress.Commands.add('deleteProduct', (_id) => {
 
 // COMMANDS - CARRINHOS //
 
-Cypress.Commands.add('consultCarById', (_id) => {
+Cypress.Commands.add('consultCartById', (_id) => {
   cy.request({
     method: 'GET',
     url: `/carrinhos/${_id}`,
@@ -154,7 +154,7 @@ Cypress.Commands.add('consultCarById', (_id) => {
   })
 })
 
-Cypress.Commands.add('consultCar', (totalPrice, totalQtd, idUser) => {
+Cypress.Commands.add('consultCart', (totalPrice, totalQtd, idUser) => {
   cy.request({
     method: 'GET',
     url: '/carrinhos',
