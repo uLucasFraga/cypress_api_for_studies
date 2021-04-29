@@ -8,9 +8,18 @@ const credentials = {
   }
 }
 
-Cypress.Commands.add('getToken', () => {
-  cy.log('Get token - Bearer')
+Cypress.Commands.add('getTokenDefaultUser', () => {
   cy.doLogin(Cypress.env('EMAIL'), Cypress.env('PASSWORD'))
+    .then(response => {
+      localStorage.setItem('token', response.body.authorization)
+      expect(response.status).to.eq(httpStatus.StatusCodes.OK)
+      expect(localStorage.getItem('token')).not.null // eslint-disable-line
+      cy.log(localStorage.getItem('token'))
+    })
+})
+
+Cypress.Commands.add('getTokenRandomUser', (email, pass) => {
+  cy.doLogin(email, pass)
     .then(response => {
       localStorage.setItem('token', response.body.authorization)
       expect(response.status).to.eq(httpStatus.StatusCodes.OK)
