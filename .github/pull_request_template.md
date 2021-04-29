@@ -4,7 +4,7 @@
 
 **2. Procedimentos para testar:**
 
-- descrever procedimento necessário para testar se existir
+- `npm run cy:open` - escolher o spec necessário
 
 **3. Comentários:**
 
