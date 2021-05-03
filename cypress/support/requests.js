@@ -168,7 +168,7 @@ Cypress.Commands.add('consultCart', (totalPrice, totalQtd, idUser) => {
   })
 })
 
-Cypress.Commands.add('registerCar', (
+Cypress.Commands.add('registerCart', (
   idProductOne,
   qtd,
   idProductTwo = dataCarts.carrinhos[0].produtos[0].idProduto
