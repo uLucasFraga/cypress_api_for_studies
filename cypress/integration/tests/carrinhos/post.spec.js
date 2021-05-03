@@ -3,7 +3,7 @@
 // POST - CARRINHOS //
 
 import faker from 'faker'
-import dataCars from '../../../fixtures/carrinhos.json'
+import dataCarts from '../../../fixtures/carrinhos.json'
 const httpStatus = require('http-status-codes')
 
 const carsFaker = {
@@ -65,7 +65,7 @@ describe('[INTEGRATION] :: Cadastrar Carrinhos com Token de autorização', () =
   })
 
   it('/POST - Cadastrar um carrinho cujo o produto esteja duplicado', () => {
-    cy.registerCar(dataCars.carrinhos[0].produtos[0].idProduto, 1)
+    cy.registerCar(dataCarts.carrinhos[0].produtos[0].idProduto, 1)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
         expect(response.body.message).to.eq('Não é permitido possuir produto duplicado')

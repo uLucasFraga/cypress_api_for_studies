@@ -3,26 +3,21 @@
 // PUT - CARRINHOS //
 
 import faker from 'faker'
-import dataProducts from '../../../fixtures/produtos.json'
+import dataCarts from '../../../fixtures/carrinhos.json'
 const httpStatus = require('http-status-codes')
 
-const productFaker = {
+const carsFaker = {
   BODY: {
-    nome: faker.commerce.productName(),
-    preco: faker.commerce.price(),
-    descricao: faker.commerce.productDescription(),
-    quantidade: faker.datatype.number(100, 1)
+    quantidade: faker.datatype.number({ min: 1000, max: 5000 })
+
   }
 }
 
-describe('[INTEGRATION] :: Editar Produtos sem Token de autorização', () => {
-  it('/PUT - Editar um produto válido', () => {
-    cy.modifyProduct(
-      dataProducts.produtos[0]._id,
-      faker.commerce.productName(),
-      faker.commerce.price(),
-      faker.commerce.productDescription(),
-      faker.datatype.number(100, 1)
+describe('[INTEGRATION] :: Cadastrar Carrinhos sem Token de autorização', () => {
+  it('/POST - Cadastrar um carrinho válido sem utilização de token', () => {
+    cy.registerCar(
+      carsFaker.BODY.idProduto,
+      carsFaker.BODY.quantidade
     )
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.UNAUTHORIZED)
@@ -31,64 +26,65 @@ describe('[INTEGRATION] :: Editar Produtos sem Token de autorização', () => {
   })
 })
 
-describe('[INTEGRATION] :: Editar Produtos com Token de autorização', () => {
+describe('[INTEGRATION] :: Cadastrar Carrinhos com Token de autorização', () => {
   let _id
-  let newId
 
   beforeEach(() => {
-    cy.getToken()
+    cy.registerUserWithLogin(
+      `${faker.name.firstName()} ${faker.name.lastName()}`,
+      faker.internet.email(),
+      faker.internet.password()
+    )
 
     cy.registerProduct(
-      productFaker.BODY.nome,
-      productFaker.BODY.preco,
-      productFaker.BODY.descricao,
-      productFaker.BODY.quantidade
+      faker.commerce.productName(),
+      faker.commerce.price(),
+      faker.commerce.productDescription(),
+      faker.datatype.number({ min: 1, max: 500 })
     )
       .then((response) => {
         _id = response.body._id
       })
   })
 
-  it('/PUT - Editar um produto válido', () => {
-    cy.modifyProduct(
-      _id,
-      faker.commerce.productName(),
-      faker.commerce.price(),
-      faker.commerce.productDescription(),
-      faker.datatype.number(100, 1)
-    )
-      .then((response) => {
-        expect(response.status).to.eq(httpStatus.StatusCodes.OK)
-        expect(response.body.message).to.eq('Registro alterado com sucesso')
-        newId = response.body._id
-      })
-  })
-
-  it('/PUT - Editar um produto já existente', () => {
-    cy.modifyProduct(
-      newId,
-      productFaker.BODY.nome,
-      productFaker.BODY.preco,
-      productFaker.BODY.descricao,
-      productFaker.BODY.quantidade
-    )
-      .then((response) => {
-        expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
-        expect(response.body.message).to.eq('Já existe produto com esse nome')
-      })
-  })
-
-  it('/PUT - Editar um produto não existente', () => {
-    cy.modifyProduct(
-      faker.random.alphaNumeric(10),
-      faker.commerce.productName(),
-      faker.commerce.price(),
-      faker.commerce.productDescription(),
-      faker.datatype.number(100, 1)
-    )
+  it('/POST - Cadastrar um carrinho válido com utilização de token', () => {
+    cy.registerCar(_id, 1)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.CREATED)
         expect(response.body.message).to.eq('Cadastro realizado com sucesso')
+      })
+  })
+
+  it('/POST - Cadastrar mais de um carrinho para o mesmo usuário', () => {
+    cy.registerCar(_id, 1)
+    cy.registerCar(_id, 1)
+      .then((response) => {
+        expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
+        expect(response.body.message).to.eq('Não é permitido ter mais de 1 carrinho')
+      })
+  })
+
+  it('/POST - Cadastrar um carrinho cujo o produto esteja duplicado', () => {
+    cy.registerCar(dataCarts.carrinhos[0].produtos[0].idProduto, 1)
+      .then((response) => {
+        expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
+        expect(response.body.message).to.eq('Não é permitido possuir produto duplicado')
+      })
+  })
+
+  it('/POST - Cadastrar um carrinho cujo o _id do produto não existe', () => {
+    cy.registerCar(faker.random.alphaNumeric(10), 1)
+      .then((response) => {
+        expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
+        expect(response.body.message).to.eq('Produto não encontrado')
+      })
+  })
+
+  it('/POST - Cadastrar um carrinho cujo a quantidade não seja suficiente', () => {
+    cy.registerCar(_id, carsFaker.BODY.quantidade)
+      .then((response) => {
+        expect(response.status).to.eq(httpStatus.StatusCodes.BAD_REQUEST)
+        expect(response.body.message).to.eq('Produto não possui quantidade suficiente')
       })
   })
 })

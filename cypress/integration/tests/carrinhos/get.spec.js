@@ -3,7 +3,7 @@
 // GET - CARRINHOS //
 
 import faker from 'faker'
-import dataCars from '../../../fixtures/carrinhos.json'
+import dataCarts from '../../../fixtures/carrinhos.json'
 const httpStatus = require('http-status-codes')
 
 describe('[INTEGRATION] :: Listar Carrinhos', () => {
@@ -21,10 +21,10 @@ describe('[INTEGRATION] :: Listar Carrinhos', () => {
   })
 
   it('/GET - Listar carrinhos cadastrados pelo _id', () => {
-    cy.consultCartById(dataCars.carrinhos[0]._id)
+    cy.consultCartById(dataCarts.carrinhos[0]._id)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
-        expect(response.body.idUsuario).to.eq(dataCars.carrinhos[0].idUsuario)
+        expect(response.body.idUsuario).to.eq(dataCarts.carrinhos[0].idUsuario)
       })
   })
 
@@ -37,10 +37,10 @@ describe('[INTEGRATION] :: Listar Carrinhos', () => {
   })
 
   it('/GET - Listar carrinhos cadastrados pelo id do usuário', () => {
-    cy.consultCart({}, {}, dataCars.carrinhos[0].idUsuario)
+    cy.consultCart({}, {}, dataCarts.carrinhos[0].idUsuario)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
-        expect(response.body.carrinhos[0]._id).to.eq(dataCars.carrinhos[0]._id)
+        expect(response.body.carrinhos[0]._id).to.eq(dataCarts.carrinhos[0]._id)
       })
   })
 
@@ -53,7 +53,7 @@ describe('[INTEGRATION] :: Listar Carrinhos', () => {
   })
 
   it('/GET - Listar carrinhos cadastrados pelo preço total', () => {
-    cy.consultCart(dataCars.carrinhos[0].precoTotal, {}, {})
+    cy.consultCart(dataCarts.carrinhos[0].precoTotal, {}, {})
       .then((response) => {
         totalPrice = response.body.carrinhos[0].precoTotal
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
@@ -70,7 +70,7 @@ describe('[INTEGRATION] :: Listar Carrinhos', () => {
   })
 
   it('/GET - Listar carrinhos cadastrados pela quantidade total', () => {
-    cy.consultCart({}, dataCars.carrinhos[0].quantidadeTotal)
+    cy.consultCart({}, dataCarts.carrinhos[0].quantidadeTotal)
       .then((response) => {
         totalQtd = response.body.carrinhos[0].quantidadeTotal
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
@@ -87,27 +87,27 @@ describe('[INTEGRATION] :: Listar Carrinhos', () => {
   })
 
   it('/GET - Listar carrinhos com uma busca correta de: id do usuário e preço total válido', () => {
-    cy.consultCart(dataCars.carrinhos[0].precoTotal, {}, dataCars.carrinhos[0].idUsuario)
+    cy.consultCart(dataCarts.carrinhos[0].precoTotal, {}, dataCarts.carrinhos[0].idUsuario)
       .then((response) => {
         totalPrice = response.body.carrinhos[0].precoTotal
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.carrinhos[0].precoTotal).to.eq(totalPrice)
-        expect(response.body.carrinhos[0].idUsuario).to.eq(dataCars.carrinhos[0].idUsuario)
+        expect(response.body.carrinhos[0].idUsuario).to.eq(dataCarts.carrinhos[0].idUsuario)
       })
   })
 
   it('/GET - Listar carrinhos com uma busca correta de: id do usuário e quantidade total válida', () => {
-    cy.consultCart({}, dataCars.carrinhos[0].quantidadeTotal, dataCars.carrinhos[0].idUsuario)
+    cy.consultCart({}, dataCarts.carrinhos[0].quantidadeTotal, dataCarts.carrinhos[0].idUsuario)
       .then((response) => {
         totalQtd = response.body.carrinhos[0].quantidadeTotal
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.carrinhos[0].quantidadeTotal).to.eq(totalQtd)
-        expect(response.body.carrinhos[0].idUsuario).to.eq(dataCars.carrinhos[0].idUsuario)
+        expect(response.body.carrinhos[0].idUsuario).to.eq(dataCarts.carrinhos[0].idUsuario)
       })
   })
 
   it('/GET - Listar carrinhos com uma busca incorreta de: id do usuário válido e preço total inválido', () => {
-    cy.consultCart(dataCars.carrinhos[1].precoTotal, {}, dataCars.carrinhos[0].idUsuario)
+    cy.consultCart(dataCarts.carrinhos[1].precoTotal, {}, dataCarts.carrinhos[0].idUsuario)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.quantidade).to.eq(0)
@@ -115,7 +115,7 @@ describe('[INTEGRATION] :: Listar Carrinhos', () => {
   })
 
   it('/GET - Listar carrinhos com uma busca incorreta de: id do usuário válido e quantidade total inválida', () => {
-    cy.consultCart({}, faker.datatype.number(100), {}, dataCars.carrinhos[0].idUsuario)
+    cy.consultCart({}, faker.datatype.number(100), {}, dataCarts.carrinhos[0].idUsuario)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.quantidade).to.eq(0)

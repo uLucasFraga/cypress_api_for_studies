@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import dataCars from './../fixtures/carrinhos.json'
+import dataCarts from './../fixtures/carrinhos.json'
 import credentials from './credentials'
 
 // COMMANDS - LOGIN //
@@ -171,7 +171,7 @@ Cypress.Commands.add('consultCart', (totalPrice, totalQtd, idUser) => {
 Cypress.Commands.add('registerCar', (
   idProductOne,
   qtd,
-  idProductTwo = dataCars.carrinhos[0].produtos[0].idProduto
+  idProductTwo = dataCarts.carrinhos[0].produtos[0].idProduto
 ) => {
   cy.request({
     method: 'POST',
