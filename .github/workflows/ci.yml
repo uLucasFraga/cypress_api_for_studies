@@ -10,6 +10,16 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+        
+      - uses: actions/cache@v1
+        with:
+          path: |
+            ~/.m2/repository
+            ~/.gradle/caches
+          key: ${{ runner.os }}-${{ github.workflow }}-${{ hashFiles('**/build.gradle') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ github.workflow }}-
+            
       - name: node.js 10 setup
         with:
           node-version: 10
@@ -57,3 +67,29 @@ jobs:
           CYPRESS_APP_URL: 'https://serverest.dev'
           CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
           CYPRESS_PASSWORD: '${{ secrets.PASSWORD }}'
+          
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Allure Report action from marketplace
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        #id: allure-report
+        with:
+          allure_results: build/allure-results
+          #gh_pages: gh-pages
+          #allure_report: allure-report
+          allure_history: allure-history
+
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
