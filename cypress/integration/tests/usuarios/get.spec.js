@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-// GET - USUÁRIOS//
+// GET - USUÁRIOS //
 
 import dataUsers from '../../../fixtures/usuarios.json'
 const httpStatus = require('http-status-codes')

@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-// GET - CARRINHOS//
+// GET - CARRINHOS //
 
 import faker from 'faker'
 import dataCars from '../../../fixtures/carrinhos.json'

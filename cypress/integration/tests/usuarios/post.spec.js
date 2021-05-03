@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-// POST - USUÁRIOS//
+// POST - USUÁRIOS //
 
 import faker from 'faker'
 const httpStatus = require('http-status-codes')

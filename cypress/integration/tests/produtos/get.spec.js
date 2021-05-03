@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-// GET - PRODUTOS//
+// GET - PRODUTOS //
 
 import dataProducts from '../../../fixtures/produtos.json'
 const httpStatus = require('http-status-codes')
