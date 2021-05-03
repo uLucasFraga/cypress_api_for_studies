@@ -195,6 +195,28 @@ Cypress.Commands.add('registerCart', (
   })
 })
 
+Cypress.Commands.add('deleteWhenPurchaseCompleteCart', () => {
+  cy.request({
+    method: 'DELETE',
+    url: '/carrinhos/concluir-compra',
+    headers: {
+      Authorization: localStorage.getItem('token')
+    },
+    failOnStatusCode: false
+  })
+})
+
+Cypress.Commands.add('deleteWhenCancelCart', () => {
+  cy.request({
+    method: 'DELETE',
+    url: '/carrinhos/cancelar-compra',
+    headers: {
+      Authorization: localStorage.getItem('token')
+    },
+    failOnStatusCode: false
+  })
+})
+
 // COMMANDS - OTHERS METHODS //
 
 Cypress.Commands.add('registerUserWithLogin', (name, email, pass, admin = 'true') => {
