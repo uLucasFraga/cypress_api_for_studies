@@ -8,8 +8,8 @@ const httpStatus = require('http-status-codes')
 
 const carsFaker = {
   BODY: {
+    idProduto: faker.random.alphaNumeric(10),
     quantidade: faker.datatype.number({ min: 1000, max: 5000 })
-
   }
 }
 
