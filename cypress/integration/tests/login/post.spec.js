@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-// LOGIN//
+// LOGIN //
 
 const httpStatus = require('http-status-codes')
 

@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-// POST - PRODUTOS//
+// POST - PRODUTOS //
 
 import faker from 'faker'
 const httpStatus = require('http-status-codes')

@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-// DELETE - USUÁRIOS//
+// DELETE - USUÁRIOS //
 
 import faker from 'faker'
 import dataUsers from '../../../fixtures/usuarios.json'

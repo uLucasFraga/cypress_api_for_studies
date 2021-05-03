@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import dataCars from './../fixtures/carrinhos.json'
+import dataCarts from './../fixtures/carrinhos.json'
 import credentials from './credentials'
 
 // COMMANDS - LOGIN //
@@ -168,10 +168,10 @@ Cypress.Commands.add('consultCart', (totalPrice, totalQtd, idUser) => {
   })
 })
 
-Cypress.Commands.add('registerCar', (
+Cypress.Commands.add('registerCart', (
   idProductOne,
   qtd,
-  idProductTwo = dataCars.carrinhos[0].produtos[0].idProduto
+  idProductTwo = dataCarts.carrinhos[0].produtos[0].idProduto
 ) => {
   cy.request({
     method: 'POST',
@@ -192,6 +192,28 @@ Cypress.Commands.add('registerCar', (
         }
       ]
     }
+  })
+})
+
+Cypress.Commands.add('deleteWhenPurchaseCompleteCart', () => {
+  cy.request({
+    method: 'DELETE',
+    url: '/carrinhos/concluir-compra',
+    headers: {
+      Authorization: localStorage.getItem('token')
+    },
+    failOnStatusCode: false
+  })
+})
+
+Cypress.Commands.add('deleteWhenCancelCart', () => {
+  cy.request({
+    method: 'DELETE',
+    url: '/carrinhos/cancelar-compra',
+    headers: {
+      Authorization: localStorage.getItem('token')
+    },
+    failOnStatusCode: false
   })
 })
 

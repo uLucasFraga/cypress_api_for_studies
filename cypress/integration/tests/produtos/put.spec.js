@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-// PUT - PRODUTOS//
+// PUT - PRODUTOS //
 
 import faker from 'faker'
 import dataProducts from '../../../fixtures/produtos.json'
