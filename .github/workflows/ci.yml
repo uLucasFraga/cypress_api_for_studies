@@ -36,6 +36,11 @@ jobs:
           CYPRESS_APP_URL: 'http://localhost:3000'
           CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
           CYPRESS_PASSWORD: '${{ secrets.PASSWORD }}'
+  allure-report:
+      needs:
+        - integration-local
+      runs-on: ubuntu-18.04
+      steps:
       - name: Get allure history
         uses: actions/checkout@v2
         if: always()
