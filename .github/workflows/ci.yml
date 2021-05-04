@@ -1,9 +1,11 @@
 name: CONTINUOUS INTEGRATIONS
-
-on:
-  pull_request:
-  workflow_dispatch:
-
+'on':
+  release:
+    types:
+      - created
+  push:
+    branches-ignore:
+      - '!master'
 jobs:
   lint:
     runs-on: ubuntu-18.04
@@ -18,7 +20,6 @@ jobs:
         run: npm ci
       - name: lint
         run: npm run lint
-
   integration-local:
     runs-on: ubuntu-18.04
     steps:
@@ -31,16 +32,17 @@ jobs:
       - name: installation of dependencies
         run: npm ci
       - name: start ServeRest locally
-        run: docker run -d -p 3000:3000 paulogoncalvesbh/serverest
+        run: 'docker run -d -p 3000:3000 paulogoncalvesbh/serverest'
       - name: api tests
-        run: npm run cy:run
+        run: 'npm run cy:run'
         env:
           CYPRESS_APP_URL: 'http://localhost:3000'
           CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
           CYPRESS_PASSWORD: '${{ secrets.PASSWORD }}'
-
   integration-prod:
-    needs: [lint, integration-local]
+    needs:
+      - lint
+      - integration-local
     runs-on: ubuntu-18.04
     steps:
       - name: checkout
@@ -52,8 +54,34 @@ jobs:
       - name: installation of dependencies
         run: npm ci
       - name: api tests
-        run: npm run cy:run
+        run: 'npm run cy:run'
         env:
           CYPRESS_APP_URL: 'https://serverest.dev'
           CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
           CYPRESS_PASSWORD: '${{ secrets.PASSWORD }}'
+  allure-report:
+    name: generate allure report
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: get allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+      - name: allure report action from marketplace
+        uses: ulucasfraga/cypress_api_for_studies@master
+        if: always()
+        with:
+          allure_results: allure-results
+          allure_history: allure-history
+          keep_reports: 10
+      - name: deploy report to github pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: '${{ secrets.GH_TOKEN }}'
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
