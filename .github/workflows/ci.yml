@@ -19,7 +19,7 @@ jobs:
         run: npm ci
       - name: Lint
         run: npm run lint
-  integration-tests-and-allure-report:
+  api-tests-and-report:
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
