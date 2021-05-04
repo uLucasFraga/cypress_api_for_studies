@@ -73,7 +73,6 @@ jobs:
             - name: generate allure report
               if: always()
               uses: afiore/action-allure-report@v0.1.0
-
             - name: commit report results
               if: always()
               run: |
@@ -82,7 +81,7 @@ jobs:
                   git add allure-report -f
                   git add allure-results -f
                   git commit -m "[chore] autogenerate Allure report" -a
-            - name: Push changes
+            - name: push changes
               if: always()
               uses: ad-m/github-push-action@master
               with:
