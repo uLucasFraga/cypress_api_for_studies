@@ -141,9 +141,14 @@ $ npm run allure:history
 $ npm run allure:clear
 ```
 
-> Para visualizar os relatórios através do gh-pages, acessar:
+###### Visualizar report:
+
+Para visualizar report: [REPORT:GH-PAGES](https://ulucasfraga.github.io/cypress_api_for_studies/)
+
+> exemplo:
 
 [![GH-PAGES](https://i.imgur.com/X19M47D.png)](https://ulucasfraga.github.io/cypress_api_for_studies/)
+
 
 
 -----------------------
