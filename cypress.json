@@ -1,17 +1,6 @@
 {
   "projectId": "tq93d8",
   "baseUrl": "https://serverest.dev",
-  "reporter": "cypress-multi-reporters",
   "screenshot": false,
-  "video": false,
-  "reporterOptions": {
-    "reporterEnabled": "mochawesome",
-    "mochawesomeReporterOptions": {
-      "reportDir": "cypress/reports/mocha",
-      "quite": true,
-      "overwrite": false,
-      "html": false,
-      "json": true
-    }
-  }
+  "video": false
 }
