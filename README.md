@@ -130,8 +130,7 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 > Para visualizar os relatórios através do gh-pages, acessar:
 
-
-[![GH-PAGES](https://imgur.com/gallery/5MXT4DZ)](https://ulucasfraga.github.io/cypress_api_for_studies/)
+![GH-PAGES](https://imgur.com/gallery/5MXT4DZ)
 
 
 -----------------------
