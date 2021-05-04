@@ -41,7 +41,7 @@ jobs:
           CYPRESS_PASSWORD: '${{ secrets.PASSWORD }}'
   allure-report:
     needs:
-      - integration-prod
+      - integration-local
     name: generate allure report
     runs-on: ubuntu-latest
     steps:
