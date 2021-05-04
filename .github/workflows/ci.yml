@@ -7,49 +7,49 @@ jobs:
   lint:
     runs-on: ubuntu-18.04
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v2
       - name: node.js 10 setup
         with:
           node-version: 10
         uses: actions/setup-node@v2
-      - name: installation of dependencies
+      - name: Installation of dependencies
         run: npm ci
-      - name: lint
+      - name: Lint
         run: npm run lint
   integration-local:
     runs-on: ubuntu-18.04
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v2
-      - name: node.js 10 setup
+      - name: Node.js 10 setup
         uses: actions/setup-node@v2
         with:
           node-version: 10
-      - name: installation of dependencies
+      - name: Installation of dependencies
         run: npm ci
-      - name: start serveRest locally
+      - name: Start serveRest locally
         run: 'docker run -d -p 3000:3000 paulogoncalvesbh/serverest'
-      - name: api tests
+      - name: Api tests
         run: 'npm run cy:run'
         env:
           CYPRESS_APP_URL: 'http://localhost:3000'
           CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
           CYPRESS_PASSWORD: '${{ secrets.PASSWORD }}'
-      - name: get allure history
+      - name: Get allure history
         uses: actions/checkout@v2
         if: always()
         continue-on-error: true
         with:
           ref: gh-pages
           path: gh-pages
-      - name: allure report action
+      - name: Allure report action
         uses: simple-elf/allure-report-action@master
         if: always()
         with:
           allure_results: build/allure-results
           allure_history: allure-history
-      - name: deploy report to github pages
+      - name: Deploy report to github pages
         if: always()
         uses: peaceiris/actions-gh-pages@v2
         env:
