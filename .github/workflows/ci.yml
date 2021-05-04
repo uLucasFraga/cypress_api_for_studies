@@ -36,31 +36,55 @@ jobs:
           CYPRESS_APP_URL: 'http://localhost:3000'
           CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
           CYPRESS_PASSWORD: '${{ secrets.PASSWORD }}'
-  allure-report:
-    needs:
-      - integration-local
-    name: generate allure report
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: get allure history
-        uses: actions/checkout@v2
-        if: always()
-        continue-on-error: true
-        with:
-          ref: gh-pages
-          path: gh-pages
-      - name: allure report action from marketplace
-        uses: ulucasfraga/cypress_api_for_studies@main
-        if: always()
-        with:
-          allure_results: allure-results
-          allure_history: allure-history
-          keep_reports: 10
-      - name: deploy report to github pages
-        if: always()
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          PERSONAL_TOKEN: '${{ secrets.GH_TOKEN }}'
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
+  generate-report:
+        needs:
+        - integration-local
+        runs-on: ubuntu-16.04
+        steps:
+            - uses: actions/checkout@v2
+            - name: Download Cypress
+              uses: bahmutov/npm-install@v1
+              env:
+                  CYPRESS_INSTALL_BINARY: 0
+
+            - name: check cypress cache
+              run: |
+                  npx cypress cache path
+                  npx cypress cache list
+            - name: restore / cache the binary
+              id: cache-cypress
+              uses: actions/cache@v1
+              with:
+                  path: ~/.cache/Cypress
+                  key: >-
+                      cypress-cache-v2-${{ runner.os }}-${{ hashFiles('**/package.json')
+                      }}
+            - name: prepare allure history
+              run: |
+                  rm -r allure-results/*
+                  cp -r ./allure-report/history ./allure-results/history
+                  rm -r allure-report/*
+            - name: install cypress
+              run: |
+                  npx cypress install
+                  npx cypress cache list
+            - name: run cypress
+              run: npm run cy:run
+            - name: generate allure report
+              if: always()
+              uses: afiore/action-allure-report@v0.1.0
+
+            - name: commit report results
+              if: always()
+              run: |
+                  git config --local user.email "action@github.com"
+                  git config --local user.name "GitHub Action"
+                  git add allure-report -f
+                  git add allure-results -f
+                  git commit -m "[chore] autogenerate Allure report" -a
+            - name: Push changes
+              if: always()
+              uses: ad-m/github-push-action@master
+              with:
+                  CYPRESS_GH_TOKEN: '${{ secrets.GH_TOKEN }}'
+                  force: true
