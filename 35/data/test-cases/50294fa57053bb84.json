@@ -1,0 +1,204 @@
+{
+  "uid" : "50294fa57053bb84",
+  "name" : "/PUT - Editar com um email inválido",
+  "fullName" : "/PUT - Editar com um email inválido",
+  "historyId" : "e6d362a69850c68ddffc937032e51052",
+  "time" : {
+    "start" : 1620155743260,
+    "stop" : 1620155743278,
+    "duration" : 18
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerUser (\"Juliana Nolan\"; \"Christiana_Stamm34@gmail.com\"; \"xCdnmgYmxNncr0F\"; \"false\")",
+      "time" : {
+        "start" : 1620155743102,
+        "stop" : 1620155743121,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620155743108,
+          "stop" : 1620155743121,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+      "time" : {
+        "start" : 1620155743129,
+        "stop" : 1620155743129,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **201** to equal **201** assert",
+      "time" : {
+        "start" : 1620155743129,
+        "stop" : 1620155743129,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "modifyUser (\"r2MUAQ2v7eyNpbTs\"; \"Juliana Nolan\"; \"com.br@nao.valido\"; \"xCdnmgYmxNncr0F\")",
+      "time" : {
+        "start" : 1620155743265,
+        "stop" : 1620155743274,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620155743266,
+          "stop" : 1620155743274,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **email deve ser um email válido** to equal **email deve ser um email válido** assert",
+      "time" : {
+        "start" : 1620155743278,
+        "stop" : 1620155743278,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **400** to equal **400** assert",
+      "time" : {
+        "start" : 1620155743278,
+        "stop" : 1620155743278,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Editar Usuários"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "153e5ffba28bd019",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/153e5ffba28bd019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150475318,
+          "stop" : 1620150475333,
+          "duration" : 15
+        }
+      }, {
+        "uid" : "1bd8985df811d603",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/1bd8985df811d603",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149688724,
+          "stop" : 1620149688741,
+          "duration" : 17
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "50294fa57053bb84.json",
+  "parameterValues" : [ ]
+}

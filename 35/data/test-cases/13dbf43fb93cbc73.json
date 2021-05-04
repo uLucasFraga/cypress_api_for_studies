@@ -1,0 +1,134 @@
+{
+  "uid" : "13dbf43fb93cbc73",
+  "name" : "/DELETE - Deletar um carrinho quando \"concluir uma compra\" válido sem utilização de token",
+  "fullName" : "/DELETE - Deletar um carrinho quando \"concluir uma compra\" válido sem utilização de token",
+  "historyId" : "2d0bcb6611d3624863239b1033243de8",
+  "time" : {
+    "start" : 1620155693324,
+    "stop" : 1620155693385,
+    "duration" : 61
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "deleteWhenPurchaseCompleteCart",
+      "time" : {
+        "start" : 1620155693343,
+        "stop" : 1620155693377,
+        "duration" : 34
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620155693347,
+          "stop" : 1620155693377,
+          "duration" : 30
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Token de acesso ausente, inválido, expirado ou usuário do token não existe mais** to equal **Token de acesso ausente, inválido, expirado ou usuário do token não existe mais** assert",
+      "time" : {
+        "start" : 1620155693384,
+        "stop" : 1620155693384,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **401** to equal **401** assert",
+      "time" : {
+        "start" : 1620155693384,
+        "stop" : 1620155693384,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Deletar Carrinhos quando \"Concluir uma Compra\" sem Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "c42fa55ffcea618b",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/c42fa55ffcea618b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150423802,
+          "stop" : 1620150423874,
+          "duration" : 72
+        }
+      }, {
+        "uid" : "df6aba9650c6b9dc",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/df6aba9650c6b9dc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149634986,
+          "stop" : 1620149635052,
+          "duration" : 66
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "13dbf43fb93cbc73.json",
+  "parameterValues" : [ ]
+}
