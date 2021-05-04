@@ -153,9 +153,9 @@ Acessar o report através do github-pages: [GH-PAGES](https://ulucasfraga.github
 
 ### Suporte
 
-- Linkedin <a href="https://www.linkedin.com/in/ulucasfraga/" target="_blank">`Lucas Fraga`</a>
+- Linkedin: <a href="https://www.linkedin.com/in/ulucasfraga/" target="_blank">**Lucas Fraga**</a>
 
-- E-mail: `lucass.fragaa@gmail.com`
+- E-mail: **lucass.fragaa@gmail.com**
 
 
 -----------------------
