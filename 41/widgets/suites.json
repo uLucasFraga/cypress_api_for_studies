@@ -4,10 +4,10 @@
     "uid" : "92ffaca0b1c86fbea03057bd84fb72d6",
     "name" : "[INTEGRATION] :: Listar Carrinhos",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 14,
+      "passed" : 15,
       "unknown" : 0,
       "total" : 15
     }

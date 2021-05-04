@@ -1,0 +1,392 @@
+{
+  "uid" : "2d1568af64866aab",
+  "name" : "/DELETE - Deletar um carrinho quando \"concluir uma compra\" que não existe para o usuário",
+  "fullName" : "/DELETE - Deletar um carrinho quando \"concluir uma compra\" que não existe para o usuário",
+  "historyId" : "c74d120dd765468c6cbd4dfea3aa79da",
+  "time" : {
+    "start" : 1620159236314,
+    "stop" : 1620159236379,
+    "duration" : 65
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1620159236315,
+        "stop" : 1620159236366,
+        "duration" : 51
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "registerUserWithLogin (\"Jairo Blanda\"; \"Ruby.Reynolds1@yahoo.com\"; \"L8ZLi4KcW3QQv1A\")",
+        "time" : {
+          "start" : 1620159236325,
+          "stop" : 1620159236353,
+          "duration" : 28
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "registerUser (\"Jairo Blanda\"; \"Ruby.Reynolds1@yahoo.com\"; \"L8ZLi4KcW3QQv1A\"; \"true\")",
+          "time" : {
+            "start" : 1620159236326,
+            "stop" : 1620159236337,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "request (\"[object Object]\")",
+            "time" : {
+              "start" : 1620159236326,
+              "stop" : 1620159236337,
+              "duration" : 11
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+          "time" : {
+            "start" : 1620159236339,
+            "stop" : 1620159236339,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "getToken (\"Ruby.Reynolds1@yahoo.com\"; \"L8ZLi4KcW3QQv1A\")",
+          "time" : {
+            "start" : 1620159236339,
+            "stop" : 1620159236353,
+            "duration" : 14
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "doLogin (\"Ruby.Reynolds1@yahoo.com\"; \"L8ZLi4KcW3QQv1A\")",
+            "time" : {
+              "start" : 1620159236340,
+              "stop" : 1620159236347,
+              "duration" : 7
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "request (\"[object Object]\")",
+              "time" : {
+                "start" : 1620159236340,
+                "stop" : 1620159236347,
+                "duration" : 7
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 0,
+              "shouldDisplayMessage" : false,
+              "hasContent" : false
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 1,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "log (\"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJ1YnkuUmV5bm9sZHMxQHlhaG9vLmNvbSIsInBhc3N3b3JkIjoiTDhaTGk0S2NXM1FRdjFBIiwiaWF0IjoxNjIwMTU5MjM2LCJleHAiOjE2MjAxNTk4MzZ9.JI2PEZNL1MJ-A0OiG7rRBRPaPTXuWKG0RV44wD9b5Uk\")",
+            "time" : {
+              "start" : 1620159236351,
+              "stop" : 1620159236352,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          }, {
+            "name" : "expected **Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJ1YnkuUmV5bm9sZHMxQHlhaG9vLmNvbSIsInBhc3N3b3JkIjoiTDhaTGk0S2NXM1FRdjFBIiwiaWF0IjoxNjIwMTU5MjM2LCJleHAiOjE2MjAxNTk4MzZ9.JI2PEZNL1MJ-A0OiG7rRBRPaPTXuWKG0RV44wD9b5Uk** not to be null assert",
+            "time" : {
+              "start" : 1620159236353,
+              "stop" : 1620159236353,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          }, {
+            "name" : "expected **200** to equal **200** assert",
+            "time" : {
+              "start" : 1620159236353,
+              "stop" : 1620159236353,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 5,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 9,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "registerProduct (\"Small Cotton Chair\"; \"295.00\"; \"The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J\"; \"2397\")",
+        "time" : {
+          "start" : 1620159236353,
+          "stop" : 1620159236365,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "request (\"[object Object]\")",
+          "time" : {
+            "start" : 1620159236354,
+            "stop" : 1620159236365,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 12,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "deleteWhenPurchaseCompleteCart",
+      "time" : {
+        "start" : 1620159236366,
+        "stop" : 1620159236374,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620159236367,
+          "stop" : 1620159236374,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Não foi encontrado carrinho para esse usuário** to equal **Não foi encontrado carrinho para esse usuário** assert",
+      "time" : {
+        "start" : 1620159236378,
+        "stop" : 1620159236378,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **200** to equal **200** assert",
+      "time" : {
+        "start" : 1620159236378,
+        "stop" : 1620159236378,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 17,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Deletar Carrinhos quando \"Concluir uma Compra\" Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "d219046d074fd3e6",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/41//#testresult/d219046d074fd3e6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620158254400,
+          "stop" : 1620158254459,
+          "duration" : 59
+        }
+      }, {
+        "uid" : "79bf86b4f806f344",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/40//#testresult/79bf86b4f806f344",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620158144851,
+          "stop" : 1620158144908,
+          "duration" : 57
+        }
+      }, {
+        "uid" : "e4d608a8034234e5",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/39//#testresult/e4d608a8034234e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620157044043,
+          "stop" : 1620157044086,
+          "duration" : 43
+        }
+      }, {
+        "uid" : "39f072cb52bb8311",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/38//#testresult/39f072cb52bb8311",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156908616,
+          "stop" : 1620156908674,
+          "duration" : 58
+        }
+      }, {
+        "uid" : "57308a75eb562efc",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/57308a75eb562efc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156060369,
+          "stop" : 1620156060431,
+          "duration" : 62
+        }
+      }, {
+        "uid" : "d192216203bfa08d",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/d192216203bfa08d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155835893,
+          "stop" : 1620155835944,
+          "duration" : 51
+        }
+      }, {
+        "uid" : "be95a0c3d77436c8",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/be95a0c3d77436c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155693512,
+          "stop" : 1620155693567,
+          "duration" : 55
+        }
+      }, {
+        "uid" : "40868c9bf3757cdb",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/40868c9bf3757cdb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150423976,
+          "stop" : 1620150424031,
+          "duration" : 55
+        }
+      }, {
+        "uid" : "46871cc722979ef0",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/46871cc722979ef0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149635170,
+          "stop" : 1620149635228,
+          "duration" : 58
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2d1568af64866aab.json",
+  "parameterValues" : [ ]
+}

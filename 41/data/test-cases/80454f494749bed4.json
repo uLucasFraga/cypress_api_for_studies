@@ -1,0 +1,197 @@
+{
+  "uid" : "80454f494749bed4",
+  "name" : "/POST - Cadastrar um carrinho válido sem utilização de token",
+  "fullName" : "/POST - Cadastrar um carrinho válido sem utilização de token",
+  "historyId" : "a381294c099bb273ed2a94203d69a706",
+  "time" : {
+    "start" : 1620159247519,
+    "stop" : 1620159247560,
+    "duration" : 41
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerCart (\"65dqcl3u3c\"; \"1607\")",
+      "time" : {
+        "start" : 1620159247533,
+        "stop" : 1620159247551,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620159247538,
+          "stop" : 1620159247551,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Token de acesso ausente, inválido, expirado ou usuário do token não existe mais** to equal **Token de acesso ausente, inválido, expirado ou usuário do token não existe mais** assert",
+      "time" : {
+        "start" : 1620159247558,
+        "stop" : 1620159247559,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **401** to equal **401** assert",
+      "time" : {
+        "start" : 1620159247559,
+        "stop" : 1620159247559,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Cadastrar Carrinhos sem Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "450409b5d5474641",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/41//#testresult/450409b5d5474641",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620158266872,
+          "stop" : 1620158266920,
+          "duration" : 48
+        }
+      }, {
+        "uid" : "fce58354f579e20f",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/40//#testresult/fce58354f579e20f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620158155874,
+          "stop" : 1620158155915,
+          "duration" : 41
+        }
+      }, {
+        "uid" : "ec552ad5bea7b49",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/39//#testresult/ec552ad5bea7b49",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620157052959,
+          "stop" : 1620157053018,
+          "duration" : 59
+        }
+      }, {
+        "uid" : "5ef628c4c7adf01",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/38//#testresult/5ef628c4c7adf01",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156920950,
+          "stop" : 1620156921013,
+          "duration" : 63
+        }
+      }, {
+        "uid" : "2ad7dd1b45a3594e",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/2ad7dd1b45a3594e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156072113,
+          "stop" : 1620156072155,
+          "duration" : 42
+        }
+      }, {
+        "uid" : "a28ddc35e8df410b",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/a28ddc35e8df410b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155847139,
+          "stop" : 1620155847185,
+          "duration" : 46
+        }
+      }, {
+        "uid" : "bbf942a3e29bb3bf",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/bbf942a3e29bb3bf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155703998,
+          "stop" : 1620155704077,
+          "duration" : 79
+        }
+      }, {
+        "uid" : "5ca77aad0af2850a",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/5ca77aad0af2850a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150434989,
+          "stop" : 1620150435069,
+          "duration" : 80
+        }
+      }, {
+        "uid" : "dd37be89b9e80cfa",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/dd37be89b9e80cfa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149646681,
+          "stop" : 1620149646724,
+          "duration" : 43
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "80454f494749bed4.json",
+  "parameterValues" : [ ]
+}

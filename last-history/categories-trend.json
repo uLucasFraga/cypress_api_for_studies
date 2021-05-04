@@ -2,6 +2,11 @@
   "buildOrder" : 41,
   "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/41/",
   "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
+  "buildOrder" : 41,
+  "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/41/",
+  "reportName" : "Allure Report with history",
   "data" : {
     "Product defects" : 1
   }

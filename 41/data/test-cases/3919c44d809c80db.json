@@ -1,0 +1,267 @@
+{
+  "uid" : "3919c44d809c80db",
+  "name" : "/PUT - Editar sem alterar o email",
+  "fullName" : "/PUT - Editar sem alterar o email",
+  "historyId" : "9f0552575fa1af2035072c22dfacd207",
+  "time" : {
+    "start" : 1620159288976,
+    "stop" : 1620159288992,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerUser (\"Max Ryan\"; \"Davonte.Cormier41@gmail.com\"; \"LUIIcI_GN2wyorZ\"; \"false\")",
+      "time" : {
+        "start" : 1620159288851,
+        "stop" : 1620159288869,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620159288856,
+          "stop" : 1620159288869,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+      "time" : {
+        "start" : 1620159288877,
+        "stop" : 1620159288877,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **201** to equal **201** assert",
+      "time" : {
+        "start" : 1620159288877,
+        "stop" : 1620159288877,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "modifyUser (\"52LwVMIJ0AtTkLAQ\"; \"Max Ryan\"; \"fulano@qa.com\"; \"LUIIcI_GN2wyorZ\")",
+      "time" : {
+        "start" : 1620159288982,
+        "stop" : 1620159288989,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620159288982,
+          "stop" : 1620159288989,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Este email já está sendo usado** to equal **Este email já está sendo usado** assert",
+      "time" : {
+        "start" : 1620159288992,
+        "stop" : 1620159288992,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **400** to equal **400** assert",
+      "time" : {
+        "start" : 1620159288992,
+        "stop" : 1620159288992,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Editar Usuários"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "118c98635c618096",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/41//#testresult/118c98635c618096",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620158309339,
+          "stop" : 1620158309363,
+          "duration" : 24
+        }
+      }, {
+        "uid" : "258ed68d87f00925",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/40//#testresult/258ed68d87f00925",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620158196750,
+          "stop" : 1620158196765,
+          "duration" : 15
+        }
+      }, {
+        "uid" : "230b56555dff658f",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/39//#testresult/230b56555dff658f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620157086501,
+          "stop" : 1620157086548,
+          "duration" : 47
+        }
+      }, {
+        "uid" : "9093e19d7de43d63",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/38//#testresult/9093e19d7de43d63",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156964554,
+          "stop" : 1620156964572,
+          "duration" : 18
+        }
+      }, {
+        "uid" : "a6b4141d457d5b16",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/a6b4141d457d5b16",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156113548,
+          "stop" : 1620156113569,
+          "duration" : 21
+        }
+      }, {
+        "uid" : "5139cb113fa7e4c5",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/5139cb113fa7e4c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155888900,
+          "stop" : 1620155888917,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "f6e46f239e41abc",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/f6e46f239e41abc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155743239,
+          "stop" : 1620155743256,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "fa9454e47e1b9df1",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/fa9454e47e1b9df1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150475295,
+          "stop" : 1620150475312,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "a0aa9b7c1dad5132",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/a0aa9b7c1dad5132",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149688703,
+          "stop" : 1620149688719,
+          "duration" : 16
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3919c44d809c80db.json",
+  "parameterValues" : [ ]
+}
