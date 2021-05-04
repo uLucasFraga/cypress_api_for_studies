@@ -5,6 +5,7 @@ on:
     branches-ignore:
       - '!main'
       
+      
 jobs:
   lint:
     runs-on: ubuntu-18.04
