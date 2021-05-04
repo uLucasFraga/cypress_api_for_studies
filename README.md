@@ -4,7 +4,7 @@
 [![SERVREST API](https://img.shields.io/badge/API-ServeRest-green)](https://github.com/PauloGoncalvesBH/ServeRest/)
 [![CONTINUOUS INTEGRATIONS](https://github.com/uLucasFraga/cypress_api_for_studies/actions/workflows/ci.yml/badge.svg)](https://github.com/uLucasFraga/cypress_api_for_studies/actions/workflows/ci.yml)
 [![CODE QUALITY](https://www.code-inspector.com/project/21255/score/svg)](https://frontend.code-inspector.com/public/project/21255/cypress_api_for_studies/dashboard)
-[![REPORT DOCS](http://inch-ci.org/github/ulucasfraga/cypress_api_for_studies.svg?branch=main)](http://inch-ci.org/github/ulucasfraga/cypress_api_for_studies)
+[![REPORT](https://img.shields.io/badge/report-valid-brightgreen)](https://ulucasfraga.github.io/cypress_api_for_studies/)
 
 
 Repositório com exemplos de testes automatizados para API Rest utilizando os frameworks e lib:
@@ -69,18 +69,22 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 > Clonar projeto
 
-- Clonar este repositório usando _ssh_ ou _https_, por exemplo:
+- Clonar este repositório usando _ssh_ ou _https_.
+
+> exemplo:
 
 `git clone https://github.com/uLucasFraga/cypress_api_for_studies.git`
 
-- Instalar todas as dependências via package.json, por exemplo:
+- Instalar todas as dependências via package.json:
 
-`cd /{desafio_api_for_studies} && npm ci`
+> exemplo:
+
+`cd /{cypress_api_for_studies} && npm ci`
 
 
 > Dicas
 
-- Utilize o seu _package.json_ para incluir ou excluir novas libs ao seu projeto
+- Utilize o seu _package-lock.json_ para incluir ou excluir novas libs ao seu projeto
 
 
 -----------------------
@@ -126,9 +130,8 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 > Para visualizar os relatórios através do gh-pages, acessar:
 
-https://ulucasfraga.github.io/cypress_api_for_studies/
 
-![img](https://imgur.com/gallery/5MXT4DZ)
+[![GH-PAGES](https://imgur.com/gallery/5MXT4DZ)](https://ulucasfraga.github.io/cypress_api_for_studies/)
 
 
 -----------------------
