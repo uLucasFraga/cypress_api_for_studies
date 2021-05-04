@@ -95,19 +95,27 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 > Para instalar as dependências do repositório:
 
-`npm ci`
+```bash
+$ npm ci
+```
 
 > Para rodas os testes:
 
-`npm test`
+```bash
+$ npm test
+```
 
 > Para rodar os testes no modo interativo do cypress:
 
-`npm run cy:open`
+```bash
+$ npm run cy:open
+```
 
 > Para rodar os testes no modo headless do cypress:
 
-`npm run cy:run`
+```bash
+$ npm run cy:run
+```
 
 
 -----------------------
@@ -117,20 +125,25 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 > Para gerar relatórios depois dos testes localmente:
 
-`npm run allure:report`
+```bash
+$ npm run allure:report
+```
 
 > Para gerar um histórico de relatórios depois dos testes localmente:
 
-`npm run allure:history`
+```bash
+$ npm run allure:history
+```
 
 > Para limpar os relatórios dos testes localmente:
 
-`npm run allure:clear`
-
+```bash
+$ npm run allure:clear
+```
 
 > Para visualizar os relatórios através do gh-pages, acessar:
 
-![GH-PAGES](https://imgur.com/gallery/5MXT4DZ)
+[![GH-PAGES](<img width="1413" alt="allure-report" src="https://user-images.githubusercontent.com/23031781/117055056-1b4c1980-acf1-11eb-9e41-81928ffbb186.png">)](https://ulucasfraga.github.io/cypress_api_for_studies/)
 
 
 -----------------------
