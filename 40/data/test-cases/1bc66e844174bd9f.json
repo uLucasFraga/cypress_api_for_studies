@@ -1,0 +1,314 @@
+{
+  "uid" : "1bc66e844174bd9f",
+  "name" : "/DELETE - Deletar um produto que contenha um carrinho",
+  "fullName" : "/DELETE - Deletar um produto que contenha um carrinho",
+  "historyId" : "08893d9727d4538480aaa4382efa7b74",
+  "time" : {
+    "start" : 1620158166726,
+    "stop" : 1620158166765,
+    "duration" : 39
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1620158166726,
+        "stop" : 1620158166753,
+        "duration" : 27
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "getToken",
+        "time" : {
+          "start" : 1620158166732,
+          "stop" : 1620158166745,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "doLogin (\"fulano@qa.com\"; \"teste\")",
+          "time" : {
+            "start" : 1620158166733,
+            "stop" : 1620158166740,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "request (\"[object Object]\")",
+            "time" : {
+              "start" : 1620158166733,
+              "stop" : 1620158166740,
+              "duration" : 7
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "log (\"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZ1bGFub0BxYS5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjIwMTU4MTY2LCJleHAiOjE2MjAxNTg3NjZ9.zT6I7xboCqkup1TT1eYLbJxZvgsJFBsRp5BYzHO7pK0\")",
+          "time" : {
+            "start" : 1620158166744,
+            "stop" : 1620158166745,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "expected **Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZ1bGFub0BxYS5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjIwMTU4MTY2LCJleHAiOjE2MjAxNTg3NjZ9.zT6I7xboCqkup1TT1eYLbJxZvgsJFBsRp5BYzHO7pK0** not to be null assert",
+          "time" : {
+            "start" : 1620158166745,
+            "stop" : 1620158166745,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "expected **200** to equal **200** assert",
+          "time" : {
+            "start" : 1620158166745,
+            "stop" : 1620158166745,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 5,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "registerProduct (\"Handcrafted Cotton Gloves\"; \"939.00\"; \"The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J\"; \"44\")",
+        "time" : {
+          "start" : 1620158166745,
+          "stop" : 1620158166752,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "request (\"[object Object]\")",
+          "time" : {
+            "start" : 1620158166745,
+            "stop" : 1620158166752,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 8,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "deleteProduct (\"BeeJh5lz3k6kSIzA\")",
+      "time" : {
+        "start" : 1620158166754,
+        "stop" : 1620158166762,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620158166754,
+          "stop" : 1620158166762,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Não é permitido excluir produto que faz parte de carrinho** to equal **Não é permitido excluir produto que faz parte de carrinho** assert",
+      "time" : {
+        "start" : 1620158166765,
+        "stop" : 1620158166765,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **400** to equal **400** assert",
+      "time" : {
+        "start" : 1620158166765,
+        "stop" : 1620158166765,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 13,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Deletar Produtos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "e42949cbdc161e20",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/39//#testresult/e42949cbdc161e20",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620157062029,
+          "stop" : 1620157062063,
+          "duration" : 34
+        }
+      }, {
+        "uid" : "beb8ae227a7dbe2a",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/38//#testresult/beb8ae227a7dbe2a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156932952,
+          "stop" : 1620156933005,
+          "duration" : 53
+        }
+      }, {
+        "uid" : "b7c20287262b4e57",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/b7c20287262b4e57",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156083365,
+          "stop" : 1620156083412,
+          "duration" : 47
+        }
+      }, {
+        "uid" : "50fee37044c469aa",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/50fee37044c469aa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155857990,
+          "stop" : 1620155858033,
+          "duration" : 43
+        }
+      }, {
+        "uid" : "1aeaa4fc73e87bd",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/1aeaa4fc73e87bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155714502,
+          "stop" : 1620155714549,
+          "duration" : 47
+        }
+      }, {
+        "uid" : "3467b5039b393cb9",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/3467b5039b393cb9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150445882,
+          "stop" : 1620150445923,
+          "duration" : 41
+        }
+      }, {
+        "uid" : "5fd728f646c2a366",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/5fd728f646c2a366",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149658181,
+          "stop" : 1620149658224,
+          "duration" : 43
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1bc66e844174bd9f.json",
+  "parameterValues" : [ ]
+}

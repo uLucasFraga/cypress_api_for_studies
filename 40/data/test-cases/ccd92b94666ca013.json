@@ -1,0 +1,374 @@
+{
+  "uid" : "ccd92b94666ca013",
+  "name" : "/POST - Cadastrar um carrinho válido com utilização de token",
+  "fullName" : "/POST - Cadastrar um carrinho válido com utilização de token",
+  "historyId" : "960a60f61e10746acc4bd1fbeaea12cb",
+  "time" : {
+    "start" : 1620158155921,
+    "stop" : 1620158155980,
+    "duration" : 59
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1620158155922,
+        "stop" : 1620158155965,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "registerUserWithLogin (\"Jazmin Heaney\"; \"Lurline_Tillman32@hotmail.com\"; \"xtq0B0zhzG3BJY9\")",
+        "time" : {
+          "start" : 1620158155931,
+          "stop" : 1620158155955,
+          "duration" : 24
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "registerUser (\"Jazmin Heaney\"; \"Lurline_Tillman32@hotmail.com\"; \"xtq0B0zhzG3BJY9\"; \"true\")",
+          "time" : {
+            "start" : 1620158155931,
+            "stop" : 1620158155940,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "request (\"[object Object]\")",
+            "time" : {
+              "start" : 1620158155932,
+              "stop" : 1620158155940,
+              "duration" : 8
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+          "time" : {
+            "start" : 1620158155942,
+            "stop" : 1620158155942,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "getToken (\"Lurline_Tillman32@hotmail.com\"; \"xtq0B0zhzG3BJY9\")",
+          "time" : {
+            "start" : 1620158155942,
+            "stop" : 1620158155955,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "doLogin (\"Lurline_Tillman32@hotmail.com\"; \"xtq0B0zhzG3BJY9\")",
+            "time" : {
+              "start" : 1620158155942,
+              "stop" : 1620158155949,
+              "duration" : 7
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "request (\"[object Object]\")",
+              "time" : {
+                "start" : 1620158155943,
+                "stop" : 1620158155949,
+                "duration" : 6
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 0,
+              "shouldDisplayMessage" : false,
+              "hasContent" : false
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 1,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "log (\"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Ikx1cmxpbmVfVGlsbG1hbjMyQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiJ4dHEwQjB6aHpHM0JKWTkiLCJpYXQiOjE2MjAxNTgxNTUsImV4cCI6MTYyMDE1ODc1NX0.YcN3Dq_xSHN-yd8ap309o25pqIxgMRAoA9Z6mD3i2cI\")",
+            "time" : {
+              "start" : 1620158155953,
+              "stop" : 1620158155954,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          }, {
+            "name" : "expected **Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Ikx1cmxpbmVfVGlsbG1hbjMyQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiJ4dHEwQjB6aHpHM0JKWTkiLCJpYXQiOjE2MjAxNTgxNTUsImV4cCI6MTYyMDE1ODc1NX0.YcN3Dq_xSHN-yd8ap309o25pqIxgMRAoA9Z6mD3i2cI** not to be null assert",
+            "time" : {
+              "start" : 1620158155955,
+              "stop" : 1620158155955,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          }, {
+            "name" : "expected **200** to equal **200** assert",
+            "time" : {
+              "start" : 1620158155955,
+              "stop" : 1620158155955,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 5,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 9,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "registerProduct (\"Practical Frozen Fish\"; \"839.00\"; \"The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J\"; \"486\")",
+        "time" : {
+          "start" : 1620158155955,
+          "stop" : 1620158155964,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "request (\"[object Object]\")",
+          "time" : {
+            "start" : 1620158155955,
+            "stop" : 1620158155964,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 12,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "registerCart (\"EhnvdixfLpvXOyhl\"; \"1\")",
+      "time" : {
+        "start" : 1620158155967,
+        "stop" : 1620158155976,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620158155967,
+          "stop" : 1620158155976,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+      "time" : {
+        "start" : 1620158155979,
+        "stop" : 1620158155979,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **201** to equal **201** assert",
+      "time" : {
+        "start" : 1620158155979,
+        "stop" : 1620158155979,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 17,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Cadastrar Carrinhos com Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "fd745cd87ba3b131",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/39//#testresult/fd745cd87ba3b131",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620157053022,
+          "stop" : 1620157053065,
+          "duration" : 43
+        }
+      }, {
+        "uid" : "4265b44de6132125",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/38//#testresult/4265b44de6132125",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156921025,
+          "stop" : 1620156921135,
+          "duration" : 110
+        }
+      }, {
+        "uid" : "6eca3308c1f0e1ff",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/6eca3308c1f0e1ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156072160,
+          "stop" : 1620156072222,
+          "duration" : 62
+        }
+      }, {
+        "uid" : "4f1010cfdec14652",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/4f1010cfdec14652",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155847191,
+          "stop" : 1620155847257,
+          "duration" : 66
+        }
+      }, {
+        "uid" : "ccb16887cf32ecca",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/ccb16887cf32ecca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155704082,
+          "stop" : 1620155704141,
+          "duration" : 59
+        }
+      }, {
+        "uid" : "a4bfbfb25c93fc4",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/a4bfbfb25c93fc4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150435074,
+          "stop" : 1620150435131,
+          "duration" : 57
+        }
+      }, {
+        "uid" : "ed1c15467b1efe3",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/ed1c15467b1efe3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149646730,
+          "stop" : 1620149646794,
+          "duration" : 64
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ccd92b94666ca013.json",
+  "parameterValues" : [ ]
+}

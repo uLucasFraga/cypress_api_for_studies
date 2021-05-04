@@ -1,0 +1,374 @@
+{
+  "uid" : "e394d811bb6dcbd9",
+  "name" : "/DELETE - Deletar um carrinho quando \"cancelar uma compra\" que não existe para o usuário",
+  "fullName" : "/DELETE - Deletar um carrinho quando \"cancelar uma compra\" que não existe para o usuário",
+  "historyId" : "b77be26bc9622422b0f2cc9bc4c4586f",
+  "time" : {
+    "start" : 1620158145057,
+    "stop" : 1620158145110,
+    "duration" : 53
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1620158145057,
+        "stop" : 1620158145098,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "registerUserWithLogin (\"Korey Hirthe\"; \"Dedrick36@gmail.com\"; \"4nhqwBoZk3VIg08\")",
+        "time" : {
+          "start" : 1620158145068,
+          "stop" : 1620158145090,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "registerUser (\"Korey Hirthe\"; \"Dedrick36@gmail.com\"; \"4nhqwBoZk3VIg08\"; \"true\")",
+          "time" : {
+            "start" : 1620158145069,
+            "stop" : 1620158145076,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "request (\"[object Object]\")",
+            "time" : {
+              "start" : 1620158145069,
+              "stop" : 1620158145076,
+              "duration" : 7
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+          "time" : {
+            "start" : 1620158145078,
+            "stop" : 1620158145078,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "getToken (\"Dedrick36@gmail.com\"; \"4nhqwBoZk3VIg08\")",
+          "time" : {
+            "start" : 1620158145078,
+            "stop" : 1620158145090,
+            "duration" : 12
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "doLogin (\"Dedrick36@gmail.com\"; \"4nhqwBoZk3VIg08\")",
+            "time" : {
+              "start" : 1620158145078,
+              "stop" : 1620158145085,
+              "duration" : 7
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "request (\"[object Object]\")",
+              "time" : {
+                "start" : 1620158145078,
+                "stop" : 1620158145085,
+                "duration" : 7
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 0,
+              "shouldDisplayMessage" : false,
+              "hasContent" : false
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 1,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "log (\"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkRlZHJpY2szNkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IjRuaHF3Qm9aazNWSWcwOCIsImlhdCI6MTYyMDE1ODE0NSwiZXhwIjoxNjIwMTU4NzQ1fQ.ljaI1cn4yw_MvzmkTplD8ul4-INoXVzyEm7I9s4Jp4Y\")",
+            "time" : {
+              "start" : 1620158145088,
+              "stop" : 1620158145089,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          }, {
+            "name" : "expected **Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkRlZHJpY2szNkBnbWFpbC5jb20iLCJwYXNzd29yZCI6IjRuaHF3Qm9aazNWSWcwOCIsImlhdCI6MTYyMDE1ODE0NSwiZXhwIjoxNjIwMTU4NzQ1fQ.ljaI1cn4yw_MvzmkTplD8ul4-INoXVzyEm7I9s4Jp4Y** not to be null assert",
+            "time" : {
+              "start" : 1620158145090,
+              "stop" : 1620158145090,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          }, {
+            "name" : "expected **200** to equal **200** assert",
+            "time" : {
+              "start" : 1620158145090,
+              "stop" : 1620158145090,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 5,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 9,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "registerProduct (\"Awesome Steel Shirt\"; \"968.00\"; \"The Football Is Good For Training And Recreational Purposes\"; \"3062\")",
+        "time" : {
+          "start" : 1620158145090,
+          "stop" : 1620158145097,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "request (\"[object Object]\")",
+          "time" : {
+            "start" : 1620158145090,
+            "stop" : 1620158145097,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 12,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "deleteWhenCancelCart",
+      "time" : {
+        "start" : 1620158145099,
+        "stop" : 1620158145106,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620158145099,
+          "stop" : 1620158145106,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Não foi encontrado carrinho para esse usuário** to equal **Não foi encontrado carrinho para esse usuário** assert",
+      "time" : {
+        "start" : 1620158145109,
+        "stop" : 1620158145109,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **200** to equal **200** assert",
+      "time" : {
+        "start" : 1620158145109,
+        "stop" : 1620158145109,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 17,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Deletar Carrinhos quando \"Cancelar uma Compra\" Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "c64ced2c3bbf6946",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/39//#testresult/c64ced2c3bbf6946",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620157044161,
+          "stop" : 1620157044197,
+          "duration" : 36
+        }
+      }, {
+        "uid" : "b02f14d140234d0b",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/38//#testresult/b02f14d140234d0b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156908827,
+          "stop" : 1620156908880,
+          "duration" : 53
+        }
+      }, {
+        "uid" : "56bb3d46b77a0015",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/56bb3d46b77a0015",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156060585,
+          "stop" : 1620156060638,
+          "duration" : 53
+        }
+      }, {
+        "uid" : "7e0b426bd19bd43",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/7e0b426bd19bd43",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155836089,
+          "stop" : 1620155836145,
+          "duration" : 56
+        }
+      }, {
+        "uid" : "ab7c95528ae8d50e",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/ab7c95528ae8d50e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155693698,
+          "stop" : 1620155693743,
+          "duration" : 45
+        }
+      }, {
+        "uid" : "c04711290e722009",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/c04711290e722009",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150424160,
+          "stop" : 1620150424207,
+          "duration" : 47
+        }
+      }, {
+        "uid" : "1b717c9f184233fc",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/1b717c9f184233fc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149635377,
+          "stop" : 1620149635424,
+          "duration" : 47
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e394d811bb6dcbd9.json",
+  "parameterValues" : [ ]
+}
