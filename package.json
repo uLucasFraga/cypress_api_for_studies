@@ -31,7 +31,7 @@
     "allure:generate": "allure generate allure-results",
     "allure:open": "allure open allure-report",
     "allure:clear": "rm -rf allure-results/ allure-report || true",
-    "cy:run": "npx cypress run --env allure=true --spec 'cypress/integration/tests/**/*.spec.js'",
+    "cy:run": "cypress run --spec 'cypress/integration/tests/**/*.spec.js'",
     "postcy:run": "npm run allure:generate && npm run allure:open",
     "cy:open": "cypress open",
     "test": "npm-run-all allure:clear cy:run allure:generate",
