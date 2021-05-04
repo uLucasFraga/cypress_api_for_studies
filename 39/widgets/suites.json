@@ -1,0 +1,114 @@
+{
+  "total" : 19,
+  "items" : [ {
+    "uid" : "92ffaca0b1c86fbea03057bd84fb72d6",
+    "name" : "[INTEGRATION] :: Listar Carrinhos",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 15,
+      "unknown" : 0,
+      "total" : 15
+    }
+  }, {
+    "uid" : "2b40ea0962fbe4a6a075e3aee6dab27b",
+    "name" : "[INTEGRATION] :: Cadastrar Produtos com Token de autorização",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 11,
+      "unknown" : 0,
+      "total" : 11
+    }
+  }, {
+    "uid" : "c678d731169861eeec45ff5486af2d8a",
+    "name" : "[INTEGRATION] :: Editar Usuários",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 11,
+      "unknown" : 0,
+      "total" : 11
+    }
+  }, {
+    "uid" : "7104d230c71976778011569f9d0102e8",
+    "name" : "[INTEGRATION] :: Listar Produtos",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "069446d563e884ccb385dfced6216302",
+    "name" : "[INTEGRATION] :: Listar Usuários",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "c7dab181ec077b7bc139b0675205c828",
+    "name" : "[INTEGRATION] :: Realizar Login",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 8
+    }
+  }, {
+    "uid" : "ff235d544dacc7b890be6d029fe1169d",
+    "name" : "[INTEGRATION] :: Cadastrar Usuários",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
+    "uid" : "8be18f217360a97e47f9d4793f8c9a77",
+    "name" : "[INTEGRATION] :: Cadastrar Carrinhos com Token de autorização",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "2033a67bda9a52229521c08477b07fa6",
+    "name" : "[INTEGRATION] :: Deletar Produtos",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "a828cece111f49892c86fda1e844be7e",
+    "name" : "[INTEGRATION] :: Deletar Usuários",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  } ]
+}
