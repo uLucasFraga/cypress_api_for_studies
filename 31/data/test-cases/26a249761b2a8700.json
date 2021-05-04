@@ -1,0 +1,125 @@
+{
+  "uid" : "26a249761b2a8700",
+  "name" : "/POST - Cadastrar um usuário sem a flag de admin",
+  "fullName" : "/POST - Cadastrar um usuário sem a flag de admin",
+  "historyId" : "9923f376c7f3ee202470edadd6edc0ad",
+  "time" : {
+    "start" : 1620148688827,
+    "stop" : 1620148688852,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerUser (\"Albina Kuphal\"; \"Corbin56@hotmail.com\"; \"5Zq9sUxjQKYEyJx\"; \"\")",
+      "time" : {
+        "start" : 1620148688837,
+        "stop" : 1620148688847,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620148688837,
+          "stop" : 1620148688847,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "expected **administrador deve ser 'true' ou 'false'** to equal **administrador deve ser **'true'** ou **'false'**** assert",
+      "time" : {
+        "start" : 1620148688850,
+        "stop" : 1620148688850,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "expected **400** to equal **400** assert",
+      "time" : {
+        "start" : 1620148688851,
+        "stop" : 1620148688851,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Cadastrar Usuários"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "d27c1c88cd4af441",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/30//#testresult/d27c1c88cd4af441",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620147835200,
+          "stop" : 1620147835216,
+          "duration" : 16
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "26a249761b2a8700.json",
+  "parameterValues" : [ ]
+}
