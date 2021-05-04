@@ -4,6 +4,7 @@
 [![SERVREST API](https://img.shields.io/badge/API-ServeRest-green)](https://github.com/PauloGoncalvesBH/ServeRest/)
 [![CONTINUOUS INTEGRATIONS](https://github.com/uLucasFraga/cypress_api_for_studies/actions/workflows/ci.yml/badge.svg)](https://github.com/uLucasFraga/cypress_api_for_studies/actions/workflows/ci.yml)
 [![CODE QUALITY](https://www.code-inspector.com/project/21255/score/svg)](https://frontend.code-inspector.com/public/project/21255/cypress_api_for_studies/dashboard)
+[![REPORT](https://img.shields.io/badge/report-valid-brightgreen)](https://ulucasfraga.github.io/cypress_api_for_studies/)
 
 
 Repositório com exemplos de testes automatizados para API Rest utilizando os frameworks e lib:
@@ -35,7 +36,6 @@ Hoje precisamos ter testes mais rápidos, fáceis e confiáveis para qualquer co
 
 -----------------------
 
-
 ### Pré Requisitos
 
 - [node e npm](https://nodejs.org/en/)
@@ -44,12 +44,11 @@ Hoje precisamos ter testes mais rápidos, fáceis e confiáveis para qualquer co
 
 -----------------------
 
-
 ### Configuração
 
 - Criar um arquivo na raiz do projeto chamado _cypress.env.json_ e incluir os seguintes dados:
 
-```
+```json
 {
     "EMAIL": "email@valido.com",
     "PASSWORD": "senha_valida"
@@ -63,56 +62,90 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 -----------------------
 
-
 ### Instalação
 
 > Clonar projeto
 
-- Clonar este repositório usando _ssh_ ou _https_, por exemplo:
+- Clonar este repositório usando _ssh_ ou _https_.
 
-`git clone https://github.com/uLucasFraga/cypress_api_for_studies.git`
+> exemplo:
 
-- Instalar todas as dependências via package.json, por exemplo:
+```js
+$ git clone https://github.com/uLucasFraga/cypress_api_for_studies.git
+```
 
-`cd /{desafio_api_for_studies} && npm ci`
+- Instalar todas as dependências via package.json:
 
+> exemplo:
+
+```js
+$ cd /cypress_api_for_studies && npm ci
+```
 
 > Dicas
 
-- Utilize o seu _package.json_ para incluir ou excluir novas libs ao seu projeto
+- Utilize o seu _package-lock.json_ para versionar as dependências do seu projeto.
 
 
 -----------------------
-
 
 ### Como testar
 
+> Para instalar as dependências do repositório:
 
-> Para instalar as dependências do repositório
+```js
+$ npm ci
+```
 
-`npm ci`
+> Para rodas os testes:
 
-> Para limpar o repositório
+```js
+$ npm test
+```
 
-`npm run precy:run`
+> Para rodar os testes no modo interativo do cypress:
 
-> Para rodar os testes no modo interativo do cypress
+```js
+$ npm run cy:open
+```
 
-`npm run cy:open`
+> Para rodar os testes no modo headless do cypress:
 
-> Para rodar todos os testes do repositório
-
-`npm run cy:run`
-
+```js
+$ npm run cy:run
+```
 
 -----------------------
 
-
 ### Reporte
 
-> Para gerar relatórios depois dos testes:
+> Para gerar relatórios depois dos testes localmente:
 
-`npm run postcy:run`
+```js
+$ npm run allure:report
+```
+
+> Para gerar um histórico de relatórios depois dos testes localmente:
+
+```js
+$ npm run allure:history
+```
+
+> Para limpar os relatórios dos testes localmente:
+
+```js
+$ npm run allure:clear
+```
+
+-----------------------
+
+##### Visualizar report:
+
+Acessar o report através do github-pages: [GH-PAGES](https://ulucasfraga.github.io/cypress_api_for_studies/)
+
+> exemplo:
+
+[![GH-PAGES](https://i.imgur.com/X19M47D.png)](https://ulucasfraga.github.io/cypress_api_for_studies/)
 
 
 -----------------------
@@ -120,13 +153,12 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 ### Suporte
 
-- Linkedin <a href="https://www.linkedin.com/in/ulucasfraga/" target="_blank">`Lucas Fraga`</a>
+- Linkedin: <a href="https://www.linkedin.com/in/ulucasfraga/" target="_blank">**Lucas Fraga**</a>
 
-- E-mail: `lucass.fragaa@gmail.com`
+- E-mail: **lucass.fragaa@gmail.com**
 
 
 -----------------------
-
 
 ### Licença
 
@@ -134,4 +166,3 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 - Copyright 2021 © <a href="https://www.linkedin.com/in/ulucasfraga" target="_blank">Lucas Fraga</a>
-

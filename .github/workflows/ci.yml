@@ -1,8 +1,10 @@
 name: CONTINUOUS INTEGRATIONS
 on:
-  pull_request:
+  pull_request: null
+  push:
     branches:
       - main
+  workflow_dispatch: null
 jobs:
   lint:
     runs-on: ubuntu-18.04
@@ -46,11 +48,8 @@ jobs:
       - name: Allure report action
         uses: simple-elf/allure-report-action@master
         if: always()
-        #id: allure-report
         with:
           allure_results: allure-results
-          #gh_pages: gh-pages
-          #allure_report: allure-report
           allure_history: allure-history
       - name: Deploy report to github pages
         if: always()

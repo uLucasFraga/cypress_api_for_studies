@@ -29,11 +29,11 @@
   },
   "scripts": {
     "allure:report": "allure generate allure-results --clean -o allure-report",
-    "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
     "allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report || true",
+    "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
     "cy:open": "npx cypress open --env allure=true",
     "cy:run": "npx cypress run --env allure=true",
-    "test": "npm-run-all allure:clear cy:run allure:generate",
+    "test": "npm-run-all allure:clear cy:run allure:report",
     "lint": "standard",
     "lint:fix": "standard --fix"
   },
