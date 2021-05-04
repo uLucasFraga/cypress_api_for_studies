@@ -21,6 +21,8 @@ jobs:
       - name: lint
         run: npm run lint
   integration-local:
+    needs:
+      - lint
     runs-on: ubuntu-18.04
     steps:
       - name: checkout
