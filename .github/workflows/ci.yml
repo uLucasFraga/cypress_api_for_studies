@@ -31,7 +31,7 @@ jobs:
           node-version: 10
       - name: installation of dependencies
         run: npm ci
-      - name: start ServeRest locally
+      - name: start serverest locally
         run: 'docker run -d -p 3000:3000 paulogoncalvesbh/serverest'
       - name: api tests
         run: 'npm run cy:run'
