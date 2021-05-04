@@ -143,7 +143,7 @@ $ npm run allure:clear
 
 > Para visualizar os relatórios através do gh-pages, acessar:
 
-[![GH-PAGES](<img width="1413" alt="allure-report" src="https://user-images.githubusercontent.com/23031781/117055056-1b4c1980-acf1-11eb-9e41-81928ffbb186.png">)](https://ulucasfraga.github.io/cypress_api_for_studies/)
+[![GH-PAGES](https://i.imgur.com/X19M47D.png)](https://ulucasfraga.github.io/cypress_api_for_studies/)
 
 
 -----------------------
