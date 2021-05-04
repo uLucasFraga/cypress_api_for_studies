@@ -1,0 +1,311 @@
+{
+  "uid" : "b611b8701fab2275",
+  "name" : "/POST - Cadastrar um produto válido com utilização de token",
+  "fullName" : "/POST - Cadastrar um produto válido com utilização de token",
+  "historyId" : "bf2816cf66b9b243d6f577960ca0ecd4",
+  "time" : {
+    "start" : 1620159342132,
+    "stop" : 1620159342169,
+    "duration" : 37
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1620159342132,
+        "stop" : 1620159342154,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "getToken",
+        "time" : {
+          "start" : 1620159342139,
+          "stop" : 1620159342153,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "doLogin (\"fulano@qa.com\"; \"teste\")",
+          "time" : {
+            "start" : 1620159342140,
+            "stop" : 1620159342148,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "request (\"[object Object]\")",
+            "time" : {
+              "start" : 1620159342140,
+              "stop" : 1620159342148,
+              "duration" : 8
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "log (\"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZ1bGFub0BxYS5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjIwMTU5MzQyLCJleHAiOjE2MjAxNTk5NDJ9.Oq3W2llBSWCsnjBJHnhjsJYRXq7xsq4SFricfTV3RSI\")",
+          "time" : {
+            "start" : 1620159342152,
+            "stop" : 1620159342153,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "expected **Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZ1bGFub0BxYS5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjIwMTU5MzQyLCJleHAiOjE2MjAxNTk5NDJ9.Oq3W2llBSWCsnjBJHnhjsJYRXq7xsq4SFricfTV3RSI** not to be null assert",
+          "time" : {
+            "start" : 1620159342153,
+            "stop" : 1620159342153,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "expected **200** to equal **200** assert",
+          "time" : {
+            "start" : 1620159342153,
+            "stop" : 1620159342153,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 5,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "registerProduct (\"Awesome Metal Mouse\"; \"180.00\"; \"The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J\"; \"44\")",
+      "time" : {
+        "start" : 1620159342155,
+        "stop" : 1620159342165,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620159342155,
+          "stop" : 1620159342165,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+      "time" : {
+        "start" : 1620159342168,
+        "stop" : 1620159342168,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **201** to equal **201** assert",
+      "time" : {
+        "start" : 1620159342169,
+        "stop" : 1620159342169,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Cadastrar Produtos com Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 11,
+        "unknown" : 0,
+        "total" : 11
+      },
+      "items" : [ {
+        "uid" : "e5674198eecab923",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/41//#testresult/e5674198eecab923",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620159265894,
+          "stop" : 1620159265931,
+          "duration" : 37
+        }
+      }, {
+        "uid" : "420347f40c81b576",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/41//#testresult/420347f40c81b576",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620158285492,
+          "stop" : 1620158285530,
+          "duration" : 38
+        }
+      }, {
+        "uid" : "38e651aab6f569a6",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/40//#testresult/38e651aab6f569a6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620158173580,
+          "stop" : 1620158173620,
+          "duration" : 40
+        }
+      }, {
+        "uid" : "c5ab37cee61dda78",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/39//#testresult/c5ab37cee61dda78",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620157067648,
+          "stop" : 1620157067683,
+          "duration" : 35
+        }
+      }, {
+        "uid" : "636cf61203a53334",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/38//#testresult/636cf61203a53334",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156940039,
+          "stop" : 1620156940080,
+          "duration" : 41
+        }
+      }, {
+        "uid" : "98235e8c21cdbf1",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/98235e8c21cdbf1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156090296,
+          "stop" : 1620156090333,
+          "duration" : 37
+        }
+      }, {
+        "uid" : "ba8c2a69da06d313",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/ba8c2a69da06d313",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155865161,
+          "stop" : 1620155865203,
+          "duration" : 42
+        }
+      }, {
+        "uid" : "f10a65f52e385335",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/f10a65f52e385335",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155721112,
+          "stop" : 1620155721151,
+          "duration" : 39
+        }
+      }, {
+        "uid" : "abca8b4089094ea1",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/abca8b4089094ea1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150452660,
+          "stop" : 1620150452698,
+          "duration" : 38
+        }
+      }, {
+        "uid" : "d0105a731276085c",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/d0105a731276085c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149665210,
+          "stop" : 1620149665284,
+          "duration" : 74
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b611b8701fab2275.json",
+  "parameterValues" : [ ]
+}

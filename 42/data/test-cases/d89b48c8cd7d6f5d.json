@@ -1,0 +1,276 @@
+{
+  "uid" : "d89b48c8cd7d6f5d",
+  "name" : "/POST - Realizar login sem preencher o email do usuário",
+  "fullName" : "/POST - Realizar login sem preencher o email do usuário",
+  "historyId" : "807f9ebcf90b271294e9b92a3ebe1dcb",
+  "time" : {
+    "start" : 1620159329912,
+    "stop" : 1620159329927,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerUser (\"Elisabeth Cummings\"; \"Willard_Paucek@yahoo.com\"; \"plSCoB5Jpc8Gor1\"; \"false\")",
+      "time" : {
+        "start" : 1620159329807,
+        "stop" : 1620159329826,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620159329811,
+          "stop" : 1620159329826,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+      "time" : {
+        "start" : 1620159329833,
+        "stop" : 1620159329833,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **201** to equal **201** assert",
+      "time" : {
+        "start" : 1620159329833,
+        "stop" : 1620159329833,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "doLogin (\"\"; \"teste\")",
+      "time" : {
+        "start" : 1620159329917,
+        "stop" : 1620159329923,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620159329917,
+          "stop" : 1620159329923,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **email não pode ficar em branco** to equal **email não pode ficar em branco** assert",
+      "time" : {
+        "start" : 1620159329926,
+        "stop" : 1620159329926,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **400** to equal **400** assert",
+      "time" : {
+        "start" : 1620159329927,
+        "stop" : 1620159329927,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Realizar Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 11,
+        "unknown" : 0,
+        "total" : 11
+      },
+      "items" : [ {
+        "uid" : "ee0208b0729961b8",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/41//#testresult/ee0208b0729961b8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620159253391,
+          "stop" : 1620159253407,
+          "duration" : 16
+        }
+      }, {
+        "uid" : "1e4be419a8ff1520",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/41//#testresult/1e4be419a8ff1520",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620158272846,
+          "stop" : 1620158272863,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "31166e3b9a8c7914",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/40//#testresult/31166e3b9a8c7914",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620158161546,
+          "stop" : 1620158161561,
+          "duration" : 15
+        }
+      }, {
+        "uid" : "9146f91ba10795d1",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/39//#testresult/9146f91ba10795d1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620157057646,
+          "stop" : 1620157057667,
+          "duration" : 21
+        }
+      }, {
+        "uid" : "5eb4134ebd1e6a61",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/38//#testresult/5eb4134ebd1e6a61",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156927043,
+          "stop" : 1620156927076,
+          "duration" : 33
+        }
+      }, {
+        "uid" : "a888a4f29ea7cf8d",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/a888a4f29ea7cf8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156077804,
+          "stop" : 1620156077819,
+          "duration" : 15
+        }
+      }, {
+        "uid" : "63a5922bd4a627ca",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/63a5922bd4a627ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155852703,
+          "stop" : 1620155852720,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "98ca274076399a8f",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/98ca274076399a8f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155709331,
+          "stop" : 1620155709346,
+          "duration" : 15
+        }
+      }, {
+        "uid" : "86e2089d38db65f5",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/86e2089d38db65f5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150440682,
+          "stop" : 1620150440700,
+          "duration" : 18
+        }
+      }, {
+        "uid" : "fa58b6c0f114bd80",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/fa58b6c0f114bd80",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149652662,
+          "stop" : 1620149652682,
+          "duration" : 20
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d89b48c8cd7d6f5d.json",
+  "parameterValues" : [ ]
+}
