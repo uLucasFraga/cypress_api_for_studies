@@ -36,7 +36,6 @@ Hoje precisamos ter testes mais rápidos, fáceis e confiáveis para qualquer co
 
 -----------------------
 
-
 ### Pré Requisitos
 
 - [node e npm](https://nodejs.org/en/)
@@ -45,12 +44,11 @@ Hoje precisamos ter testes mais rápidos, fáceis e confiáveis para qualquer co
 
 -----------------------
 
-
 ### Configuração
 
 - Criar um arquivo na raiz do projeto chamado _cypress.env.json_ e incluir os seguintes dados:
 
-```
+```json
 {
     "EMAIL": "email@valido.com",
     "PASSWORD": "senha_valida"
@@ -64,7 +62,6 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 -----------------------
 
-
 ### Instalação
 
 > Clonar projeto
@@ -73,25 +70,26 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 > exemplo:
 
-`git clone https://github.com/uLucasFraga/cypress_api_for_studies.git`
+```bash
+$ git clone https://github.com/uLucasFraga/cypress_api_for_studies.git
+```
 
 - Instalar todas as dependências via package.json:
 
 > exemplo:
 
-`cd /{cypress_api_for_studies} && npm ci`
-
+```bash
+$ cd /{cypress_api_for_studies} && npm ci
+```
 
 > Dicas
 
-- Utilize o seu _package-lock.json_ para incluir ou excluir novas libs ao seu projeto
+- Utilize o seu _package-lock.json_ para versionar as dependências do seu projeto.
 
 
 -----------------------
 
-
 ### Como testar
-
 
 > Para instalar as dependências do repositório:
 
@@ -117,9 +115,7 @@ $ npm run cy:open
 $ npm run cy:run
 ```
 
-
 -----------------------
-
 
 ### Reporte
 
@@ -141,14 +137,15 @@ $ npm run allure:history
 $ npm run allure:clear
 ```
 
-###### Visualizar report:
+-----------------------
 
-Para visualizar report: [REPORT:GH-PAGES](https://ulucasfraga.github.io/cypress_api_for_studies/)
+##### Visualizar report:
+
+Acessar o report através do github-pages: [GH-PAGES](https://ulucasfraga.github.io/cypress_api_for_studies/)
 
 > exemplo:
 
 [![GH-PAGES](https://i.imgur.com/X19M47D.png)](https://ulucasfraga.github.io/cypress_api_for_studies/)
-
 
 
 -----------------------
@@ -163,11 +160,9 @@ Para visualizar report: [REPORT:GH-PAGES](https://ulucasfraga.github.io/cypress_
 
 -----------------------
 
-
 ### Licença
 
 [![Licença](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 - Copyright 2021 © <a href="https://www.linkedin.com/in/ulucasfraga" target="_blank">Lucas Fraga</a>
-
