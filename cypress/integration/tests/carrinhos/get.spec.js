@@ -7,9 +7,34 @@ import dataCarts from '../../../fixtures/carrinhos.json'
 const httpStatus = require('http-status-codes')
 
 describe('[INTEGRATION] :: Listar Carrinhos', () => {
+  let _id
   let qtd
   let totalPrice
   let totalQtd
+
+  beforeEach(() => {
+    cy.registerUserWithLogin(
+      `${faker.name.firstName()} ${faker.name.lastName()}`,
+      faker.internet.email(),
+      faker.internet.password()
+    )
+
+    cy.registerProduct(
+      faker.commerce.productName(),
+      faker.commerce.price(),
+      faker.commerce.productDescription(),
+      faker.datatype.number({ min: 1, max: 500 })
+    )
+      .then((response) => {
+        _id = response.body._id
+      })
+
+    cy.registerCart(_id, 1)
+      .then((response) => {
+        expect(response.status).to.eq(httpStatus.StatusCodes.CREATED)
+        expect(response.body.message).to.eq('Cadastro realizado com sucesso')
+      })
+  })
 
   it('/GET - Listar todos os carrinhos cadastrados', () => {
     cy.consultCart()
@@ -21,7 +46,7 @@ describe('[INTEGRATION] :: Listar Carrinhos', () => {
   })
 
   it('/GET - Listar carrinhos cadastrados pelo _id', () => {
-    cy.consultCartById(dataCarts.carrinhos[0]._id)
+    cy.consultCartById(_id)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.idUsuario).to.eq(dataCarts.carrinhos[0].idUsuario)
@@ -62,7 +87,7 @@ describe('[INTEGRATION] :: Listar Carrinhos', () => {
   })
 
   it('/GET - Listar carrinhos cadastrados pelo preço total inválido', () => {
-    cy.consultCart(faker.commerce.price(500000), {}, {})
+    cy.consultCart(faker.commerce.price({ min: 5000, max: 10000 }), {}, {})
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.quantidade).to.eq(0)
@@ -79,7 +104,7 @@ describe('[INTEGRATION] :: Listar Carrinhos', () => {
   })
 
   it('/GET - Listar carrinhos cadastrados pela quantidade total inválido', () => {
-    cy.consultCart({}, faker.datatype.number({min: 500, max: 5000}))
+    cy.consultCart({}, faker.datatype.number({ min: 5000, max: 10000 }))
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.quantidade).to.eq(0)
