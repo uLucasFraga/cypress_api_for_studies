@@ -4,6 +4,7 @@
 [![SERVREST API](https://img.shields.io/badge/API-ServeRest-green)](https://github.com/PauloGoncalvesBH/ServeRest/)
 [![CONTINUOUS INTEGRATIONS](https://github.com/uLucasFraga/cypress_api_for_studies/actions/workflows/ci.yml/badge.svg)](https://github.com/uLucasFraga/cypress_api_for_studies/actions/workflows/ci.yml)
 [![CODE QUALITY](https://www.code-inspector.com/project/21255/score/svg)](https://frontend.code-inspector.com/public/project/21255/cypress_api_for_studies/dashboard)
+[![REPORT DOCS](http://inch-ci.org/github/ulucasfraga/cypress_api_for_studies.svg?branch=main)](http://inch-ci.org/github/ulucasfraga/cypress_api_for_studies)
 
 
 Repositório com exemplos de testes automatizados para API Rest utilizando os frameworks e lib:
