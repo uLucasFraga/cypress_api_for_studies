@@ -1,0 +1,293 @@
+{
+  "uid" : "6c628191e71a7c93",
+  "name" : "/POST - Cadastrar um produto com o mesmo nome",
+  "fullName" : "/POST - Cadastrar um produto com o mesmo nome",
+  "historyId" : "eee3e2296280d92c644dceaabf9f8707",
+  "time" : {
+    "start" : 1620158285532,
+    "stop" : 1620158285566,
+    "duration" : 34
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1620158285533,
+        "stop" : 1620158285551,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "getToken",
+        "time" : {
+          "start" : 1620158285538,
+          "stop" : 1620158285551,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "doLogin (\"fulano@qa.com\"; \"teste\")",
+          "time" : {
+            "start" : 1620158285538,
+            "stop" : 1620158285545,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "request (\"[object Object]\")",
+            "time" : {
+              "start" : 1620158285539,
+              "stop" : 1620158285545,
+              "duration" : 6
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "log (\"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZ1bGFub0BxYS5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjIwMTU4Mjg1LCJleHAiOjE2MjAxNTg4ODV9.2buU7bR45fOzlGwzSIxzRSZUlYheWrIQeBnn5Sfwfs4\")",
+          "time" : {
+            "start" : 1620158285549,
+            "stop" : 1620158285550,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "expected **Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZ1bGFub0BxYS5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjIwMTU4Mjg1LCJleHAiOjE2MjAxNTg4ODV9.2buU7bR45fOzlGwzSIxzRSZUlYheWrIQeBnn5Sfwfs4** not to be null assert",
+          "time" : {
+            "start" : 1620158285550,
+            "stop" : 1620158285550,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "expected **200** to equal **200** assert",
+          "time" : {
+            "start" : 1620158285551,
+            "stop" : 1620158285551,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 5,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "registerProduct (\"Tasty Steel Chips\"; \"836.00\"; \"Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles\"; \"93\")",
+      "time" : {
+        "start" : 1620158285552,
+        "stop" : 1620158285562,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620158285552,
+          "stop" : 1620158285562,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Já existe produto com esse nome** to equal **Já existe produto com esse nome** assert",
+      "time" : {
+        "start" : 1620158285565,
+        "stop" : 1620158285565,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **400** to equal **400** assert",
+      "time" : {
+        "start" : 1620158285565,
+        "stop" : 1620158285565,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Cadastrar Produtos com Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 9,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "c48ae8c7491c49a3",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/40//#testresult/c48ae8c7491c49a3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620158173623,
+          "stop" : 1620158173658,
+          "duration" : 35
+        }
+      }, {
+        "uid" : "db4188faabf811d2",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/39//#testresult/db4188faabf811d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620157067686,
+          "stop" : 1620157067715,
+          "duration" : 29
+        }
+      }, {
+        "uid" : "30406d27068c0548",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/38//#testresult/30406d27068c0548",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156940082,
+          "stop" : 1620156940118,
+          "duration" : 36
+        }
+      }, {
+        "uid" : "d5eaf2f77ff51d6",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/d5eaf2f77ff51d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156090336,
+          "stop" : 1620156090369,
+          "duration" : 33
+        }
+      }, {
+        "uid" : "f2291c33ddaa2a0b",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/f2291c33ddaa2a0b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155865206,
+          "stop" : 1620155865240,
+          "duration" : 34
+        }
+      }, {
+        "uid" : "81af5d9e8432cd39",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/81af5d9e8432cd39",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155721154,
+          "stop" : 1620155721184,
+          "duration" : 30
+        }
+      }, {
+        "uid" : "fcb2310f878b4f6b",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/fcb2310f878b4f6b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150452700,
+          "stop" : 1620150452734,
+          "duration" : 34
+        }
+      }, {
+        "uid" : "e1936687472205d1",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/e1936687472205d1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149665287,
+          "stop" : 1620149665323,
+          "duration" : 36
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6c628191e71a7c93.json",
+  "parameterValues" : [ ]
+}
