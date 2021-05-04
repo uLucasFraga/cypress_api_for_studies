@@ -70,7 +70,7 @@ O arquivo **_cypress.env.json_** neste projeto, encontra-se no _.gitignore_. Log
 
 > exemplo:
 
-```bash
+```js
 $ git clone https://github.com/uLucasFraga/cypress_api_for_studies.git
 ```
 
@@ -78,8 +78,8 @@ $ git clone https://github.com/uLucasFraga/cypress_api_for_studies.git
 
 > exemplo:
 
-```bash
-$ cd /{cypress_api_for_studies} && npm ci
+```js
+$ cd /cypress_api_for_studies && npm ci
 ```
 
 > Dicas
@@ -93,25 +93,25 @@ $ cd /{cypress_api_for_studies} && npm ci
 
 > Para instalar as dependências do repositório:
 
-```bash
+```js
 $ npm ci
 ```
 
 > Para rodas os testes:
 
-```bash
+```js
 $ npm test
 ```
 
 > Para rodar os testes no modo interativo do cypress:
 
-```bash
+```js
 $ npm run cy:open
 ```
 
 > Para rodar os testes no modo headless do cypress:
 
-```bash
+```js
 $ npm run cy:run
 ```
 
@@ -121,19 +121,19 @@ $ npm run cy:run
 
 > Para gerar relatórios depois dos testes localmente:
 
-```bash
+```js
 $ npm run allure:report
 ```
 
 > Para gerar um histórico de relatórios depois dos testes localmente:
 
-```bash
+```js
 $ npm run allure:history
 ```
 
 > Para limpar os relatórios dos testes localmente:
 
-```bash
+```js
 $ npm run allure:clear
 ```
 
