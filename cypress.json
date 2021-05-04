@@ -1,6 +1,6 @@
 {
   "projectId": "tq93d8",
-  "baseUrl": "https://serverest.dev",
+  "baseUrl": "http://localhost:3000",
   "screenshot": false,
   "video": false
 }
