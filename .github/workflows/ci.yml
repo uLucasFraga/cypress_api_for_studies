@@ -1,5 +1,5 @@
 name: CONTINUOUS INTEGRATIONS
-on:
+'on':
   push:
     branches-ignore:
       - '!main'
@@ -17,8 +17,8 @@ jobs:
         run: npm ci
       - name: lint
         run: npm run lint
-  integration-local:
-    runs-on: ubuntu-18.04
+  generate-report:
+    runs-on: ubuntu-16.04
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -26,6 +26,23 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 10
+      - name: check cypress cache
+        run: |
+          npx cypress cache path
+          npx cypress cache list
+      - name: restore or cache the binary
+        id: cache-cypress
+        uses: actions/cache@v1
+        with:
+          path: ~/.cache/Cypress
+          key: >-
+            cypress-cache-v2-${{ runner.os }}-${{ hashFiles('**/package.json')
+            }}
+      - name: prepare allure history
+        run: |
+          rm -r allure-results/*
+          cp -r ./allure-report/history ./allure-results/history
+          rm -r allure-report/*
       - name: installation of dependencies
         run: npm ci
       - name: start serverest locally
@@ -36,54 +53,20 @@ jobs:
           CYPRESS_APP_URL: 'http://localhost:3000'
           CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
           CYPRESS_PASSWORD: '${{ secrets.PASSWORD }}'
-  generate-report:
-        needs:
-        - integration-local
-        runs-on: ubuntu-16.04
-        steps:
-            - uses: actions/checkout@v2
-            - name: Download Cypress
-              uses: bahmutov/npm-install@v1
-              env:
-                  CYPRESS_INSTALL_BINARY: 0
-
-            - name: check cypress cache
-              run: |
-                  npx cypress cache path
-                  npx cypress cache list
-            - name: restore / cache the binary
-              id: cache-cypress
-              uses: actions/cache@v1
-              with:
-                  path: ~/.cache/Cypress
-                  key: >-
-                      cypress-cache-v2-${{ runner.os }}-${{ hashFiles('**/package.json')
-                      }}
-            - name: prepare allure history
-              run: |
-                  rm -r allure-results/*
-                  cp -r ./allure-report/history ./allure-results/history
-                  rm -r allure-report/*
-            - name: install cypress
-              run: |
-                  npx cypress install
-                  npx cypress cache list
-            - name: run cypress
-              run: npm run cy:run
-            - name: generate allure report
-              if: always()
-              uses: afiore/action-allure-report@v0.1.0
-            - name: commit report results
-              if: always()
-              run: |
-                  git config --local user.email "lucass.fragaa@gmail.com"
-                  git config --local user.name "Lucas Fraga"
-                  git add allure-report -f
-                  git add allure-results -f
-                  git commit -m "[chore] autogenerate Allure report" -a
-            - name: push changes
-              if: always()
-              uses: ad-m/github-push-action@master
-              with:
-                  github_token: '${{ secrets.GH_TOKEN }}'
-                  force: true
+      - name: generate allure report
+        if: always()
+        uses: afiore/action-allure-report@v0.1.0
+      - name: commit report results
+        if: always()
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add allure-report -f
+          git add allure-results -f
+          git commit -m "[chore] autogenerate Allure report" -a
+      - name: push changes
+        if: always()
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: '${{ secrets.GH_TOKEN }}'
+          force: true
