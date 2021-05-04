@@ -1,0 +1,231 @@
+{
+  "uid" : "292d19ba4bb1104d",
+  "name" : "/DELETE - Deletar um usuário válido",
+  "fullName" : "/DELETE - Deletar um usuário válido",
+  "historyId" : "b5409526436607381e45c2d3fd6e9ad3",
+  "time" : {
+    "start" : 1620156951555,
+    "stop" : 1620156951590,
+    "duration" : 35
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerUser (\"Kristy Champlin\"; \"Aidan20@yahoo.com\"; \"XP_yMyJty3Ec69V\"; \"false\")",
+      "time" : {
+        "start" : 1620156951493,
+        "stop" : 1620156951536,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620156951505,
+          "stop" : 1620156951536,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+      "time" : {
+        "start" : 1620156951545,
+        "stop" : 1620156951545,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "expected **201** to equal **201** assert",
+      "time" : {
+        "start" : 1620156951545,
+        "stop" : 1620156951545,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "deleteUser (\"1O3Sdle66nCfR3J5\")",
+      "time" : {
+        "start" : 1620156951559,
+        "stop" : 1620156951585,
+        "duration" : 26
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620156951559,
+          "stop" : 1620156951585,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "expected **Registro excluído com sucesso** to equal **Registro excluído com sucesso** assert",
+      "time" : {
+        "start" : 1620156951589,
+        "stop" : 1620156951589,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "expected **200** to equal **200** assert",
+      "time" : {
+        "start" : 1620156951589,
+        "stop" : 1620156951589,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Deletar Usuários"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "1ab3ad1251be517e",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/1ab3ad1251be517e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156101282,
+          "stop" : 1620156101303,
+          "duration" : 21
+        }
+      }, {
+        "uid" : "c0560377dc633c40",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/c0560377dc633c40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155876017,
+          "stop" : 1620155876034,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "d7f52249d3a5d997",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/d7f52249d3a5d997",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155731542,
+          "stop" : 1620155731561,
+          "duration" : 19
+        }
+      }, {
+        "uid" : "bb948845b8c69f71",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/bb948845b8c69f71",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150463192,
+          "stop" : 1620150463210,
+          "duration" : 18
+        }
+      }, {
+        "uid" : "9f4868909a14650e",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/9f4868909a14650e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149676204,
+          "stop" : 1620149676235,
+          "duration" : 31
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "292d19ba4bb1104d.json",
+  "parameterValues" : [ ]
+}

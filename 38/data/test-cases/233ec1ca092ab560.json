@@ -1,0 +1,231 @@
+{
+  "uid" : "233ec1ca092ab560",
+  "name" : "/PUT - Editar com um email inválido",
+  "fullName" : "/PUT - Editar com um email inválido",
+  "historyId" : "e6d362a69850c68ddffc937032e51052",
+  "time" : {
+    "start" : 1620156964577,
+    "stop" : 1620156964594,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerUser (\"Al Bartell\"; \"Bella70@yahoo.com\"; \"_amvrmvsuPdgljq\"; \"false\")",
+      "time" : {
+        "start" : 1620156964397,
+        "stop" : 1620156964427,
+        "duration" : 30
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620156964402,
+          "stop" : 1620156964427,
+          "duration" : 25
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+      "time" : {
+        "start" : 1620156964436,
+        "stop" : 1620156964436,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "expected **201** to equal **201** assert",
+      "time" : {
+        "start" : 1620156964436,
+        "stop" : 1620156964436,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "modifyUser (\"ncnB0M7sFE7FFbuX\"; \"Al Bartell\"; \"com.br@nao.valido\"; \"_amvrmvsuPdgljq\")",
+      "time" : {
+        "start" : 1620156964582,
+        "stop" : 1620156964590,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620156964583,
+          "stop" : 1620156964590,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "expected **email deve ser um email válido** to equal **email deve ser um email válido** assert",
+      "time" : {
+        "start" : 1620156964594,
+        "stop" : 1620156964594,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "expected **400** to equal **400** assert",
+      "time" : {
+        "start" : 1620156964594,
+        "stop" : 1620156964594,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Editar Usuários"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "39da9d4620b9c30b",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/39da9d4620b9c30b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156113574,
+          "stop" : 1620156113588,
+          "duration" : 14
+        }
+      }, {
+        "uid" : "5f759d618068ca65",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/5f759d618068ca65",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155888922,
+          "stop" : 1620155888940,
+          "duration" : 18
+        }
+      }, {
+        "uid" : "50294fa57053bb84",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/50294fa57053bb84",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155743260,
+          "stop" : 1620155743278,
+          "duration" : 18
+        }
+      }, {
+        "uid" : "153e5ffba28bd019",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/153e5ffba28bd019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150475318,
+          "stop" : 1620150475333,
+          "duration" : 15
+        }
+      }, {
+        "uid" : "1bd8985df811d603",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/1bd8985df811d603",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149688724,
+          "stop" : 1620149688741,
+          "duration" : 17
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "233ec1ca092ab560.json",
+  "parameterValues" : [ ]
+}

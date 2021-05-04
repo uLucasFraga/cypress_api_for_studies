@@ -1,0 +1,356 @@
+{
+  "uid" : "62e39f79ec86dc25",
+  "name" : "/POST - Cadastrar um carrinho cujo o produto esteja duplicado",
+  "fullName" : "/POST - Cadastrar um carrinho cujo o produto esteja duplicado",
+  "historyId" : "883720029cacc1342c90e8e743914ab0",
+  "time" : {
+    "start" : 1620156921252,
+    "stop" : 1620156921314,
+    "duration" : 62
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1620156921252,
+        "stop" : 1620156921300,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "registerUserWithLogin (\"Reinhold Cole\"; \"Mossie_Schiller52@gmail.com\"; \"hXExNtjdKWRWHZA\")",
+        "time" : {
+          "start" : 1620156921263,
+          "stop" : 1620156921289,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "registerUser (\"Reinhold Cole\"; \"Mossie_Schiller52@gmail.com\"; \"hXExNtjdKWRWHZA\"; \"true\")",
+          "time" : {
+            "start" : 1620156921264,
+            "stop" : 1620156921272,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "request (\"[object Object]\")",
+            "time" : {
+              "start" : 1620156921264,
+              "stop" : 1620156921272,
+              "duration" : 8
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true,
+          "stepsCount" : 1
+        }, {
+          "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+          "time" : {
+            "start" : 1620156921274,
+            "stop" : 1620156921274,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        }, {
+          "name" : "getToken (\"Mossie_Schiller52@gmail.com\"; \"hXExNtjdKWRWHZA\")",
+          "time" : {
+            "start" : 1620156921274,
+            "stop" : 1620156921289,
+            "duration" : 15
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "doLogin (\"Mossie_Schiller52@gmail.com\"; \"hXExNtjdKWRWHZA\")",
+            "time" : {
+              "start" : 1620156921275,
+              "stop" : 1620156921283,
+              "duration" : 8
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "request (\"[object Object]\")",
+              "time" : {
+                "start" : 1620156921275,
+                "stop" : 1620156921283,
+                "duration" : 8
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "attachmentsCount" : 0,
+              "shouldDisplayMessage" : false,
+              "hasContent" : false,
+              "stepsCount" : 0
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true,
+            "stepsCount" : 1
+          }, {
+            "name" : "log (\"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Ik1vc3NpZV9TY2hpbGxlcjUyQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiaFhFeE50amRLV1JXSFpBIiwiaWF0IjoxNjIwMTU2OTIxLCJleHAiOjE2MjAxNTc1MjF9.zSJGiSpiPKePNO3oLNQ-WAyM_IFSe8AGief-hS-7Elw\")",
+            "time" : {
+              "start" : 1620156921287,
+              "stop" : 1620156921288,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "expected **Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Ik1vc3NpZV9TY2hpbGxlcjUyQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiaFhFeE50amRLV1JXSFpBIiwiaWF0IjoxNjIwMTU2OTIxLCJleHAiOjE2MjAxNTc1MjF9.zSJGiSpiPKePNO3oLNQ-WAyM_IFSe8AGief-hS-7Elw** not to be null assert",
+            "time" : {
+              "start" : 1620156921288,
+              "stop" : 1620156921288,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "expected **200** to equal **200** assert",
+            "time" : {
+              "start" : 1620156921288,
+              "stop" : 1620156921288,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true,
+          "stepsCount" : 5
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 9
+      }, {
+        "name" : "registerProduct (\"Generic Rubber Bacon\"; \"619.00\"; \"Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals\"; \"311\")",
+        "time" : {
+          "start" : 1620156921289,
+          "stop" : 1620156921299,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "request (\"[object Object]\")",
+          "time" : {
+            "start" : 1620156921289,
+            "stop" : 1620156921299,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 12
+    }, {
+      "name" : "registerCart (\"BeeJh5lz3k6kSIzA\"; \"1\")",
+      "time" : {
+        "start" : 1620156921301,
+        "stop" : 1620156921310,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620156921301,
+          "stop" : 1620156921310,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "expected **Não é permitido possuir produto duplicado** to equal **Não é permitido possuir produto duplicado** assert",
+      "time" : {
+        "start" : 1620156921314,
+        "stop" : 1620156921314,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "expected **400** to equal **400** assert",
+      "time" : {
+        "start" : 1620156921314,
+        "stop" : 1620156921314,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 17
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Cadastrar Carrinhos com Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "6762cc461057f770",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/6762cc461057f770",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156072298,
+          "stop" : 1620156072345,
+          "duration" : 47
+        }
+      }, {
+        "uid" : "b959b647c759808f",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/b959b647c759808f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155847334,
+          "stop" : 1620155847390,
+          "duration" : 56
+        }
+      }, {
+        "uid" : "e91634f3e526da9e",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/e91634f3e526da9e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155704214,
+          "stop" : 1620155704263,
+          "duration" : 49
+        }
+      }, {
+        "uid" : "daad1bcdc450f611",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/daad1bcdc450f611",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150435200,
+          "stop" : 1620150435251,
+          "duration" : 51
+        }
+      }, {
+        "uid" : "cb96b565f4c476f4",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/cb96b565f4c476f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149646868,
+          "stop" : 1620149646922,
+          "duration" : 54
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "62e39f79ec86dc25.json",
+  "parameterValues" : [ ]
+}

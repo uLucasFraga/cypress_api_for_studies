@@ -1,0 +1,216 @@
+{
+  "uid" : "d3fc2f88bca1163f",
+  "name" : "/DELETE - Deletar um usuário com _id em branco",
+  "fullName" : "/DELETE - Deletar um usuário com _id em branco",
+  "historyId" : "41614ab9d428629d1e1b3a7f062aeea0",
+  "time" : {
+    "start" : 1620156951617,
+    "stop" : 1620156951631,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerUser (\"Kristy Champlin\"; \"Aidan20@yahoo.com\"; \"XP_yMyJty3Ec69V\"; \"false\")",
+      "time" : {
+        "start" : 1620156951493,
+        "stop" : 1620156951536,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620156951505,
+          "stop" : 1620156951536,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+      "time" : {
+        "start" : 1620156951545,
+        "stop" : 1620156951545,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "expected **201** to equal **201** assert",
+      "time" : {
+        "start" : 1620156951545,
+        "stop" : 1620156951545,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "deleteUser (\"\")",
+      "time" : {
+        "start" : 1620156951622,
+        "stop" : 1620156951629,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620156951622,
+          "stop" : 1620156951629,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "expected **405** to equal **405** assert",
+      "time" : {
+        "start" : 1620156951631,
+        "stop" : 1620156951631,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 3
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Deletar Usuários"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "9ba91633fdf1c378",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/9ba91633fdf1c378",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156101330,
+          "stop" : 1620156101346,
+          "duration" : 16
+        }
+      }, {
+        "uid" : "5ecb8a9d70f17ecd",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/5ecb8a9d70f17ecd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155876060,
+          "stop" : 1620155876077,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "d186e275263e920c",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/d186e275263e920c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155731585,
+          "stop" : 1620155731599,
+          "duration" : 14
+        }
+      }, {
+        "uid" : "2d48884f9fc16770",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/2d48884f9fc16770",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150463234,
+          "stop" : 1620150463248,
+          "duration" : 14
+        }
+      }, {
+        "uid" : "9f331ac2c0ffa26f",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/9f331ac2c0ffa26f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149676259,
+          "stop" : 1620149676274,
+          "duration" : 15
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d3fc2f88bca1163f.json",
+  "parameterValues" : [ ]
+}

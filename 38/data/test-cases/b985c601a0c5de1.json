@@ -1,0 +1,386 @@
+{
+  "uid" : "b985c601a0c5de1",
+  "name" : "/POST - Cadastrar mais de um carrinho para o mesmo usuário",
+  "fullName" : "/POST - Cadastrar mais de um carrinho para o mesmo usuário",
+  "historyId" : "62be99d554c1444655f493b5fc789bdc",
+  "time" : {
+    "start" : 1620156921144,
+    "stop" : 1620156921245,
+    "duration" : 101
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1620156921145,
+        "stop" : 1620156921217,
+        "duration" : 72
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "registerUserWithLogin (\"Diego Erdman\"; \"Adah1@hotmail.com\"; \"2Ky86BDGAJH2uZk\")",
+        "time" : {
+          "start" : 1620156921155,
+          "stop" : 1620156921206,
+          "duration" : 51
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "registerUser (\"Diego Erdman\"; \"Adah1@hotmail.com\"; \"2Ky86BDGAJH2uZk\"; \"true\")",
+          "time" : {
+            "start" : 1620156921156,
+            "stop" : 1620156921182,
+            "duration" : 26
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "request (\"[object Object]\")",
+            "time" : {
+              "start" : 1620156921156,
+              "stop" : 1620156921182,
+              "duration" : 26
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true,
+          "stepsCount" : 1
+        }, {
+          "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+          "time" : {
+            "start" : 1620156921184,
+            "stop" : 1620156921184,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        }, {
+          "name" : "getToken (\"Adah1@hotmail.com\"; \"2Ky86BDGAJH2uZk\")",
+          "time" : {
+            "start" : 1620156921184,
+            "stop" : 1620156921206,
+            "duration" : 22
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "doLogin (\"Adah1@hotmail.com\"; \"2Ky86BDGAJH2uZk\")",
+            "time" : {
+              "start" : 1620156921185,
+              "stop" : 1620156921200,
+              "duration" : 15
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "request (\"[object Object]\")",
+              "time" : {
+                "start" : 1620156921185,
+                "stop" : 1620156921200,
+                "duration" : 15
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "attachmentsCount" : 0,
+              "shouldDisplayMessage" : false,
+              "hasContent" : false,
+              "stepsCount" : 0
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true,
+            "stepsCount" : 1
+          }, {
+            "name" : "log (\"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkFkYWgxQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIyS3k4NkJER0FKSDJ1WmsiLCJpYXQiOjE2MjAxNTY5MjEsImV4cCI6MTYyMDE1NzUyMX0.PGhdub2DCN3iaSgb4vv3xQg0Q6ZAuV68-RTxcDbU2Ug\")",
+            "time" : {
+              "start" : 1620156921204,
+              "stop" : 1620156921205,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "expected **Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkFkYWgxQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIyS3k4NkJER0FKSDJ1WmsiLCJpYXQiOjE2MjAxNTY5MjEsImV4cCI6MTYyMDE1NzUyMX0.PGhdub2DCN3iaSgb4vv3xQg0Q6ZAuV68-RTxcDbU2Ug** not to be null assert",
+            "time" : {
+              "start" : 1620156921205,
+              "stop" : 1620156921205,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false,
+            "stepsCount" : 0
+          }, {
+            "name" : "expected **200** to equal **200** assert",
+            "time" : {
+              "start" : 1620156921206,
+              "stop" : 1620156921206,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false,
+            "stepsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true,
+          "stepsCount" : 5
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 9
+      }, {
+        "name" : "registerProduct (\"Ergonomic Rubber Towels\"; \"303.00\"; \"The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality\"; \"26\")",
+        "time" : {
+          "start" : 1620156921206,
+          "stop" : 1620156921217,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "request (\"[object Object]\")",
+          "time" : {
+            "start" : 1620156921206,
+            "stop" : 1620156921217,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 12
+    }, {
+      "name" : "registerCart (\"1DU5V6RGe6PLg6Ih\"; \"1\")",
+      "time" : {
+        "start" : 1620156921219,
+        "stop" : 1620156921231,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620156921219,
+          "stop" : 1620156921231,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "registerCart (\"1DU5V6RGe6PLg6Ih\"; \"1\")",
+      "time" : {
+        "start" : 1620156921231,
+        "stop" : 1620156921240,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620156921232,
+          "stop" : 1620156921240,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "expected **Não é permitido ter mais de 1 carrinho** to equal **Não é permitido ter mais de 1 carrinho** assert",
+      "time" : {
+        "start" : 1620156921244,
+        "stop" : 1620156921244,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "expected **400** to equal **400** assert",
+      "time" : {
+        "start" : 1620156921244,
+        "stop" : 1620156921244,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 19
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Cadastrar Carrinhos com Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "fd33a84789c8d6d9",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/fd33a84789c8d6d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156072224,
+          "stop" : 1620156072292,
+          "duration" : 68
+        }
+      }, {
+        "uid" : "e3196071b7150521",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/e3196071b7150521",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155847260,
+          "stop" : 1620155847332,
+          "duration" : 72
+        }
+      }, {
+        "uid" : "60cefa6957851d38",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/60cefa6957851d38",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155704144,
+          "stop" : 1620155704208,
+          "duration" : 64
+        }
+      }, {
+        "uid" : "22302df7e4da830f",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/22302df7e4da830f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150435134,
+          "stop" : 1620150435195,
+          "duration" : 61
+        }
+      }, {
+        "uid" : "68e56e8957902bc4",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/68e56e8957902bc4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149646797,
+          "stop" : 1620149646863,
+          "duration" : 66
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b985c601a0c5de1.json",
+  "parameterValues" : [ ]
+}

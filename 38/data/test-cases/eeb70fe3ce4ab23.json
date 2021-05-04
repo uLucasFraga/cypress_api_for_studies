@@ -1,0 +1,231 @@
+{
+  "uid" : "eeb70fe3ce4ab23",
+  "name" : "/PUT - Editar nome de um usuário válido",
+  "fullName" : "/PUT - Editar nome de um usuário válido",
+  "historyId" : "bb3a8be13e3514eba543d6287723f27e",
+  "time" : {
+    "start" : 1620156964493,
+    "stop" : 1620156964511,
+    "duration" : 18
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerUser (\"Al Bartell\"; \"Bella70@yahoo.com\"; \"_amvrmvsuPdgljq\"; \"false\")",
+      "time" : {
+        "start" : 1620156964397,
+        "stop" : 1620156964427,
+        "duration" : 30
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620156964402,
+          "stop" : 1620156964427,
+          "duration" : 25
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+      "time" : {
+        "start" : 1620156964436,
+        "stop" : 1620156964436,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "expected **201** to equal **201** assert",
+      "time" : {
+        "start" : 1620156964436,
+        "stop" : 1620156964436,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "modifyUser (\"ncnB0M7sFE7FFbuX\"; \"Turner Wiza\"; \"Bella70@yahoo.com\"; \"_amvrmvsuPdgljq\")",
+      "time" : {
+        "start" : 1620156964499,
+        "stop" : 1620156964506,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620156964499,
+          "stop" : 1620156964506,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "expected **Registro alterado com sucesso** to equal **Registro alterado com sucesso** assert",
+      "time" : {
+        "start" : 1620156964510,
+        "stop" : 1620156964510,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "expected **200** to equal **200** assert",
+      "time" : {
+        "start" : 1620156964510,
+        "stop" : 1620156964510,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Editar Usuários"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "ce222c2a7f35e041",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/ce222c2a7f35e041",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156113491,
+          "stop" : 1620156113508,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "38e3b3e1a17060c5",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/38e3b3e1a17060c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155888839,
+          "stop" : 1620155888855,
+          "duration" : 16
+        }
+      }, {
+        "uid" : "ab0178d7e2d853cb",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/ab0178d7e2d853cb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155743176,
+          "stop" : 1620155743193,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "cbb2f5271e076d2",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/cbb2f5271e076d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150475238,
+          "stop" : 1620150475255,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "1481cbf64b6ab658",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/1481cbf64b6ab658",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149688642,
+          "stop" : 1620149688661,
+          "duration" : 19
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "eeb70fe3ce4ab23.json",
+  "parameterValues" : [ ]
+}
