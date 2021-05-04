@@ -21,7 +21,7 @@ describe('[INTEGRATION] :: Listar Usuários', () => {
     cy.consultUser(dataUsers.nome)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
-        expect(response.body.usuarios[0].nome).to.deep.eq(dataUsers.nome)
+        expect(response.body.usuarios[0].nome).to.eq(dataUsers.nome)
       })
   })
 
@@ -29,7 +29,7 @@ describe('[INTEGRATION] :: Listar Usuários', () => {
     cy.consultUser({}, dataUsers.email)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
-        expect(response.body.usuarios[0].email).to.deep.eq(dataUsers.email)
+        expect(response.body.usuarios[0].email).to.eq(dataUsers.email)
       })
   })
 
@@ -37,7 +37,7 @@ describe('[INTEGRATION] :: Listar Usuários', () => {
     cy.consultUser({}, {}, dataUsers._id)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
-        expect(response.body.usuarios[0]._id).to.deep.eq(dataUsers._id)
+        expect(response.body.usuarios[0]._id).to.eq(dataUsers._id)
       })
   })
 
@@ -45,8 +45,8 @@ describe('[INTEGRATION] :: Listar Usuários', () => {
     cy.consultUser(dataUsers.nome, dataUsers.email)
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
-        expect(response.body.usuarios[0].nome).to.deep.eq(dataUsers.nome)
-        expect(response.body.usuarios[0].email).to.deep.eq(dataUsers.email)
+        expect(response.body.usuarios[0].nome).to.eq(dataUsers.nome)
+        expect(response.body.usuarios[0].email).to.eq(dataUsers.email)
       })
   })
 
