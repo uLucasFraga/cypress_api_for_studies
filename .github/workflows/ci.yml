@@ -1,95 +1,61 @@
 name: CONTINUOUS INTEGRATIONS
-
 on:
   pull_request:
-  workflow_dispatch:
-
+    branches:
+      - main
 jobs:
   lint:
     runs-on: ubuntu-18.04
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v2
-        
-      - uses: actions/cache@v1
-        with:
-          path: |
-            ~/.m2/repository
-            ~/.gradle/caches
-          key: ${{ runner.os }}-${{ github.workflow }}-${{ hashFiles('**/build.gradle') }}
-          restore-keys: |
-            ${{ runner.os }}-${{ github.workflow }}-
-            
       - name: node.js 10 setup
         with:
           node-version: 10
         uses: actions/setup-node@v2
-      - name: installation of dependencies
+      - name: Installation of dependencies
         run: npm ci
-      - name: lint
+      - name: Lint
         run: npm run lint
-
-  integration-local:
+  integration-tests-and-allure-report:
     runs-on: ubuntu-18.04
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v2
-      - name: node.js 10 setup
+      - name: Node.js 10 setup
         uses: actions/setup-node@v2
         with:
           node-version: 10
-      - name: installation of dependencies
+      - name: Installation of dependencies
         run: npm ci
-      - name: start ServeRest locally
+      - name: Start serveRest locally
         run: docker run -d -p 3000:3000 paulogoncalvesbh/serverest
-      - name: api tests
+      - name: Api tests
         run: npm run cy:run
         env:
-          CYPRESS_APP_URL: 'http://localhost:3000'
-          CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
-          CYPRESS_PASSWORD: '${{ secrets.PASSWORD }}'
-
-  integration-prod:
-    needs: [lint, integration-local]
-    runs-on: ubuntu-18.04
-    steps:
-      - name: checkout
-        uses: actions/checkout@v2
-      - name: node.js 10 setup
-        uses: actions/setup-node@v2
-        with:
-          node-version: 10
-      - name: installation of dependencies
-        run: npm ci
-      - name: api tests
-        run: npm run cy:run
-        env:
-          CYPRESS_APP_URL: 'https://serverest.dev'
-          CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
-          CYPRESS_PASSWORD: '${{ secrets.PASSWORD }}'
-          
-      - name: Get Allure history
+          CYPRESS_APP_URL: http://localhost:3000
+          CYPRESS_EMAIL: ${{ secrets.EMAIL }}
+          CYPRESS_PASSWORD: ${{ secrets.PASSWORD }}
+      - name: Get allure history
         uses: actions/checkout@v2
         if: always()
         continue-on-error: true
         with:
           ref: gh-pages
           path: gh-pages
-
-      - name: Allure Report action from marketplace
+      - name: Allure report action
         uses: simple-elf/allure-report-action@master
         if: always()
         #id: allure-report
         with:
-          allure_results: build/allure-results
+          allure_results: allure-results
           #gh_pages: gh-pages
           #allure_report: allure-report
           allure_history: allure-history
-
-      - name: Deploy report to Github Pages
+      - name: Deploy report to github pages
         if: always()
         uses: peaceiris/actions-gh-pages@v2
         env:
-          PERSONAL_TOKEN: ${{ secrets.TOKEN }}
+          PERSONAL_TOKEN: ${{ secrets.GH_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
