@@ -1,0 +1,257 @@
+{
+  "uid" : "caa27dee4e3b9b89",
+  "name" : "/POST - Cadastrar um produto sem preencher o campo Descrição",
+  "fullName" : "/POST - Cadastrar um produto sem preencher o campo Descrição",
+  "historyId" : "73d132e3ed4557ea0b0390bd0133e6e9",
+  "time" : {
+    "start" : 1620156090591,
+    "stop" : 1620156090619,
+    "duration" : 28
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1620156090591,
+        "stop" : 1620156090608,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "getToken",
+        "time" : {
+          "start" : 1620156090597,
+          "stop" : 1620156090607,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "doLogin (\"fulano@qa.com\"; \"teste\")",
+          "time" : {
+            "start" : 1620156090597,
+            "stop" : 1620156090603,
+            "duration" : 6
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "request (\"[object Object]\")",
+            "time" : {
+              "start" : 1620156090597,
+              "stop" : 1620156090603,
+              "duration" : 6
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "log (\"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZ1bGFub0BxYS5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjIwMTU2MDkwLCJleHAiOjE2MjAxNTY2OTB9.qsX1UJKGndJELZlBOEoafqVgmfsUwgsdnyHFq8SUsTc\")",
+          "time" : {
+            "start" : 1620156090606,
+            "stop" : 1620156090607,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "expected **Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZ1bGFub0BxYS5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjIwMTU2MDkwLCJleHAiOjE2MjAxNTY2OTB9.qsX1UJKGndJELZlBOEoafqVgmfsUwgsdnyHFq8SUsTc** not to be null assert",
+          "time" : {
+            "start" : 1620156090607,
+            "stop" : 1620156090607,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "expected **200** to equal **200** assert",
+          "time" : {
+            "start" : 1620156090607,
+            "stop" : 1620156090607,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 5,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "registerProduct (\"Practical Wooden Gloves\"; \"740.00\"; \"\"; \"48\")",
+      "time" : {
+        "start" : 1620156090608,
+        "stop" : 1620156090616,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620156090609,
+          "stop" : 1620156090616,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **descricao não pode ficar em branco** to equal **descricao não pode ficar em branco** assert",
+      "time" : {
+        "start" : 1620156090619,
+        "stop" : 1620156090619,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **400** to equal **400** assert",
+      "time" : {
+        "start" : 1620156090619,
+        "stop" : 1620156090619,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Cadastrar Produtos com Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "ed331a4c6eab5239",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/ed331a4c6eab5239",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155865549,
+          "stop" : 1620155865584,
+          "duration" : 35
+        }
+      }, {
+        "uid" : "d76fe3cbcb0802c0",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/d76fe3cbcb0802c0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155721400,
+          "stop" : 1620155721431,
+          "duration" : 31
+        }
+      }, {
+        "uid" : "528238e03ce6dda",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/528238e03ce6dda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150452952,
+          "stop" : 1620150452979,
+          "duration" : 27
+        }
+      }, {
+        "uid" : "b0161da035496627",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/b0161da035496627",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149665559,
+          "stop" : 1620149665600,
+          "duration" : 41
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "caa27dee4e3b9b89.json",
+  "parameterValues" : [ ]
+}

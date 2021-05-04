@@ -1,0 +1,222 @@
+{
+  "uid" : "7421f117b03f061b",
+  "name" : "/DELETE - Deletar um usuário que contenha um carrinho",
+  "fullName" : "/DELETE - Deletar um usuário que contenha um carrinho",
+  "historyId" : "29878244dfdd7fb5645e358fb52bcb8e",
+  "time" : {
+    "start" : 1620156101348,
+    "stop" : 1620156101367,
+    "duration" : 19
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerUser (\"Johathan Feeney\"; \"Leonor_Jacobi@gmail.com\"; \"CGSapNT046xz9r2\"; \"false\")",
+      "time" : {
+        "start" : 1620156101251,
+        "stop" : 1620156101272,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620156101256,
+          "stop" : 1620156101272,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+      "time" : {
+        "start" : 1620156101280,
+        "stop" : 1620156101280,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **201** to equal **201** assert",
+      "time" : {
+        "start" : 1620156101280,
+        "stop" : 1620156101280,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "deleteUser (\"oUb7aGkMtSEPf6BZ\")",
+      "time" : {
+        "start" : 1620156101354,
+        "stop" : 1620156101362,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620156101355,
+          "stop" : 1620156101362,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Não é permitido excluir usuário com carrinho cadastrado** to equal **Não é permitido excluir usuário com carrinho cadastrado** assert",
+      "time" : {
+        "start" : 1620156101366,
+        "stop" : 1620156101366,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **400** to equal **400** assert",
+      "time" : {
+        "start" : 1620156101366,
+        "stop" : 1620156101366,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Deletar Usuários"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "57b7e2d78ce35078",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/57b7e2d78ce35078",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155876079,
+          "stop" : 1620155876096,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "99b472034886c96d",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/99b472034886c96d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155731601,
+          "stop" : 1620155731617,
+          "duration" : 16
+        }
+      }, {
+        "uid" : "beee7a3e244d30fe",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/beee7a3e244d30fe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150463251,
+          "stop" : 1620150463267,
+          "duration" : 16
+        }
+      }, {
+        "uid" : "8f1d67e989253527",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/8f1d67e989253527",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149676276,
+          "stop" : 1620149676293,
+          "duration" : 17
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7421f117b03f061b.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,152 @@
+{
+  "uid" : "fc5c369dc6fc296d",
+  "name" : "/POST - Cadastrar um produto válido sem utilização de token",
+  "fullName" : "/POST - Cadastrar um produto válido sem utilização de token",
+  "historyId" : "bfd3cb118329c9b3b4a3a580be6f8550",
+  "time" : {
+    "start" : 1620156090214,
+    "stop" : 1620156090290,
+    "duration" : 76
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerProduct (\"Practical Wooden Gloves\"; \"740.00\"; \"The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive\"; \"48\")",
+      "time" : {
+        "start" : 1620156090243,
+        "stop" : 1620156090279,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620156090248,
+          "stop" : 1620156090279,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Token de acesso ausente, inválido, expirado ou usuário do token não existe mais** to equal **Token de acesso ausente, inválido, expirado ou usuário do token não existe mais** assert",
+      "time" : {
+        "start" : 1620156090288,
+        "stop" : 1620156090288,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **401** to equal **401** assert",
+      "time" : {
+        "start" : 1620156090288,
+        "stop" : 1620156090288,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Cadastrar Produtos sem Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "3b51d3f3d74e65d9",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/3b51d3f3d74e65d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155865110,
+          "stop" : 1620155865156,
+          "duration" : 46
+        }
+      }, {
+        "uid" : "636bd72eda5cb187",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/636bd72eda5cb187",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155721062,
+          "stop" : 1620155721107,
+          "duration" : 45
+        }
+      }, {
+        "uid" : "ca8c97c67c51afd8",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/ca8c97c67c51afd8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150452613,
+          "stop" : 1620150452656,
+          "duration" : 43
+        }
+      }, {
+        "uid" : "7b0936fd22070765",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/7b0936fd22070765",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149665153,
+          "stop" : 1620149665205,
+          "duration" : 52
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fc5c369dc6fc296d.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected 400 to equal 200",
+      "children" : [ {
+        "name" : "/GET - Listar carrinhos com uma busca incorreta de: id do usuário válido e quantidade total inválida",
+        "uid" : "e3a5c65cb7c8a3e1",
+        "parentUid" : "8a8ec833bcc43a11032742d4196f0744",
+        "status" : "failed",
+        "time" : {
+          "start" : 1620156066559,
+          "stop" : 1620156066988,
+          "duration" : 429
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8a8ec833bcc43a11032742d4196f0744"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

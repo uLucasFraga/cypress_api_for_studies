@@ -1,0 +1,152 @@
+{
+  "uid" : "f86f3715c0487903",
+  "name" : "/POST - Cadastrar um usuário sem nome",
+  "fullName" : "/POST - Cadastrar um usuário sem nome",
+  "historyId" : "e70f1593da1b3e6eb46995d181114212",
+  "time" : {
+    "start" : 1620156108248,
+    "stop" : 1620156108268,
+    "duration" : 20
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerUser (\"\"; \"Davin.McDermott@gmail.com\"; \"TOkYxuuvHriWvD7\"; \"true\")",
+      "time" : {
+        "start" : 1620156108255,
+        "stop" : 1620156108263,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620156108255,
+          "stop" : 1620156108263,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **nome não pode ficar em branco** to equal **nome não pode ficar em branco** assert",
+      "time" : {
+        "start" : 1620156108267,
+        "stop" : 1620156108267,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **400** to equal **400** assert",
+      "time" : {
+        "start" : 1620156108267,
+        "stop" : 1620156108267,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Cadastrar Usuários"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "6d56914e616cba95",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/6d56914e616cba95",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155883385,
+          "stop" : 1620155883422,
+          "duration" : 37
+        }
+      }, {
+        "uid" : "6b5346e05dccfbdf",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/6b5346e05dccfbdf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155738111,
+          "stop" : 1620155738134,
+          "duration" : 23
+        }
+      }, {
+        "uid" : "5ee4334521888f23",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/5ee4334521888f23",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150469908,
+          "stop" : 1620150469927,
+          "duration" : 19
+        }
+      }, {
+        "uid" : "66508fe42b7da74b",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/66508fe42b7da74b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149683376,
+          "stop" : 1620149683416,
+          "duration" : 40
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f86f3715c0487903.json",
+  "parameterValues" : [ ]
+}
