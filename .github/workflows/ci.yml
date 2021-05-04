@@ -5,7 +5,6 @@ on:
     branches-ignore:
       - '!main'
       
-      
 jobs:
   lint:
     runs-on: ubuntu-18.04
@@ -25,16 +24,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: checkout
-        uses: actions/checkout@v2 
-      - uses: actions/cache@v1
-        with:
-          path: |
-            ~/.m2/repository
-            ~/.gradle/caches
-          key: ${{ runner.os }}-${{ github.workflow }}-${{ hashFiles('**/build.gradle') }}
-          restore-keys: |
-            ${{ runner.os }}-${{ github.workflow }}-
-            
+        uses: actions/checkout@v2
       - name: node.js 10 setup
         uses: actions/setup-node@v2
         with:
