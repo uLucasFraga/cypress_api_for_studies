@@ -17,8 +17,8 @@ jobs:
         run: npm ci
       - name: lint
         run: npm run lint
-  generate-report:
-    runs-on: ubuntu-16.04
+  integration-local:
+    runs-on: ubuntu-18.04
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -26,26 +26,9 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 10
-      - name: check cypress cache
-        run: |
-          npx cypress cache path
-          npx cypress cache list
-      - name: restore or cache the binary
-        id: cache-cypress
-        uses: actions/cache@v1
-        with:
-          path: ~/.cache/Cypress
-          key: >-
-            cypress-cache-v2-${{ runner.os }}-${{ hashFiles('**/package.json')
-            }}
-      - name: prepare allure history
-        run: |
-          rm -r allure-results/*
-          cp -r ./allure-report/history ./allure-results/history
-          rm -r allure-report/*
       - name: installation of dependencies
         run: npm ci
-      - name: start serverest locally
+      - name: start serveRest locally
         run: 'docker run -d -p 3000:3000 paulogoncalvesbh/serverest'
       - name: api tests
         run: 'npm run cy:run'
@@ -53,20 +36,23 @@ jobs:
           CYPRESS_APP_URL: 'http://localhost:3000'
           CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
           CYPRESS_PASSWORD: '${{ secrets.PASSWORD }}'
-      - name: generate allure report
+      - name: get allure history
+        uses: actions/checkout@v2
         if: always()
-        uses: afiore/action-allure-report@v0.1.0
-      - name: commit report results
-        if: always()
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add allure-report -f
-          git add allure-results -f
-          git commit -m "[chore] autogenerate Allure report" -a
-      - name: push changes
-        if: always()
-        uses: ad-m/github-push-action@master
+        continue-on-error: true
         with:
-          github_token: '${{ secrets.GH_TOKEN }}'
-          force: true
+          ref: gh-pages
+          path: gh-pages
+      - name: allure report action
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        with:
+          allure_results: build/allure-results
+          allure_history: allure-history
+      - name: deploy report to github pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: '${{ secrets.GH_TOKEN }}'
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
