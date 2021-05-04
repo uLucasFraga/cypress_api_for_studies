@@ -60,6 +60,8 @@ jobs:
           CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
           CYPRESS_PASSWORD: '${{ secrets.PASSWORD }}'
   allure-report:
+    needs:
+      - integration-prod
     name: generate allure report
     runs-on: ubuntu-latest
     steps:
