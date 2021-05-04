@@ -2,13 +2,47 @@
 
 // LOGIN //
 
+import faker from 'faker'
 const httpStatus = require('http-status-codes')
 
-describe('[INTEGRATION] :: Login', () => {
-  it('/POST - Realizar login com sucesso', () => {
+const userFaker = {
+  BODY: {
+    nome: `${faker.name.firstName()} ${faker.name.lastName()}`,
+    email: faker.internet.email(),
+    pass: faker.internet.password(),
+    admin: faker.datatype.boolean().toString()
+  }
+}
+
+describe('[INTEGRATION] :: Realizar Login', () => {
+  before(() => {
+    cy.registerUser(
+      userFaker.BODY.nome,
+      userFaker.BODY.email,
+      userFaker.BODY.pass,
+      userFaker.BODY.admin
+    )
+      .then((response) => {
+        expect(response.status).to.eq(httpStatus.StatusCodes.CREATED)
+        expect(response.body.message).to.eq('Cadastro realizado com sucesso')
+      })
+  })
+
+  it('/POST - Realizar login com sucesso com usuário já cadastrado (fulano@qa)', () => {
     cy.doLogin(
       Cypress.env('EMAIL'),
       Cypress.env('PASSWORD')
+    )
+      .then((response) => {
+        expect(response.status).to.eq(httpStatus.StatusCodes.OK)
+        expect(response.body.message).to.eq('Login realizado com sucesso')
+      })
+  })
+
+  it('/POST - Realizar login com sucesso com usuário criado fake', () => {
+    cy.doLogin(
+      userFaker.BODY.email,
+      userFaker.BODY.pass
     )
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
