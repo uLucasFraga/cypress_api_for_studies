@@ -1,11 +1,8 @@
 name: CONTINUOUS INTEGRATIONS
-'on':
-  release:
-    types:
-      - created
+on:
   push:
     branches-ignore:
-      - '!master'
+      - '!main'
 jobs:
   lint:
     runs-on: ubuntu-18.04
@@ -54,7 +51,7 @@ jobs:
           ref: gh-pages
           path: gh-pages
       - name: allure report action from marketplace
-        uses: ulucasfraga/cypress_api_for_studies@master
+        uses: ulucasfraga/cypress_api_for_studies@main
         if: always()
         with:
           allure_results: allure-results
