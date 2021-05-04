@@ -17,7 +17,7 @@ jobs:
         run: npm ci
       - name: Lint
         run: npm run lint
-  integration-tests-and-allure-report:
+  integration-tests:
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
@@ -29,13 +29,18 @@ jobs:
       - name: Installation of dependencies
         run: npm ci
       - name: Start serveRest locally
-        run: 'docker run -d -p 3000:3000 paulogoncalvesbh/serverest'
+        run: docker run -d -p 3000:3000 paulogoncalvesbh/serverest
       - name: Api tests
-        run: 'npm run cy:run'
+        run: npm run cy:run
         env:
-          CYPRESS_APP_URL: 'http://localhost:3000'
-          CYPRESS_EMAIL: '${{ secrets.EMAIL }}'
-          CYPRESS_PASSWORD: '${{ secrets.PASSWORD }}'
+          CYPRESS_APP_URL: http://localhost:3000
+          CYPRESS_EMAIL: ${{ secrets.EMAIL }}
+          CYPRESS_PASSWORD: ${{ secrets.PASSWORD }}
+  allure-report:
+    needs:
+      - integration-tests
+    runs-on: ubuntu-18.04
+    steps:
       - name: Get allure history
         uses: actions/checkout@v2
         if: always()
@@ -56,6 +61,6 @@ jobs:
         if: always()
         uses: peaceiris/actions-gh-pages@v2
         env:
-          PERSONAL_TOKEN: '${{ secrets.GH_TOKEN }}'
+          PERSONAL_TOKEN: ${{ secrets.GH_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
