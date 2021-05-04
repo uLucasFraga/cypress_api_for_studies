@@ -1,0 +1,410 @@
+{
+  "uid" : "4c3e72700f35e380",
+  "name" : "/DELETE - Deletar um carrinho quando \"cancelar uma compra\" que não existe para o usuário",
+  "fullName" : "/DELETE - Deletar um carrinho quando \"cancelar uma compra\" que não existe para o usuário",
+  "historyId" : "b77be26bc9622422b0f2cc9bc4c4586f",
+  "time" : {
+    "start" : 1620159486123,
+    "stop" : 1620159486205,
+    "duration" : 82
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1620159486123,
+        "stop" : 1620159486192,
+        "duration" : 69
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "registerUserWithLogin (\"Kiarra Raynor\"; \"Garfield_Ward@hotmail.com\"; \"LZRsNO7ZLV5VFrn\")",
+        "time" : {
+          "start" : 1620159486131,
+          "stop" : 1620159486181,
+          "duration" : 50
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "registerUser (\"Kiarra Raynor\"; \"Garfield_Ward@hotmail.com\"; \"LZRsNO7ZLV5VFrn\"; \"true\")",
+          "time" : {
+            "start" : 1620159486132,
+            "stop" : 1620159486142,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "request (\"[object Object]\")",
+            "time" : {
+              "start" : 1620159486132,
+              "stop" : 1620159486142,
+              "duration" : 10
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+          "time" : {
+            "start" : 1620159486144,
+            "stop" : 1620159486144,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "getToken (\"Garfield_Ward@hotmail.com\"; \"LZRsNO7ZLV5VFrn\")",
+          "time" : {
+            "start" : 1620159486144,
+            "stop" : 1620159486181,
+            "duration" : 37
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "doLogin (\"Garfield_Ward@hotmail.com\"; \"LZRsNO7ZLV5VFrn\")",
+            "time" : {
+              "start" : 1620159486144,
+              "stop" : 1620159486176,
+              "duration" : 32
+            },
+            "status" : "passed",
+            "steps" : [ {
+              "name" : "request (\"[object Object]\")",
+              "time" : {
+                "start" : 1620159486145,
+                "stop" : 1620159486176,
+                "duration" : 31
+              },
+              "status" : "passed",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 0,
+              "shouldDisplayMessage" : false,
+              "hasContent" : false
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 1,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "log (\"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkdhcmZpZWxkX1dhcmRAaG90bWFpbC5jb20iLCJwYXNzd29yZCI6IkxaUnNOTzdaTFY1VkZybiIsImlhdCI6MTYyMDE1OTQ4NiwiZXhwIjoxNjIwMTYwMDg2fQ.bH-AUXnHdgLrQZMKrme740PV1GGyy2nK-gf5zMNl2gQ\")",
+            "time" : {
+              "start" : 1620159486180,
+              "stop" : 1620159486181,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          }, {
+            "name" : "expected **Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkdhcmZpZWxkX1dhcmRAaG90bWFpbC5jb20iLCJwYXNzd29yZCI6IkxaUnNOTzdaTFY1VkZybiIsImlhdCI6MTYyMDE1OTQ4NiwiZXhwIjoxNjIwMTYwMDg2fQ.bH-AUXnHdgLrQZMKrme740PV1GGyy2nK-gf5zMNl2gQ** not to be null assert",
+            "time" : {
+              "start" : 1620159486181,
+              "stop" : 1620159486181,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          }, {
+            "name" : "expected **200** to equal **200** assert",
+            "time" : {
+              "start" : 1620159486181,
+              "stop" : 1620159486181,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 5,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 9,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "registerProduct (\"Rustic Plastic Keyboard\"; \"912.00\"; \"Carbonite web goalkeeper gloves are ergonomically designed to give easy fit\"; \"2665\")",
+        "time" : {
+          "start" : 1620159486181,
+          "stop" : 1620159486191,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "request (\"[object Object]\")",
+          "time" : {
+            "start" : 1620159486181,
+            "stop" : 1620159486191,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 12,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "deleteWhenCancelCart",
+      "time" : {
+        "start" : 1620159486193,
+        "stop" : 1620159486201,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620159486193,
+          "stop" : 1620159486201,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Não foi encontrado carrinho para esse usuário** to equal **Não foi encontrado carrinho para esse usuário** assert",
+      "time" : {
+        "start" : 1620159486204,
+        "stop" : 1620159486204,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **200** to equal **200** assert",
+      "time" : {
+        "start" : 1620159486204,
+        "stop" : 1620159486204,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 17,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Deletar Carrinhos quando \"Cancelar uma Compra\" Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 12,
+        "unknown" : 0,
+        "total" : 12
+      },
+      "items" : [ {
+        "uid" : "8ad273313cd2bf3c",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/42//#testresult/8ad273313cd2bf3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620159313760,
+          "stop" : 1620159313809,
+          "duration" : 49
+        }
+      }, {
+        "uid" : "b8a245d441c7f2e7",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/41//#testresult/b8a245d441c7f2e7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620159236541,
+          "stop" : 1620159236598,
+          "duration" : 57
+        }
+      }, {
+        "uid" : "e68ed765dac9a1b",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/41//#testresult/e68ed765dac9a1b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620158254615,
+          "stop" : 1620158254671,
+          "duration" : 56
+        }
+      }, {
+        "uid" : "e394d811bb6dcbd9",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/40//#testresult/e394d811bb6dcbd9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620158145057,
+          "stop" : 1620158145110,
+          "duration" : 53
+        }
+      }, {
+        "uid" : "c64ced2c3bbf6946",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/39//#testresult/c64ced2c3bbf6946",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620157044161,
+          "stop" : 1620157044197,
+          "duration" : 36
+        }
+      }, {
+        "uid" : "b02f14d140234d0b",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/38//#testresult/b02f14d140234d0b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156908827,
+          "stop" : 1620156908880,
+          "duration" : 53
+        }
+      }, {
+        "uid" : "56bb3d46b77a0015",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/56bb3d46b77a0015",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156060585,
+          "stop" : 1620156060638,
+          "duration" : 53
+        }
+      }, {
+        "uid" : "7e0b426bd19bd43",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/7e0b426bd19bd43",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155836089,
+          "stop" : 1620155836145,
+          "duration" : 56
+        }
+      }, {
+        "uid" : "ab7c95528ae8d50e",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/ab7c95528ae8d50e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155693698,
+          "stop" : 1620155693743,
+          "duration" : 45
+        }
+      }, {
+        "uid" : "c04711290e722009",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/c04711290e722009",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150424160,
+          "stop" : 1620150424207,
+          "duration" : 47
+        }
+      }, {
+        "uid" : "1b717c9f184233fc",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/1b717c9f184233fc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149635377,
+          "stop" : 1620149635424,
+          "duration" : 47
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "4c3e72700f35e380.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,335 @@
+{
+  "uid" : "30bd96b67f285ee2",
+  "name" : "/DELETE - Deletar um produto com _id em branco",
+  "fullName" : "/DELETE - Deletar um produto com _id em branco",
+  "historyId" : "e72a9bf847be996a948eef7b666c3cc6",
+  "time" : {
+    "start" : 1620159509116,
+    "stop" : 1620159509165,
+    "duration" : 49
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1620159509116,
+        "stop" : 1620159509151,
+        "duration" : 35
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "getToken",
+        "time" : {
+          "start" : 1620159509123,
+          "stop" : 1620159509138,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "doLogin (\"fulano@qa.com\"; \"teste\")",
+          "time" : {
+            "start" : 1620159509123,
+            "stop" : 1620159509132,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "request (\"[object Object]\")",
+            "time" : {
+              "start" : 1620159509123,
+              "stop" : 1620159509132,
+              "duration" : 9
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "log (\"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZ1bGFub0BxYS5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjIwMTU5NTA5LCJleHAiOjE2MjAxNjAxMDl9.lM2pAnv4OYL8UI3bfyu9QU-wtXbYTNlSDdntdaesE4c\")",
+          "time" : {
+            "start" : 1620159509136,
+            "stop" : 1620159509137,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "expected **Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZ1bGFub0BxYS5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjIwMTU5NTA5LCJleHAiOjE2MjAxNjAxMDl9.lM2pAnv4OYL8UI3bfyu9QU-wtXbYTNlSDdntdaesE4c** not to be null assert",
+          "time" : {
+            "start" : 1620159509138,
+            "stop" : 1620159509138,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "expected **200** to equal **200** assert",
+          "time" : {
+            "start" : 1620159509138,
+            "stop" : 1620159509138,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 5,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "registerProduct (\"Practical Cotton Bacon\"; \"102.00\"; \"Carbonite web goalkeeper gloves are ergonomically designed to give easy fit\"; \"85\")",
+        "time" : {
+          "start" : 1620159509138,
+          "stop" : 1620159509150,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "request (\"[object Object]\")",
+          "time" : {
+            "start" : 1620159509138,
+            "stop" : 1620159509150,
+            "duration" : 12
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 8,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "deleteProduct (\"\")",
+      "time" : {
+        "start" : 1620159509152,
+        "stop" : 1620159509163,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620159509153,
+          "stop" : 1620159509163,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **405** to equal **405** assert",
+      "time" : {
+        "start" : 1620159509165,
+        "stop" : 1620159509165,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 12,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[INTEGRATION] :: Deletar Produtos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 12,
+        "unknown" : 0,
+        "total" : 12
+      },
+      "items" : [ {
+        "uid" : "1f426e2db8eb9678",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/42//#testresult/1f426e2db8eb9678",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620159335103,
+          "stop" : 1620159335150,
+          "duration" : 47
+        }
+      }, {
+        "uid" : "e8dc6e73fb8edce5",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/41//#testresult/e8dc6e73fb8edce5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620159258728,
+          "stop" : 1620159258779,
+          "duration" : 51
+        }
+      }, {
+        "uid" : "d386d13770357712",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/41//#testresult/d386d13770357712",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620158278251,
+          "stop" : 1620158278294,
+          "duration" : 43
+        }
+      }, {
+        "uid" : "3b589cdd82bc3cbb",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/40//#testresult/3b589cdd82bc3cbb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620158166680,
+          "stop" : 1620158166723,
+          "duration" : 43
+        }
+      }, {
+        "uid" : "97a9701ceb63bd8b",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/39//#testresult/97a9701ceb63bd8b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620157061989,
+          "stop" : 1620157062024,
+          "duration" : 35
+        }
+      }, {
+        "uid" : "19aa19b1a667614",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/38//#testresult/19aa19b1a667614",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156932899,
+          "stop" : 1620156932948,
+          "duration" : 49
+        }
+      }, {
+        "uid" : "180f3d14df77e7d4",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/37//#testresult/180f3d14df77e7d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620156083320,
+          "stop" : 1620156083362,
+          "duration" : 42
+        }
+      }, {
+        "uid" : "dd4c5bf2f1181d18",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/36//#testresult/dd4c5bf2f1181d18",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155857937,
+          "stop" : 1620155857988,
+          "duration" : 51
+        }
+      }, {
+        "uid" : "131956711af4509d",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/35//#testresult/131956711af4509d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620155714456,
+          "stop" : 1620155714497,
+          "duration" : 41
+        }
+      }, {
+        "uid" : "aa9c15cf491e7bc3",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/34//#testresult/aa9c15cf491e7bc3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620150445833,
+          "stop" : 1620150445880,
+          "duration" : 47
+        }
+      }, {
+        "uid" : "e89b3fd8c81a7563",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/33//#testresult/e89b3fd8c81a7563",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620149658130,
+          "stop" : 1620149658178,
+          "duration" : 48
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "30bd96b67f285ee2.json",
+  "parameterValues" : [ ]
+}
