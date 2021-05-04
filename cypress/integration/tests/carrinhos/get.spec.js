@@ -79,7 +79,7 @@ describe('[INTEGRATION] :: Listar Carrinhos', () => {
   })
 
   it('/GET - Listar carrinhos cadastrados pela quantidade total inválido', () => {
-    cy.consultCart({}, faker.datatype.number(100))
+    cy.consultCart({}, faker.datatype.number({min: 500, max: 5000}))
       .then((response) => {
         expect(response.status).to.eq(httpStatus.StatusCodes.OK)
         expect(response.body.quantidade).to.eq(0)
