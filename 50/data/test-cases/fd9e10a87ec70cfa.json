@@ -1,0 +1,222 @@
+{
+  "uid" : "fd9e10a87ec70cfa",
+  "name" : "/POST - Realizar login com tipo de email inválido",
+  "fullName" : "/POST - Realizar login com tipo de email inválido",
+  "historyId" : "b4441b3e1d4afd586229c1b12a41a8d8",
+  "time" : {
+    "start" : 1620345538132,
+    "stop" : 1620345538148,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerUser (\"Blanche Gorczany\"; \"Henry.Erdman19@gmail.com\"; \"KVsxpLwAg73mWHV\"; \"false\")",
+      "time" : {
+        "start" : 1620345538031,
+        "stop" : 1620345538079,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620345538035,
+          "stop" : 1620345538079,
+          "duration" : 44
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+      "time" : {
+        "start" : 1620345538086,
+        "stop" : 1620345538086,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **201** to equal **201** assert",
+      "time" : {
+        "start" : 1620345538087,
+        "stop" : 1620345538087,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "doLogin (\"email_invalido\"; \"teste\")",
+      "time" : {
+        "start" : 1620345538136,
+        "stop" : 1620345538144,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620345538137,
+          "stop" : 1620345538144,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **email deve ser um email válido** to equal **email deve ser um email válido** assert",
+      "time" : {
+        "start" : 1620345538147,
+        "stop" : 1620345538147,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **400** to equal **400** assert",
+      "time" : {
+        "start" : 1620345538148,
+        "stop" : 1620345538148,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[LOGIN] :: Realizar Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "e22a40f1d5ce371f",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/49//#testresult/e22a40f1d5ce371f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620343954899,
+          "stop" : 1620343954914,
+          "duration" : 15
+        }
+      }, {
+        "uid" : "565e8c569f20774a",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/48//#testresult/565e8c569f20774a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341830465,
+          "stop" : 1620341830481,
+          "duration" : 16
+        }
+      }, {
+        "uid" : "d8cb97e019d75fdc",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/48//#testresult/d8cb97e019d75fdc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341814457,
+          "stop" : 1620341814473,
+          "duration" : 16
+        }
+      }, {
+        "uid" : "d67d87e787b96b6f",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/47//#testresult/d67d87e787b96b6f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341722875,
+          "stop" : 1620341722892,
+          "duration" : 17
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fd9e10a87ec70cfa.json",
+  "parameterValues" : [ ]
+}

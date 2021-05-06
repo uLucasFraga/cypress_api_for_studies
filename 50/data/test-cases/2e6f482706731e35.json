@@ -1,0 +1,152 @@
+{
+  "uid" : "2e6f482706731e35",
+  "name" : "/DELETE - Deletar um carrinho quando \"cancelar uma compra\" válido sem utilização de token",
+  "fullName" : "/DELETE - Deletar um carrinho quando \"cancelar uma compra\" válido sem utilização de token",
+  "historyId" : "59d16ad4e70db93339d9823f2df9f7bd",
+  "time" : {
+    "start" : 1620345521198,
+    "stop" : 1620345521232,
+    "duration" : 34
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "deleteWhenCancelCart",
+      "time" : {
+        "start" : 1620345521213,
+        "stop" : 1620345521227,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620345521214,
+          "stop" : 1620345521227,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Token de acesso ausente, inválido, expirado ou usuário do token não existe mais** to equal **Token de acesso ausente, inválido, expirado ou usuário do token não existe mais** assert",
+      "time" : {
+        "start" : 1620345521231,
+        "stop" : 1620345521231,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **401** to equal **401** assert",
+      "time" : {
+        "start" : 1620345521232,
+        "stop" : 1620345521232,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[CARRINHOS] :: Deletar Carrinhos quando \"Cancelar uma Compra\" sem Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "aad7e467547a6a8f",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/49//#testresult/aad7e467547a6a8f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620343940727,
+          "stop" : 1620343940744,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "6648b2765de7680c",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/48//#testresult/6648b2765de7680c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341813420,
+          "stop" : 1620341813455,
+          "duration" : 35
+        }
+      }, {
+        "uid" : "2912e3120c6408b6",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/48//#testresult/2912e3120c6408b6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341798591,
+          "stop" : 1620341798611,
+          "duration" : 20
+        }
+      }, {
+        "uid" : "f4f887ab33dfece1",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/47//#testresult/f4f887ab33dfece1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341705950,
+          "stop" : 1620341706000,
+          "duration" : 50
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2e6f482706731e35.json",
+  "parameterValues" : [ ]
+}

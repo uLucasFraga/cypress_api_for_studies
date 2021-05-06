@@ -1,0 +1,143 @@
+{
+  "uid" : "1699650f9cbe8fcd",
+  "name" : "/POST - Cadastrar um usuário válido",
+  "fullName" : "/POST - Cadastrar um usuário válido",
+  "historyId" : "c7c05b0df7829e6010ff418ee54b43c7",
+  "time" : {
+    "start" : 1620345568039,
+    "stop" : 1620345568089,
+    "duration" : 50
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerUser (\"Addie Olson\"; \"Otis.Okuneva@gmail.com\"; \"5plmXDzAgaOB9Gu\"; \"true\")",
+      "time" : {
+        "start" : 1620345568058,
+        "stop" : 1620345568078,
+        "duration" : 20
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620345568062,
+          "stop" : 1620345568078,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+      "time" : {
+        "start" : 1620345568087,
+        "stop" : 1620345568087,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **201** to equal **201** assert",
+      "time" : {
+        "start" : 1620345568087,
+        "stop" : 1620345568087,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[USUÁRIOS] :: Cadastrar Usuários"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "6dcf26313ae0eb84",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/49//#testresult/6dcf26313ae0eb84",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620343980765,
+          "stop" : 1620343980828,
+          "duration" : 63
+        }
+      }, {
+        "uid" : "74c54e6e42a9bcd0",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/48//#testresult/74c54e6e42a9bcd0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341860509,
+          "stop" : 1620341860584,
+          "duration" : 75
+        }
+      }, {
+        "uid" : "2013050716dd7e78",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/48//#testresult/2013050716dd7e78",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341843388,
+          "stop" : 1620341843427,
+          "duration" : 39
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1699650f9cbe8fcd.json",
+  "parameterValues" : [ ]
+}

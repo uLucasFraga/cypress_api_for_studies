@@ -1,0 +1,152 @@
+{
+  "uid" : "e172538e7c61ec3b",
+  "name" : "/POST - Cadastrar um carrinho válido sem utilização de token",
+  "fullName" : "/POST - Cadastrar um carrinho válido sem utilização de token",
+  "historyId" : "e5c0044c42c83801f62fade53559470c",
+  "time" : {
+    "start" : 1620345532375,
+    "stop" : 1620345532417,
+    "duration" : 42
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerCart (\"6375yn4fym\"; \"1128\")",
+      "time" : {
+        "start" : 1620345532390,
+        "stop" : 1620345532409,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620345532395,
+          "stop" : 1620345532409,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Token de acesso ausente, inválido, expirado ou usuário do token não existe mais** to equal **Token de acesso ausente, inválido, expirado ou usuário do token não existe mais** assert",
+      "time" : {
+        "start" : 1620345532416,
+        "stop" : 1620345532416,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **401** to equal **401** assert",
+      "time" : {
+        "start" : 1620345532416,
+        "stop" : 1620345532416,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[CARRINHOS] :: Cadastrar Carrinhos sem Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "433f8c7da26a53c8",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/49//#testresult/433f8c7da26a53c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620343949992,
+          "stop" : 1620343950034,
+          "duration" : 42
+        }
+      }, {
+        "uid" : "8737ddea6f48baf",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/48//#testresult/8737ddea6f48baf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341824673,
+          "stop" : 1620341824747,
+          "duration" : 74
+        }
+      }, {
+        "uid" : "5eebe590703f9194",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/48//#testresult/5eebe590703f9194",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341808978,
+          "stop" : 1620341809057,
+          "duration" : 79
+        }
+      }, {
+        "uid" : "abfd67d0e0df3183",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/47//#testresult/abfd67d0e0df3183",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341717209,
+          "stop" : 1620341717251,
+          "duration" : 42
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e172538e7c61ec3b.json",
+  "parameterValues" : [ ]
+}
