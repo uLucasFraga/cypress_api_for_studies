@@ -1,3 +1,10 @@
 [ {
+  "buildOrder" : 47,
+  "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/47/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 23089
+  }
+}, {
   "data" : { }
 } ]
