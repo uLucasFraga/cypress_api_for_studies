@@ -14,7 +14,7 @@ const userFaker = {
   }
 }
 
-describe('[INTEGRATION] :: Editar Usuários', () => {
+describe('[USUÁRIOS] :: Editar Usuários', () => {
   let _id
 
   before(() => {

@@ -5,7 +5,7 @@
 import dataProducts from '../../../fixtures/produtos.json'
 const httpStatus = require('http-status-codes')
 
-describe('[INTEGRATION] :: Listar Produtos', () => {
+describe('[PRODUTOS] :: Listar Produtos', () => {
   let qtd
 
   it('/GET - Listar todos os produtos cadastrados', () => {

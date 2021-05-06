@@ -14,7 +14,7 @@ const userFaker = {
   }
 }
 
-describe('[INTEGRATION] :: Realizar Login', () => {
+describe('[LOGIN] :: Realizar Login', () => {
   before(() => {
     cy.registerUser(
       userFaker.BODY.nome,

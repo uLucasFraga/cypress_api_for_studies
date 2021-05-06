@@ -15,7 +15,7 @@ const productFaker = {
   }
 }
 
-describe('[INTEGRATION] :: Editar Produtos sem Token de autorização', () => {
+describe('[PRODUTOS] :: Editar Produtos sem Token de autorização', () => {
   it('/PUT - Editar um produto válido', () => {
     cy.modifyProduct(
       dataProducts.produtos[0]._id,
@@ -31,7 +31,7 @@ describe('[INTEGRATION] :: Editar Produtos sem Token de autorização', () => {
   })
 })
 
-describe('[INTEGRATION] :: Editar Produtos com Token de autorização', () => {
+describe('[PRODUTOS] :: Editar Produtos com Token de autorização', () => {
   let _id
   let newId
 

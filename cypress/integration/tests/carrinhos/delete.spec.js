@@ -5,7 +5,7 @@
 import faker from 'faker'
 const httpStatus = require('http-status-codes')
 
-describe('[INTEGRATION] :: Deletar Carrinhos quando "Concluir uma Compra" sem Token de autorização', () => {
+describe('[CARRINHOS] :: Deletar Carrinhos quando "Concluir uma Compra" sem Token de autorização', () => {
   it('/DELETE - Deletar um carrinho quando "concluir uma compra" válido sem utilização de token', () => {
     cy.deleteWhenPurchaseCompleteCart()
       .then((response) => {
@@ -15,7 +15,7 @@ describe('[INTEGRATION] :: Deletar Carrinhos quando "Concluir uma Compra" sem To
   })
 })
 
-describe('[INTEGRATION] :: Deletar Carrinhos quando "Concluir uma Compra" Token de autorização', () => {
+describe('[CARRINHOS] :: Deletar Carrinhos quando "Concluir uma Compra" Token de autorização', () => {
   let _id
 
   beforeEach(() => {
@@ -55,7 +55,7 @@ describe('[INTEGRATION] :: Deletar Carrinhos quando "Concluir uma Compra" Token 
   })
 })
 
-describe('[INTEGRATION] :: Deletar Carrinhos quando "Cancelar uma Compra" sem Token de autorização', () => {
+describe('[CARRINHOS] :: Deletar Carrinhos quando "Cancelar uma Compra" sem Token de autorização', () => {
   it('/DELETE - Deletar um carrinho quando "cancelar uma compra" válido sem utilização de token', () => {
     cy.deleteWhenCancelCart()
       .then((response) => {
@@ -65,7 +65,7 @@ describe('[INTEGRATION] :: Deletar Carrinhos quando "Cancelar uma Compra" sem To
   })
 })
 
-describe('[INTEGRATION] :: Deletar Carrinhos quando "Cancelar uma Compra" Token de autorização', () => {
+describe('[CARRINHOS] :: Deletar Carrinhos quando "Cancelar uma Compra" Token de autorização', () => {
   let _id
 
   beforeEach(() => {

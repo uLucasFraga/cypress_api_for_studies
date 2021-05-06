@@ -15,7 +15,7 @@ const productFaker = {
   }
 }
 
-describe('[INTEGRATION] :: Deletar Produtos sem Token de autorização', () => {
+describe('[PRODUTOS] :: Deletar Produtos sem Token de autorização', () => {
   it('/DELETE - Deletar um produto válido sem utilização de token', () => {
     cy.deleteProduct(dataProduct.produtos[0]._id)
       .then((response) => {
@@ -25,7 +25,7 @@ describe('[INTEGRATION] :: Deletar Produtos sem Token de autorização', () => {
   })
 })
 
-describe('[INTEGRATION] :: Deletar Produtos', () => {
+describe('[PRODUTOS] :: Deletar Produtos', () => {
   let _id
 
   beforeEach(() => {

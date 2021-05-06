@@ -13,7 +13,7 @@ const carsFaker = {
   }
 }
 
-describe('[INTEGRATION] :: Cadastrar Carrinhos sem Token de autorização', () => {
+describe('[CARRINHOS] :: Cadastrar Carrinhos sem Token de autorização', () => {
   it('/POST - Cadastrar um carrinho válido sem utilização de token', () => {
     cy.registerCart(
       carsFaker.BODY.idProduto,
@@ -26,7 +26,7 @@ describe('[INTEGRATION] :: Cadastrar Carrinhos sem Token de autorização', () =
   })
 })
 
-describe('[INTEGRATION] :: Cadastrar Carrinhos com Token de autorização', () => {
+describe('[CARRINHOS] :: Cadastrar Carrinhos com Token de autorização', () => {
   let _id
 
   beforeEach(() => {

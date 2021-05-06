@@ -14,7 +14,7 @@ const userFaker = {
   }
 }
 
-describe('[INTEGRATION] :: Cadastrar Usuários', () => {
+describe('[USUÁRIOS] :: Cadastrar Usuários', () => {
   it('/POST - Cadastrar um usuário válido', () => {
     cy.registerUser(
       userFaker.BODY.nome,
