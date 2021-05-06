@@ -5,7 +5,7 @@
 import dataUsers from '../../../fixtures/usuarios.json'
 const httpStatus = require('http-status-codes')
 
-describe('[INTEGRATION] :: Listar Usuários', () => {
+describe('[USUÁRIOS] :: Listar Usuários', () => {
   let qtd
 
   it('/GET - Listar todos os usuários cadastrados', () => {

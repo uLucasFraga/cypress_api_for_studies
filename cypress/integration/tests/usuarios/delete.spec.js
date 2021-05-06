@@ -15,7 +15,7 @@ const userFaker = {
   }
 }
 
-describe('[INTEGRATION] :: Deletar Usuários', () => {
+describe('[USUÁRIOS] :: Deletar Usuários', () => {
   let _id
 
   before(() => {

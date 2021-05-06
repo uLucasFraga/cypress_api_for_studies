@@ -6,7 +6,7 @@ import faker from 'faker'
 import dataCarts from '../../../fixtures/carrinhos.json'
 const httpStatus = require('http-status-codes')
 
-describe('[INTEGRATION] :: Listar Carrinhos', () => {
+describe('[CARRINHOS] :: Listar Carrinhos', () => {
   let qtd
   let totalPrice
   let totalQtd
