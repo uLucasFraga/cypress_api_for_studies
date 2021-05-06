@@ -1,4 +1,114 @@
 {
-  "total" : 0,
-  "items" : [ ]
+  "total" : 11,
+  "items" : [ {
+    "uid" : "abe3563a87ef84d98cd5bb66f260264f",
+    "name" : "[CARRINHOS] :: Listar Carrinhos",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 15,
+      "unknown" : 0,
+      "total" : 15
+    }
+  }, {
+    "uid" : "e70d2b3f80ff42f37eda24e7b58c08d0",
+    "name" : "[PRODUTOS] :: Listar Produtos",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "971dd6fc5f8929b4698f82e24b3159f2",
+    "name" : "[LOGIN] :: Realizar Login",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 8
+    }
+  }, {
+    "uid" : "f356215ae2ab263a950bfe82e05c91b7",
+    "name" : "[CARRINHOS] :: Cadastrar Carrinhos com Token de autorização",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "5c154d5552877bcaf5ff2cb339870b80",
+    "name" : "[PRODUTOS] :: Deletar Produtos",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "cf0f38495225f3fdb4f2a0c7f070a76a",
+    "name" : "[CARRINHOS] :: Deletar Carrinhos quando \"Concluir uma Compra\" Token de autorização",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "c44fb8b980c8afe46dcd9f61d3b4c118",
+    "name" : "[CARRINHOS] :: Deletar Carrinhos quando \"Cancelar uma Compra\" Token de autorização",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "9ae61dd66efc632b5899ed2a2cfee62b",
+    "name" : "[CARRINHOS] :: Deletar Carrinhos quando \"Concluir uma Compra\" sem Token de autorização",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "06bcc5ef2cac18932151f8e8be104a93",
+    "name" : "[CARRINHOS] :: Deletar Carrinhos quando \"Cancelar uma Compra\" sem Token de autorização",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "4ceb79dfa060da16d4bdc834fb482f6d",
+    "name" : "[CARRINHOS] :: Cadastrar Carrinhos sem Token de autorização",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
 }

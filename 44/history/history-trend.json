@@ -1,4 +1,16 @@
 [ {
+  "buildOrder" : 44,
+  "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 49,
+    "unknown" : 0,
+    "total" : 49
+  }
+}, {
   "data" : {
     "failed" : 0,
     "broken" : 0,

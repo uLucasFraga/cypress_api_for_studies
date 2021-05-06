@@ -1,1 +1,982 @@
-{ }
+{
+  "6989f13e0389048d3c7fe1d16bf1c47f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "98a46a030777b0a9",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/98a46a030777b0a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339988348,
+        "stop" : 1620339988399,
+        "duration" : 51
+      }
+    } ]
+  },
+  "f6c0ac5e2540da12ecfd2817a3112594" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7c4035996f05e4db",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/7c4035996f05e4db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339993980,
+        "stop" : 1620339994000,
+        "duration" : 20
+      }
+    } ]
+  },
+  "06c090b176181a64aee82800872d3ee4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "428b8b92e762f0ce",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/428b8b92e762f0ce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339988165,
+        "stop" : 1620339988223,
+        "duration" : 58
+      }
+    } ]
+  },
+  "15de4cb6608a1a76627a567890a997c4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2ddf7ff2386e9bf3",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/2ddf7ff2386e9bf3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339999234,
+        "stop" : 1620339999279,
+        "duration" : 45
+      }
+    } ]
+  },
+  "b4eb2f20ce04be1031b9a907f5d6eaf1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b7e30463864ed5c1",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/b7e30463864ed5c1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339982971,
+        "stop" : 1620339982995,
+        "duration" : 24
+      }
+    } ]
+  },
+  "d2484d373f547d17ad3bb5ec9fb16b25" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "76fd961e02d2288a",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/76fd961e02d2288a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339982708,
+        "stop" : 1620339982728,
+        "duration" : 20
+      }
+    } ]
+  },
+  "17e9629c9e6e40b60fb4f802f39da8d9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4840063d2d94d669",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/4840063d2d94d669",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339976720,
+        "stop" : 1620339976774,
+        "duration" : 54
+      }
+    } ]
+  },
+  "b4441b3e1d4afd586229c1b12a41a8d8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "138880bf24481f5f",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/138880bf24481f5f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339993910,
+        "stop" : 1620339993930,
+        "duration" : 20
+      }
+    } ]
+  },
+  "b6389f246c2c87e2d607063d79ce131f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3f3bd7e8f668e494",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/3f3bd7e8f668e494",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339982768,
+        "stop" : 1620339982793,
+        "duration" : 25
+      }
+    } ]
+  },
+  "a0af95c274d0e6b3c635118c9a4e41a8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "aac4d05e90621b1d",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/aac4d05e90621b1d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339982796,
+        "stop" : 1620339982818,
+        "duration" : 22
+      }
+    } ]
+  },
+  "9ed5352533fba201255547a8bc5efacb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b47d0c731b1f03cd",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/b47d0c731b1f03cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620340001169,
+        "stop" : 1620340001185,
+        "duration" : 16
+      }
+    } ]
+  },
+  "260002ec885ca48e1c35b5c4ac466932" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6b61c01a65c56891",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/6b61c01a65c56891",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620340001206,
+        "stop" : 1620340001221,
+        "duration" : 15
+      }
+    } ]
+  },
+  "59d16ad4e70db93339d9823f2df9f7bd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fccfe03a31f23cba",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/fccfe03a31f23cba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339976777,
+        "stop" : 1620339976798,
+        "duration" : 21
+      }
+    } ]
+  },
+  "7c8de102b11a36c3f971d020dc7ba50a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a14ffa150c937cbe",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/a14ffa150c937cbe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339982890,
+        "stop" : 1620339982909,
+        "duration" : 19
+      }
+    } ]
+  },
+  "605d4104b70746d74baf6f23f6d672e7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "92fcb9dc317f5eab",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/92fcb9dc317f5eab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339999386,
+        "stop" : 1620339999437,
+        "duration" : 51
+      }
+    } ]
+  },
+  "e5c0044c42c83801f62fade53559470c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cd77fe108a2f7926",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/cd77fe108a2f7926",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339988118,
+        "stop" : 1620339988160,
+        "duration" : 42
+      }
+    } ]
+  },
+  "546cedaf57c9d8c00c9b67806c8a249f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "51a5905fd1199ee3",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/51a5905fd1199ee3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339982821,
+        "stop" : 1620339982840,
+        "duration" : 19
+      }
+    } ]
+  },
+  "732817599e847a91993a9363b8a0b0fa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a59018ee0a9f63f9",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/a59018ee0a9f63f9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339982844,
+        "stop" : 1620339982863,
+        "duration" : 19
+      }
+    } ]
+  },
+  "e9320a22e2fe5eefba045c9ce03a4dbe" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "953d0310564f5e5d",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/953d0310564f5e5d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339988291,
+        "stop" : 1620339988346,
+        "duration" : 55
+      }
+    } ]
+  },
+  "669f6179bacdf32fe068ce9010b9e5ed" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "553ab29cb93ace13",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/553ab29cb93ace13",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339982945,
+        "stop" : 1620339982968,
+        "duration" : 23
+      }
+    } ]
+  },
+  "847a270ddf767f49a937d91789702f76" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "57ee919a5dbd7598",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/57ee919a5dbd7598",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620340001089,
+        "stop" : 1620340001107,
+        "duration" : 18
+      }
+    } ]
+  },
+  "314073b6c3a5d257f6f08faa4804990c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2710c4da9225b694",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/2710c4da9225b694",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339999285,
+        "stop" : 1620339999337,
+        "duration" : 52
+      }
+    } ]
+  },
+  "1a27459dd93e94a5211465c494396bac" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "47c5839e01a4d012",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/47c5839e01a4d012",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339988226,
+        "stop" : 1620339988288,
+        "duration" : 62
+      }
+    } ]
+  },
+  "47a6335ea27e54d82024a725598150ae" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6fc439bca729a159",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/6fc439bca729a159",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339976549,
+        "stop" : 1620339976613,
+        "duration" : 64
+      }
+    } ]
+  },
+  "79a064b9ea13db23f8526ca387db319a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6b891ac80349a543",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/6b891ac80349a543",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339982622,
+        "stop" : 1620339982647,
+        "duration" : 25
+      }
+    } ]
+  },
+  "11a1c78b1bf7e2f7f01471661d14d057" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "855a4456a9adb22b",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/855a4456a9adb22b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339994005,
+        "stop" : 1620339994026,
+        "duration" : 21
+      }
+    } ]
+  },
+  "83c84a9e5c213f0772e9fcffc8aea64e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1f2475426de421fa",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/1f2475426de421fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620340001019,
+        "stop" : 1620340001063,
+        "duration" : 44
+      }
+    } ]
+  },
+  "c73a3615d68bea8c0ed993295cd377cc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cee5046faa90093",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/cee5046faa90093",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339982911,
+        "stop" : 1620339982943,
+        "duration" : 32
+      }
+    } ]
+  },
+  "3dd387ac50b0926b83a0e6f68d60cbd5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8ad5d9cbbb4d6a3f",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/8ad5d9cbbb4d6a3f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620340001129,
+        "stop" : 1620340001146,
+        "duration" : 17
+      }
+    } ]
+  },
+  "47c552d89f9db7eafbde679bc4cb3255" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a751dc2799b57a42",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/a751dc2799b57a42",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339999340,
+        "stop" : 1620339999383,
+        "duration" : 43
+      }
+    } ]
+  },
+  "736df8187f072071be248a1cbe64490a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8ac3e039fd0d58ab",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/8ac3e039fd0d58ab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339993870,
+        "stop" : 1620339993886,
+        "duration" : 16
+      }
+    } ]
+  },
+  "d9eeb89326bd08786310b6af5ff78472" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "77a1f29097d49482",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/77a1f29097d49482",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339982678,
+        "stop" : 1620339982701,
+        "duration" : 23
+      }
+    } ]
+  },
+  "3ee7d26ab0d74976242abb698d1a6373" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3136006d2e286a33",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/3136006d2e286a33",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339982650,
+        "stop" : 1620339982675,
+        "duration" : 25
+      }
+    } ]
+  },
+  "b2801249f845675051fc05b04adb4039" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "56386b2e7452c9e7",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/56386b2e7452c9e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339993890,
+        "stop" : 1620339993908,
+        "duration" : 18
+      }
+    } ]
+  },
+  "25f36da75711e0dc7b4a0fd776a043c4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "edc8c6a7dac1f17e",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/edc8c6a7dac1f17e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339982866,
+        "stop" : 1620339982887,
+        "duration" : 21
+      }
+    } ]
+  },
+  "f5bd39c9976acd8b156509d48026bdae" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "35b8e4fded4e4bde",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/35b8e4fded4e4bde",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339982731,
+        "stop" : 1620339982754,
+        "duration" : 23
+      }
+    } ]
+  },
+  "479101b0764f0ea53dc3b0110e8671bf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a55b46aa0322cfce",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/a55b46aa0322cfce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339982548,
+        "stop" : 1620339982615,
+        "duration" : 67
+      }
+    } ]
+  },
+  "d053418afea6ab2fac8280e4e4d45081" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ba0a52b0c87a17ea",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/ba0a52b0c87a17ea",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339976619,
+        "stop" : 1620339976717,
+        "duration" : 98
+      }
+    } ]
+  },
+  "5407ab5bdd45671b10ab4228bc712305" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ab2492aa68d3f384",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/ab2492aa68d3f384",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620340001110,
+        "stop" : 1620340001126,
+        "duration" : 16
+      }
+    } ]
+  },
+  "e6a9f1e8ff499e382bbaecd85b150877" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f2358236e619854c",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/f2358236e619854c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339994032,
+        "stop" : 1620339994054,
+        "duration" : 22
+      }
+    } ]
+  },
+  "ee63bcb58d2de8d4433ed3e2bbac6d79" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c5e8a8d6dbd17962",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/c5e8a8d6dbd17962",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339999439,
+        "stop" : 1620339999483,
+        "duration" : 44
+      }
+    } ]
+  },
+  "e6d364d7a67beb2ce3fe86e69aaf0b3a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "51580cb2e5c3b76b",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/51580cb2e5c3b76b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339988401,
+        "stop" : 1620339988450,
+        "duration" : 49
+      }
+    } ]
+  },
+  "cf5abaeb92589962c5b52c699e0a95fe" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5f27810531f043da",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/5f27810531f043da",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620340001187,
+        "stop" : 1620340001203,
+        "duration" : 16
+      }
+    } ]
+  },
+  "7b06493a66fde32cb7b285d5dbc1d8de" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "29f4f541c8c3ab7c",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/29f4f541c8c3ab7c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620340001067,
+        "stop" : 1620340001086,
+        "duration" : 19
+      }
+    } ]
+  },
+  "69df8963c565567473ea27860b93afa2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ca10392503bdc7cf",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/ca10392503bdc7cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339993934,
+        "stop" : 1620339993957,
+        "duration" : 23
+      }
+    } ]
+  },
+  "959251a60de6f1ba5b00387de05a9486" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "22589ed0b712f931",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/22589ed0b712f931",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620340001149,
+        "stop" : 1620340001167,
+        "duration" : 18
+      }
+    } ]
+  },
+  "c8007de18be01a64e410e27011996ac0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "56174150a997850c",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/56174150a997850c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339976816,
+        "stop" : 1620339976912,
+        "duration" : 96
+      }
+    } ]
+  },
+  "dafde0330edb32a6f9c08a426a5decf5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4cd32677f7b59c3c",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/4cd32677f7b59c3c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339976915,
+        "stop" : 1620339976963,
+        "duration" : 48
+      }
+    } ]
+  },
+  "d1267d26d9565e9766a29a60bf3d456b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8d3cd358244c8f14",
+      "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/44//#testresult/8d3cd358244c8f14",
+      "status" : "passed",
+      "time" : {
+        "start" : 1620339993960,
+        "stop" : 1620339993978,
+        "duration" : 18
+      }
+    } ]
+  }
+}
