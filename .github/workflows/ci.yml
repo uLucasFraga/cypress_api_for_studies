@@ -8,12 +8,16 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-18.04
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [8, 10]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: node.js 10 setup
         with:
-          node-version: 10
+          node-version: ${{ matrix.node-version }}
         uses: actions/setup-node@v2
       - name: Installation of dependencies
         run: npm ci
@@ -21,13 +25,19 @@ jobs:
         run: npm run lint
   api-tests-and-report:
     runs-on: ubuntu-18.04
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [8, 10]
+        ci_node_total: [2]
+        ci_node_index: [0, 1]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Node.js 10 setup
         uses: actions/setup-node@v2
         with:
-          node-version: 10
+          node-version: ${{ matrix.node-version }}
       - name: Installation of dependencies
         run: npm ci
       - name: Start serveRest locally
@@ -38,6 +48,10 @@ jobs:
           CYPRESS_APP_URL: http://localhost:3000
           CYPRESS_EMAIL: ${{ secrets.EMAIL }}
           CYPRESS_PASSWORD: ${{ secrets.PASSWORD }}
+          KNAPSACK_PRO_TEST_SUITE_TOKEN_CYPRESS: ${{ secrets.KNAPSACK_PRO_TEST_SUITE_TOKEN_CYPRESS }}
+          KNAPSACK_PRO_CI_NODE_TOTAL: ${{ matrix.ci_node_total }}
+          KNAPSACK_PRO_CI_NODE_INDEX: ${{ matrix.ci_node_index }}
+          KNAPSACK_PRO_FIXED_QUEUE_SPLIT: true
       - name: Get allure history
         uses: actions/checkout@v2
         if: always()

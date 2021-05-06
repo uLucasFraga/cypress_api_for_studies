@@ -7,6 +7,7 @@
     "mocha": "^8.3.2"
   },
   "devDependencies": {
+    "@knapsack-pro/cypress": "^4.3.1",
     "@shelex/cypress-allure-plugin": "^2.5.1",
     "cypress-multi-reporters": "^1.5.0",
     "faker": "^5.5.3",
