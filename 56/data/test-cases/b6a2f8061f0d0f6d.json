@@ -1,0 +1,143 @@
+{
+  "uid" : "b6a2f8061f0d0f6d",
+  "name" : "/GET - Listar produtos cadastrados pela descrição",
+  "fullName" : "/GET - Listar produtos cadastrados pela descrição",
+  "historyId" : "5407ab5bdd45671b10ab4228bc712305",
+  "time" : {
+    "start" : 1620419950945,
+    "stop" : 1620419950960,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "consultProduct (\"[object Object]\"; \"[object Object]\"; \"Mouse\")",
+      "time" : {
+        "start" : 1620419950950,
+        "stop" : 1620419950956,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620419950950,
+          "stop" : 1620419950956,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Mouse** to deeply equal **Mouse** assert",
+      "time" : {
+        "start" : 1620419950960,
+        "stop" : 1620419950960,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **200** to equal **200** assert",
+      "time" : {
+        "start" : 1620419950960,
+        "stop" : 1620419950960,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[PRODUTOS] :: Listar Produtos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "e0442aa8d811a84a",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/55//#testresult/e0442aa8d811a84a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620419518427,
+          "stop" : 1620419518443,
+          "duration" : 16
+        }
+      }, {
+        "uid" : "2918c874e393bab4",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/54//#testresult/2918c874e393bab4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620419159032,
+          "stop" : 1620419159051,
+          "duration" : 19
+        }
+      }, {
+        "uid" : "3b791bb1527b9899",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/53//#testresult/3b791bb1527b9899",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620418969334,
+          "stop" : 1620418969359,
+          "duration" : 25
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b6a2f8061f0d0f6d.json",
+  "parameterValues" : [ ]
+}

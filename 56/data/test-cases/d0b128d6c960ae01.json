@@ -1,0 +1,143 @@
+{
+  "uid" : "d0b128d6c960ae01",
+  "name" : "/POST - Cadastrar um usuário válido",
+  "fullName" : "/POST - Cadastrar um usuário válido",
+  "historyId" : "c7c05b0df7829e6010ff418ee54b43c7",
+  "time" : {
+    "start" : 1620419972189,
+    "stop" : 1620419972229,
+    "duration" : 40
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerUser (\"Meda Gusikowski\"; \"Joanie55@hotmail.com\"; \"D48vbp34r_5M7sq\"; \"true\")",
+      "time" : {
+        "start" : 1620419972204,
+        "stop" : 1620419972222,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620419972208,
+          "stop" : 1620419972222,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+      "time" : {
+        "start" : 1620419972228,
+        "stop" : 1620419972228,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **201** to equal **201** assert",
+      "time" : {
+        "start" : 1620419972228,
+        "stop" : 1620419972228,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[USUÁRIOS] :: Cadastrar Usuários"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "426e4f59b5de2c3a",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/55//#testresult/426e4f59b5de2c3a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620419540554,
+          "stop" : 1620419540615,
+          "duration" : 61
+        }
+      }, {
+        "uid" : "fb2b740d6f2162a2",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/54//#testresult/fb2b740d6f2162a2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620419183275,
+          "stop" : 1620419183366,
+          "duration" : 91
+        }
+      }, {
+        "uid" : "6b40a3479f7aae01",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/53//#testresult/6b40a3479f7aae01",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620418994503,
+          "stop" : 1620418994610,
+          "duration" : 107
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d0b128d6c960ae01.json",
+  "parameterValues" : [ ]
+}

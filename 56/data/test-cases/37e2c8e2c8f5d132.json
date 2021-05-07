@@ -1,0 +1,143 @@
+{
+  "uid" : "37e2c8e2c8f5d132",
+  "name" : "/POST - Cadastrar um usuário sem a flag de admin",
+  "fullName" : "/POST - Cadastrar um usuário sem a flag de admin",
+  "historyId" : "f23a9c6c8fddcc5f2bf200d7275b7145",
+  "time" : {
+    "start" : 1620419972295,
+    "stop" : 1620419972310,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerUser (\"Meda Gusikowski\"; \"Joanie55@hotmail.com\"; \"D48vbp34r_5M7sq\"; \"\")",
+      "time" : {
+        "start" : 1620419972300,
+        "stop" : 1620419972307,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620419972300,
+          "stop" : 1620419972307,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **administrador deve ser 'true' ou 'false'** to equal **administrador deve ser **'true'** ou **'false'**** assert",
+      "time" : {
+        "start" : 1620419972310,
+        "stop" : 1620419972310,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **400** to equal **400** assert",
+      "time" : {
+        "start" : 1620419972310,
+        "stop" : 1620419972310,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[USUÁRIOS] :: Cadastrar Usuários"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "9b040c15c3b8cd1b",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/55//#testresult/9b040c15c3b8cd1b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620419540702,
+          "stop" : 1620419540724,
+          "duration" : 22
+        }
+      }, {
+        "uid" : "c6dfbb6325edbae7",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/54//#testresult/c6dfbb6325edbae7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620419183441,
+          "stop" : 1620419183460,
+          "duration" : 19
+        }
+      }, {
+        "uid" : "12c029a72ca0fdc8",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/53//#testresult/12c029a72ca0fdc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620418994697,
+          "stop" : 1620418994719,
+          "duration" : 22
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "37e2c8e2c8f5d132.json",
+  "parameterValues" : [ ]
+}
