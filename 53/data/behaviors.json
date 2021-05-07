@@ -1,0 +1,1253 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "/DELETE - Deletar um carrinho quando \"concluir uma compra\" válido sem utilização de token",
+    "uid" : "cd0d0d28cf188d1e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418943246,
+      "stop" : 1620418943314,
+      "duration" : 68
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/DELETE - Deletar um carrinho quando \"concluir uma compra\" válido com utilização de token",
+    "uid" : "ebef1ea7f91bff5b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418943320,
+      "stop" : 1620418943430,
+      "duration" : 110
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/DELETE - Deletar um carrinho quando \"concluir uma compra\" que não existe para o usuário",
+    "uid" : "83a305e6e55ac239",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418943434,
+      "stop" : 1620418943501,
+      "duration" : 67
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/DELETE - Deletar um carrinho quando \"cancelar uma compra\" válido sem utilização de token",
+    "uid" : "3c79e286fd360429",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418943505,
+      "stop" : 1620418943532,
+      "duration" : 27
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/DELETE - Deletar um carrinho quando \"cancelar uma compra\" válido com utilização de token",
+    "uid" : "e1cbefdcb6357a9b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418943536,
+      "stop" : 1620418943648,
+      "duration" : 112
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/DELETE - Deletar um carrinho quando \"cancelar uma compra\" que não existe para o usuário",
+    "uid" : "1eb2b2b6bbf696f1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418943651,
+      "stop" : 1620418943705,
+      "duration" : 54
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar todos os carrinhos cadastrados",
+    "uid" : "6c6389c95c794a80",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418949593,
+      "stop" : 1620418949650,
+      "duration" : 57
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar carrinhos cadastrados pelo _id",
+    "uid" : "9e6a951227bcff58",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418949655,
+      "stop" : 1620418949691,
+      "duration" : 36
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar carrinhos cadastrados por um _id inválido",
+    "uid" : "24564093a0bda860",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418949702,
+      "stop" : 1620418949722,
+      "duration" : 20
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar carrinhos cadastrados pelo id do usuário",
+    "uid" : "342f27b584d4c65f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418949730,
+      "stop" : 1620418949775,
+      "duration" : 45
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar carrinhos cadastrados pelo id do usuário inválido",
+    "uid" : "f3498be324a96fdc",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418949778,
+      "stop" : 1620418949797,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar carrinhos cadastrados pelo preço total",
+    "uid" : "d784a392df9fcb43",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418949800,
+      "stop" : 1620418949820,
+      "duration" : 20
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar carrinhos cadastrados pelo preço total inválido",
+    "uid" : "ab995fef01b0217a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418949822,
+      "stop" : 1620418949847,
+      "duration" : 25
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar carrinhos cadastrados pela quantidade total",
+    "uid" : "6571887b1adb2b95",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418949850,
+      "stop" : 1620418949869,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar carrinhos cadastrados pela quantidade total inválido",
+    "uid" : "11e1f994c78f53d6",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418949871,
+      "stop" : 1620418949888,
+      "duration" : 17
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar carrinhos com uma busca correta de: id do usuário e preço total válido",
+    "uid" : "7905a9f6d9ac60f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418949891,
+      "stop" : 1620418949910,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar carrinhos com uma busca correta de: id do usuário e quantidade total válida",
+    "uid" : "9670eed0b37e2e35",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418949913,
+      "stop" : 1620418949931,
+      "duration" : 18
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar carrinhos com uma busca incorreta de: id do usuário válido e preço total inválido",
+    "uid" : "aee5ad51bc7740db",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418949934,
+      "stop" : 1620418949961,
+      "duration" : 27
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar carrinhos com uma busca incorreta de: id do usuário válido e quantidade total inválida",
+    "uid" : "f9d603c180be23d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418949966,
+      "stop" : 1620418949983,
+      "duration" : 17
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar carrinhos com uma busca inválida",
+    "uid" : "c07bfe58d8fc4c7b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418949986,
+      "stop" : 1620418950007,
+      "duration" : 21
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar carrinhos com uma busca em branco",
+    "uid" : "4900764ec4a32b64",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418950010,
+      "stop" : 1620418950030,
+      "duration" : 20
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um carrinho válido sem utilização de token",
+    "uid" : "7b7328260e39ce34",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418955599,
+      "stop" : 1620418955653,
+      "duration" : 54
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um carrinho válido com utilização de token",
+    "uid" : "2e3a55eb70598957",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418955666,
+      "stop" : 1620418955760,
+      "duration" : 94
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar mais de um carrinho para o mesmo usuário",
+    "uid" : "86e5e7a58e61677f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418955764,
+      "stop" : 1620418955849,
+      "duration" : 85
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um carrinho cujo o produto esteja duplicado",
+    "uid" : "b5bc93e9a5802dd6",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418955852,
+      "stop" : 1620418955913,
+      "duration" : 61
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um carrinho cujo o _id do produto não existe",
+    "uid" : "a8ce3cef5cd41316",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418955918,
+      "stop" : 1620418955978,
+      "duration" : 60
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um carrinho cujo a quantidade não seja suficiente",
+    "uid" : "64854586e9cbb795",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418955982,
+      "stop" : 1620418956045,
+      "duration" : 63
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Realizar login com sucesso com usuário já cadastrado (fulano@qa)",
+    "uid" : "37b8892ff127750d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418961698,
+      "stop" : 1620418961724,
+      "duration" : 26
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Realizar login com sucesso com usuário criado fake",
+    "uid" : "eb6c292685774beb",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418961729,
+      "stop" : 1620418961757,
+      "duration" : 28
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Realizar login com tipo de email inválido",
+    "uid" : "9eb471db847666e9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418961760,
+      "stop" : 1620418961786,
+      "duration" : 26
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Realizar login com email inexistente",
+    "uid" : "217ffba356cb7f9f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418961789,
+      "stop" : 1620418961812,
+      "duration" : 23
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Realizar login sem preencher o email do usuário",
+    "uid" : "8dcbf51f161fa5d0",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418961816,
+      "stop" : 1620418961838,
+      "duration" : 22
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Realizar login com senha inválida",
+    "uid" : "4c0ef07b37f429f9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418961847,
+      "stop" : 1620418961873,
+      "duration" : 26
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Realizar login sem preencher a senha",
+    "uid" : "33643071864b983a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418961877,
+      "stop" : 1620418961905,
+      "duration" : 28
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Realizar login sem preencher o email e a senha",
+    "uid" : "9a40d2f2670c6752",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418961909,
+      "stop" : 1620418961932,
+      "duration" : 23
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/DELETE - Deletar um produto válido sem utilização de token",
+    "uid" : "b4714048b9acc5e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418967358,
+      "stop" : 1620418967406,
+      "duration" : 48
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/DELETE - Deletar um produto válido",
+    "uid" : "1c38e2ddc3bf5d4d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418967413,
+      "stop" : 1620418967470,
+      "duration" : 57
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/DELETE - Deletar um produto que não existe",
+    "uid" : "95f00e0ec1599cd1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418967472,
+      "stop" : 1620418967524,
+      "duration" : 52
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/DELETE - Deletar um produto com _id em branco",
+    "uid" : "2ecb93d75ea8808c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418967526,
+      "stop" : 1620418967590,
+      "duration" : 64
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/DELETE - Deletar um produto que contenha um carrinho",
+    "uid" : "540acc7176a60fa5",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418967594,
+      "stop" : 1620418967652,
+      "duration" : 58
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar todos os produtos cadastrados",
+    "uid" : "35c91b1b9ebfe3a8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418969222,
+      "stop" : 1620418969275,
+      "duration" : 53
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar produtos cadastrados pelo _id",
+    "uid" : "2eb1698bb3be5bdc",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418969279,
+      "stop" : 1620418969301,
+      "duration" : 22
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar produtos cadastrados pelo nome",
+    "uid" : "8bb8b23b3ef1e479",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418969304,
+      "stop" : 1620418969331,
+      "duration" : 27
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar produtos cadastrados pela descrição",
+    "uid" : "3b791bb1527b9899",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418969334,
+      "stop" : 1620418969359,
+      "duration" : 25
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar produtos que não estão cadastrados pelo _id",
+    "uid" : "aa7b460a3e7a5bdb",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418969362,
+      "stop" : 1620418969381,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar produtos que não estão cadastrados pelo nome",
+    "uid" : "ae8aa354029d3911",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418969384,
+      "stop" : 1620418969403,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar produtos que não estão cadastrados pela descrição",
+    "uid" : "a611f6eb0b006c48",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418969405,
+      "stop" : 1620418969426,
+      "duration" : 21
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar produtos pelo _id na URL válido",
+    "uid" : "fc182a0f786c2051",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418969428,
+      "stop" : 1620418969448,
+      "duration" : 20
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar produtos pelo _id na URL que não existe",
+    "uid" : "767a71484874fb6e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418969451,
+      "stop" : 1620418969469,
+      "duration" : 18
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um produto válido sem utilização de token",
+    "uid" : "cc4ec66c0ca68f12",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418974919,
+      "stop" : 1620418974990,
+      "duration" : 71
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um produto válido com utilização de token",
+    "uid" : "ca06a9cea38f3543",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418975006,
+      "stop" : 1620418975075,
+      "duration" : 69
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um produto com o mesmo nome",
+    "uid" : "a85e793b0e00fb20",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418975078,
+      "stop" : 1620418975143,
+      "duration" : 65
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um produto com o campo Nome não sendo uma string",
+    "uid" : "9390edb62610c795",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418975150,
+      "stop" : 1620418975197,
+      "duration" : 47
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um produto com o campo Preço não sendo um number",
+    "uid" : "47965a41846dc8ec",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418975205,
+      "stop" : 1620418975252,
+      "duration" : 47
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um produto com o campo Descrição não sendo uma string",
+    "uid" : "623ee52b2cf296e0",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418975256,
+      "stop" : 1620418975313,
+      "duration" : 57
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um produto com o campo Quantidade não sendo um number",
+    "uid" : "18ace63eb1f7b3f1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418975316,
+      "stop" : 1620418975352,
+      "duration" : 36
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um produto sem preencher o campo Nome",
+    "uid" : "bc9506659d6b0458",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418975355,
+      "stop" : 1620418975401,
+      "duration" : 46
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um produto sem preencher o campo Preco",
+    "uid" : "5443a3b6a1ea0fc8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418975404,
+      "stop" : 1620418975445,
+      "duration" : 41
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um produto sem preencher o campo Descrição",
+    "uid" : "bc62643f3f447127",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418975448,
+      "stop" : 1620418975487,
+      "duration" : 39
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um produto sem preencher o campo Quantidade",
+    "uid" : "7ae93e7f952dd85c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418975491,
+      "stop" : 1620418975540,
+      "duration" : 49
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um produto sem preencher nenhum campo",
+    "uid" : "6f3ea61b8c949e4e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418975546,
+      "stop" : 1620418975591,
+      "duration" : 45
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/PUT - Editar um produto válido",
+    "uid" : "230dd7ef3b105f9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418980960,
+      "stop" : 1620418981007,
+      "duration" : 47
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/PUT - Editar um produto válido",
+    "uid" : "15a1e73cdc2cf83d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418981012,
+      "stop" : 1620418981067,
+      "duration" : 55
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/PUT - Editar um produto já existente",
+    "uid" : "3e25c89a1a3c1f47",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418981070,
+      "stop" : 1620418981113,
+      "duration" : 43
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/PUT - Editar um produto não existente",
+    "uid" : "4d7b7dbfa5c4f22",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418981115,
+      "stop" : 1620418981188,
+      "duration" : 73
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/DELETE - Deletar um usuário válido",
+    "uid" : "19d65a0656fda95c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418986957,
+      "stop" : 1620418986987,
+      "duration" : 30
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/DELETE - Deletar um usuário que não existe",
+    "uid" : "b175b62fc9f1a2fe",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418986992,
+      "stop" : 1620418987018,
+      "duration" : 26
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/DELETE - Deletar um usuário com _id em branco",
+    "uid" : "9273a0d80adbcf6d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418987022,
+      "stop" : 1620418987041,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/DELETE - Deletar um usuário que contenha um carrinho",
+    "uid" : "b4250d3a357867ee",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418987045,
+      "stop" : 1620418987068,
+      "duration" : 23
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar todos os usuários cadastrados",
+    "uid" : "ce655edbcfc3f517",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418988602,
+      "stop" : 1620418988650,
+      "duration" : 48
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar usuários cadastrados pelo nome",
+    "uid" : "47e29bf3f853854",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418988654,
+      "stop" : 1620418988674,
+      "duration" : 20
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar usuários cadastrados pelo email",
+    "uid" : "9a86ad49fd3f70a1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418988677,
+      "stop" : 1620418988696,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar usuários cadastrados pelo _id",
+    "uid" : "61ded8af46a6895a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418988699,
+      "stop" : 1620418988722,
+      "duration" : 23
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar usuários com uma busca correta de: nome válido e email válido",
+    "uid" : "4afc4d98dfc997f3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418988725,
+      "stop" : 1620418988757,
+      "duration" : 32
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar usuários com uma busca incorreta de: nome válido e email inválido",
+    "uid" : "d76db9b83ecd86fe",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418988760,
+      "stop" : 1620418988780,
+      "duration" : 20
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar usuários com uma busca incorreta de: nome inválido e email válido",
+    "uid" : "9d10e48a49754e57",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418988782,
+      "stop" : 1620418988801,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar usuários com uma busca incorreta de: nome sem parâmetro e email válido",
+    "uid" : "117c93d9d83ccc17",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418988804,
+      "stop" : 1620418988823,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/GET - Listar usuários com uma busca incorreta de: nome e email sem parâmetro",
+    "uid" : "a91c6fbec0080b30",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418988826,
+      "stop" : 1620418988858,
+      "duration" : 32
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um usuário válido",
+    "uid" : "6b40a3479f7aae01",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418994503,
+      "stop" : 1620418994610,
+      "duration" : 107
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um usuário sem nome",
+    "uid" : "5f3c72dae76b89b9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418994615,
+      "stop" : 1620418994648,
+      "duration" : 33
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um usuário sem email",
+    "uid" : "1fdc36eb95127930",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418994651,
+      "stop" : 1620418994670,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um usuário sem password",
+    "uid" : "9e5295cac6dc3e9c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418994673,
+      "stop" : 1620418994694,
+      "duration" : 21
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um usuário sem a flag de admin",
+    "uid" : "12c029a72ca0fdc8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418994697,
+      "stop" : 1620418994719,
+      "duration" : 22
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um usuário sem nenhuma informação preenchida",
+    "uid" : "2775644377013d93",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418994722,
+      "stop" : 1620418994748,
+      "duration" : 26
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/POST - Cadastrar um usuário já cadastrado",
+    "uid" : "d8a708d66e055f35",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620418994755,
+      "stop" : 1620418994773,
+      "duration" : 18
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/PUT - Editar nome, email e senha de um usuário válido",
+    "uid" : "c580299eec224cea",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620419000154,
+      "stop" : 1620419000173,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/PUT - Editar um usuário que não existe na base",
+    "uid" : "52424002778d2acb",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620419000177,
+      "stop" : 1620419000197,
+      "duration" : 20
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/PUT - Editar nome de um usuário válido",
+    "uid" : "5bd539508139f0e2",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620419000200,
+      "stop" : 1620419000222,
+      "duration" : 22
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/PUT - Editar email de um usuário válido",
+    "uid" : "9937a9bde275a0da",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620419000225,
+      "stop" : 1620419000243,
+      "duration" : 18
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/PUT - Editar password de um usuário válido",
+    "uid" : "ee9ca7070d962f5b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620419000246,
+      "stop" : 1620419000268,
+      "duration" : 22
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/PUT - Editar sem alterar o email",
+    "uid" : "4885cdea69255d14",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620419000271,
+      "stop" : 1620419000302,
+      "duration" : 31
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/PUT - Editar com um email inválido",
+    "uid" : "271c623beeade777",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620419000310,
+      "stop" : 1620419000335,
+      "duration" : 25
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/PUT - Editar sem preencher o nome",
+    "uid" : "edd07b3a465aa13d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620419000338,
+      "stop" : 1620419000364,
+      "duration" : 26
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/PUT - Editar sem preencher o email",
+    "uid" : "c3f300a1b0b74a43",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620419000371,
+      "stop" : 1620419000392,
+      "duration" : 21
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/PUT - Editar sem preencher o password",
+    "uid" : "d40d98af8798a281",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620419000398,
+      "stop" : 1620419000420,
+      "duration" : 22
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "/PUT - Editar sem preencher o nome, email e password",
+    "uid" : "df8d057fb8978376",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1620419000424,
+      "stop" : 1620419000454,
+      "duration" : 30
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "behaviors"
+}

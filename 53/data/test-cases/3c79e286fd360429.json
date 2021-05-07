@@ -1,0 +1,105 @@
+{
+  "uid" : "3c79e286fd360429",
+  "name" : "/DELETE - Deletar um carrinho quando \"cancelar uma compra\" válido sem utilização de token",
+  "fullName" : "/DELETE - Deletar um carrinho quando \"cancelar uma compra\" válido sem utilização de token",
+  "historyId" : "59d16ad4e70db93339d9823f2df9f7bd",
+  "time" : {
+    "start" : 1620418943505,
+    "stop" : 1620418943532,
+    "duration" : 27
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "deleteWhenCancelCart",
+      "time" : {
+        "start" : 1620418943517,
+        "stop" : 1620418943528,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620418943517,
+          "stop" : 1620418943528,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Token de acesso ausente, inválido, expirado ou usuário do token não existe mais** to equal **Token de acesso ausente, inválido, expirado ou usuário do token não existe mais** assert",
+      "time" : {
+        "start" : 1620418943532,
+        "stop" : 1620418943532,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **401** to equal **401** assert",
+      "time" : {
+        "start" : 1620418943532,
+        "stop" : 1620418943532,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[CARRINHOS] :: Deletar Carrinhos quando \"Cancelar uma Compra\" sem Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3c79e286fd360429.json",
+  "parameterValues" : [ ]
+}

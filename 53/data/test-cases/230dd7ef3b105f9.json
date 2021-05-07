@@ -1,0 +1,105 @@
+{
+  "uid" : "230dd7ef3b105f9",
+  "name" : "/PUT - Editar um produto válido",
+  "fullName" : "/PUT - Editar um produto válido",
+  "historyId" : "8c81209ee6dcfe6a17f266e5f21cfcde",
+  "time" : {
+    "start" : 1620418980960,
+    "stop" : 1620418981007,
+    "duration" : 47
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "modifyProduct (\"BeeJh5lz3k6kSIzA\"; \"Sleek Fresh Hat\"; \"405.00\"; \"Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals\"; \"60\")",
+      "time" : {
+        "start" : 1620418980976,
+        "stop" : 1620418980996,
+        "duration" : 20
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620418980981,
+          "stop" : 1620418980996,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Token de acesso ausente, inválido, expirado ou usuário do token não existe mais** to equal **Token de acesso ausente, inválido, expirado ou usuário do token não existe mais** assert",
+      "time" : {
+        "start" : 1620418981005,
+        "stop" : 1620418981005,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **401** to equal **401** assert",
+      "time" : {
+        "start" : 1620418981005,
+        "stop" : 1620418981005,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[PRODUTOS] :: Editar Produtos sem Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "230dd7ef3b105f9.json",
+  "parameterValues" : [ ]
+}

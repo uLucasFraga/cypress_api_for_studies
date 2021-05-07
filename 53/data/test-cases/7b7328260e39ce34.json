@@ -1,0 +1,105 @@
+{
+  "uid" : "7b7328260e39ce34",
+  "name" : "/POST - Cadastrar um carrinho válido sem utilização de token",
+  "fullName" : "/POST - Cadastrar um carrinho válido sem utilização de token",
+  "historyId" : "e5c0044c42c83801f62fade53559470c",
+  "time" : {
+    "start" : 1620418955599,
+    "stop" : 1620418955653,
+    "duration" : 54
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerCart (\"ufg7n6iauq\"; \"1655\")",
+      "time" : {
+        "start" : 1620418955617,
+        "stop" : 1620418955643,
+        "duration" : 26
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620418955623,
+          "stop" : 1620418955643,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Token de acesso ausente, inválido, expirado ou usuário do token não existe mais** to equal **Token de acesso ausente, inválido, expirado ou usuário do token não existe mais** assert",
+      "time" : {
+        "start" : 1620418955651,
+        "stop" : 1620418955651,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **401** to equal **401** assert",
+      "time" : {
+        "start" : 1620418955651,
+        "stop" : 1620418955651,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[CARRINHOS] :: Cadastrar Carrinhos sem Token de autorização"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7b7328260e39ce34.json",
+  "parameterValues" : [ ]
+}
