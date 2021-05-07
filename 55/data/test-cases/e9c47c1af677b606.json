@@ -1,0 +1,134 @@
+{
+  "uid" : "e9c47c1af677b606",
+  "name" : "/GET - Listar carrinhos cadastrados pela quantidade total inválido",
+  "fullName" : "/GET - Listar carrinhos cadastrados pela quantidade total inválido",
+  "historyId" : "546cedaf57c9d8c00c9b67806c8a249f",
+  "time" : {
+    "start" : 1620419501431,
+    "stop" : 1620419501445,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "consultCart (\"[object Object]\"; \"79\")",
+      "time" : {
+        "start" : 1620419501435,
+        "stop" : 1620419501441,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620419501436,
+          "stop" : 1620419501441,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **0** to equal **0** assert",
+      "time" : {
+        "start" : 1620419501444,
+        "stop" : 1620419501444,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **200** to equal **200** assert",
+      "time" : {
+        "start" : 1620419501444,
+        "stop" : 1620419501444,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[CARRINHOS] :: Listar Carrinhos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "25fb0648edb9fc41",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/54//#testresult/25fb0648edb9fc41",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620419140482,
+          "stop" : 1620419140501,
+          "duration" : 19
+        }
+      }, {
+        "uid" : "11e1f994c78f53d6",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/53//#testresult/11e1f994c78f53d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620418949871,
+          "stop" : 1620418949888,
+          "duration" : 17
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e9c47c1af677b606.json",
+  "parameterValues" : [ ]
+}
