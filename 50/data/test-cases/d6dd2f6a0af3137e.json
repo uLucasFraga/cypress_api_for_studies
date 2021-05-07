@@ -1,0 +1,222 @@
+{
+  "uid" : "d6dd2f6a0af3137e",
+  "name" : "/DELETE - Deletar um usuário que contenha um carrinho",
+  "fullName" : "/DELETE - Deletar um usuário que contenha um carrinho",
+  "historyId" : "58bb4fee010b8ed16ac1c0bb458387a2",
+  "time" : {
+    "start" : 1620345583951,
+    "stop" : 1620345583968,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "registerUser (\"Erick Rutherford\"; \"Raina25@yahoo.com\"; \"nTAMen2aqmqSDjS\"; \"false\")",
+      "time" : {
+        "start" : 1620345583821,
+        "stop" : 1620345583862,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620345583833,
+          "stop" : 1620345583862,
+          "duration" : 29
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Cadastro realizado com sucesso** to equal **Cadastro realizado com sucesso** assert",
+      "time" : {
+        "start" : 1620345583878,
+        "stop" : 1620345583878,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **201** to equal **201** assert",
+      "time" : {
+        "start" : 1620345583878,
+        "stop" : 1620345583878,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "deleteUser (\"oUb7aGkMtSEPf6BZ\")",
+      "time" : {
+        "start" : 1620345583957,
+        "stop" : 1620345583964,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620345583957,
+          "stop" : 1620345583964,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **Não é permitido excluir usuário com carrinho cadastrado** to equal **Não é permitido excluir usuário com carrinho cadastrado** assert",
+      "time" : {
+        "start" : 1620345583968,
+        "stop" : 1620345583968,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **400** to equal **400** assert",
+      "time" : {
+        "start" : 1620345583968,
+        "stop" : 1620345583968,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[USUÁRIOS] :: Deletar Usuários"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "a1822023684c98a9",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/50//#testresult/a1822023684c98a9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620345561171,
+          "stop" : 1620345561192,
+          "duration" : 21
+        }
+      }, {
+        "uid" : "5991bc6a02250f10",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/49//#testresult/5991bc6a02250f10",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620343974889,
+          "stop" : 1620343974904,
+          "duration" : 15
+        }
+      }, {
+        "uid" : "34b0b1e298ad8168",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/48//#testresult/34b0b1e298ad8168",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341853869,
+          "stop" : 1620341853884,
+          "duration" : 15
+        }
+      }, {
+        "uid" : "2889bb25ab6f961e",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/48//#testresult/2889bb25ab6f961e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341836987,
+          "stop" : 1620341837005,
+          "duration" : 18
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d6dd2f6a0af3137e.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,152 @@
+{
+  "uid" : "116e5058d2c27ba5",
+  "name" : "/GET - Listar usuários com uma busca incorreta de: nome inválido e email válido",
+  "fullName" : "/GET - Listar usuários com uma busca incorreta de: nome inválido e email válido",
+  "historyId" : "29e2332a29283502cae1678b8064e249",
+  "time" : {
+    "start" : 1620345585557,
+    "stop" : 1620345585573,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "consultUser (\"Nome Incorreto\"; \"fulano@qa.com\")",
+      "time" : {
+        "start" : 1620345585562,
+        "stop" : 1620345585569,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620345585563,
+          "stop" : 1620345585569,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **0** to equal **0** assert",
+      "time" : {
+        "start" : 1620345585572,
+        "stop" : 1620345585572,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **200** to equal **200** assert",
+      "time" : {
+        "start" : 1620345585573,
+        "stop" : 1620345585573,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[USUÁRIOS] :: Listar Usuários"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "24c9bc468563873a",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/50//#testresult/24c9bc468563873a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620345562759,
+          "stop" : 1620345562774,
+          "duration" : 15
+        }
+      }, {
+        "uid" : "d04adfac890f85f",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/49//#testresult/d04adfac890f85f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620343976112,
+          "stop" : 1620343976126,
+          "duration" : 14
+        }
+      }, {
+        "uid" : "be5d94f2fc2076ed",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/48//#testresult/be5d94f2fc2076ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341855323,
+          "stop" : 1620341855339,
+          "duration" : 16
+        }
+      }, {
+        "uid" : "274c3ebd404d66fe",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/48//#testresult/274c3ebd404d66fe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341838506,
+          "stop" : 1620341838521,
+          "duration" : 15
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "116e5058d2c27ba5.json",
+  "parameterValues" : [ ]
+}

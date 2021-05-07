@@ -1,0 +1,161 @@
+{
+  "uid" : "ef03fc343f67640a",
+  "name" : "/GET - Listar carrinhos com uma busca incorreta de: id do usuário válido e quantidade total inválida",
+  "fullName" : "/GET - Listar carrinhos com uma busca incorreta de: id do usuário válido e quantidade total inválida",
+  "historyId" : "c73a3615d68bea8c0ed993295cd377cc",
+  "time" : {
+    "start" : 1620345549615,
+    "stop" : 1620345549635,
+    "duration" : 20
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "consultCart (\"[object Object]\"; \"59\"; \"[object Object]\"; \"oUb7aGkMtSEPf6BZ\")",
+      "time" : {
+        "start" : 1620345549621,
+        "stop" : 1620345549632,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620345549621,
+          "stop" : 1620345549632,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **0** to equal **0** assert",
+      "time" : {
+        "start" : 1620345549635,
+        "stop" : 1620345549635,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **200** to equal **200** assert",
+      "time" : {
+        "start" : 1620345549635,
+        "stop" : 1620345549635,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[CARRINHOS] :: Listar Carrinhos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "2d1c230ad58cd7c2",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/50//#testresult/2d1c230ad58cd7c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620345527211,
+          "stop" : 1620345527232,
+          "duration" : 21
+        }
+      }, {
+        "uid" : "586e55a7162cb520",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/49//#testresult/586e55a7162cb520",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620343945682,
+          "stop" : 1620343945696,
+          "duration" : 14
+        }
+      }, {
+        "uid" : "3770751a00d1924e",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/48//#testresult/3770751a00d1924e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341819431,
+          "stop" : 1620341819447,
+          "duration" : 16
+        }
+      }, {
+        "uid" : "975f59baffbf42fa",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/48//#testresult/975f59baffbf42fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341804055,
+          "stop" : 1620341804071,
+          "duration" : 16
+        }
+      }, {
+        "uid" : "c8af56760354abec",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/47//#testresult/c8af56760354abec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341712057,
+          "stop" : 1620341712075,
+          "duration" : 18
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ef03fc343f67640a.json",
+  "parameterValues" : [ ]
+}

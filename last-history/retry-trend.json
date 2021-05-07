@@ -7,6 +7,14 @@
     "retry" : 0
   }
 }, {
+  "buildOrder" : 50,
+  "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/50/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "run" : 96,
+    "retry" : 0
+  }
+}, {
   "buildOrder" : 49,
   "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/49/",
   "reportName" : "Allure Report with history",

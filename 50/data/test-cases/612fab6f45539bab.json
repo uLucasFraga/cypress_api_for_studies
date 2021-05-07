@@ -1,0 +1,152 @@
+{
+  "uid" : "612fab6f45539bab",
+  "name" : "/GET - Listar produtos que não estão cadastrados pelo nome",
+  "fullName" : "/GET - Listar produtos que não estão cadastrados pelo nome",
+  "historyId" : "959251a60de6f1ba5b00387de05a9486",
+  "time" : {
+    "start" : 1620345567644,
+    "stop" : 1620345567662,
+    "duration" : 18
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "consultProduct (\"[object Object]\"; \"Produto que não existe\")",
+      "time" : {
+        "start" : 1620345567649,
+        "stop" : 1620345567656,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "request (\"[object Object]\")",
+        "time" : {
+          "start" : 1620345567650,
+          "stop" : 1620345567656,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expected **0** to deeply equal **0** assert",
+      "time" : {
+        "start" : 1620345567661,
+        "stop" : 1620345567661,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expected **200** to equal **200** assert",
+      "time" : {
+        "start" : 1620345567661,
+        "stop" : 1620345567661,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "[PRODUTOS] :: Listar Produtos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "49d6399108a9b630",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/50//#testresult/49d6399108a9b630",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620345545142,
+          "stop" : 1620345545165,
+          "duration" : 23
+        }
+      }, {
+        "uid" : "e2a72a9166deb819",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/49//#testresult/e2a72a9166deb819",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620343960838,
+          "stop" : 1620343960852,
+          "duration" : 14
+        }
+      }, {
+        "uid" : "82c10fa526ab0d2a",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/48//#testresult/82c10fa526ab0d2a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341837444,
+          "stop" : 1620341837461,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "f2faa9a110d336e7",
+        "reportUrl" : "https://uLucasFraga.github.io/cypress_api_for_studies/48//#testresult/f2faa9a110d336e7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1620341821380,
+          "stop" : 1620341821396,
+          "duration" : 16
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "612fab6f45539bab.json",
+  "parameterValues" : [ ]
+}
